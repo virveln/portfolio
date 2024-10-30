@@ -1,8 +1,8 @@
 // src/components/Project.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Project.css'; 
 import '../styles/General.css';
+import '../styles/Project.css'; 
 import projectsData from './projectsData';
 
 

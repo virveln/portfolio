@@ -1,21 +1,27 @@
+@import url('./General.css');
+
 .container{
     padding-top: 20px;
 }
 
 .welcome-text {
     text-align: center;
+    margin: 50px auto 100px auto;
+    width: 700px;
+    color: var(--primary-color);
+    font-size: 3em;
 }
 
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:center;
   }
   
   .project-item {
     position: relative;
     margin: 10px;
-    width: 300px; /* Bredd på varje projekt */
+    max-width: 850px; 
   }
   
   .project-link {
@@ -25,12 +31,19 @@
   .thumbnail-container {
     position: relative;
     overflow: hidden;
+    max-width: 850px;
+    max-height: 500px;
+    border-radius: 8px; 
+    
   }
-  
+  /*bild fyller inte ut container*/
   .project-thumbnail {
     width: 100%;
-    height: auto; /* Gör att bilden behåller proportionerna */
-    border-radius: 8px; /* Rundade hörn */
+    height: 100%; 
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 8px; 
     transition: transform 0.3s; /* Gör en smidig zoom vid hovring */
   }
   

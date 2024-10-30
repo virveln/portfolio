@@ -1,5 +1,18 @@
+:root{
+    --primary-color: #05BFDB;
+    --primary-color-darker: #0299b1;
+    --primary-color-hover: #048296;
+}
+
 .colorscheme {
     box-sizing: border-box;
     /*background-color: #191919;
-    color: #EEEEEE;*/
+    color: #EEEEEE;
+    color: var(--primary-color);*/
 }
+
+a{
+    color: black;
+    text-decoration: none;
+}
+

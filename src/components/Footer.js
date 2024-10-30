@@ -1,7 +1,7 @@
 // src/components/Footer.js
 import React from 'react';
-import '../styles/Footer.css'; 
 import '../styles/General.css';
+import '../styles/Footer.css'; 
 
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 

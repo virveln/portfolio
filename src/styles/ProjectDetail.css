@@ -1,6 +1,8 @@
-/* src/components/ProjectDetail.css */
+@import url('./General.css');
 
 .project-detail {
+    max-width: 1000px;
+    margin: auto;    
     padding: 20px;
   }
   
@@ -26,3 +28,21 @@
     border-radius: 8px; /* Rundade hörn för bilder */
   }
   
+  #project-title{
+    text-align: center;
+  }
+
+  #project-link{
+    text-decoration: underline;
+    color: var(--primary-color);
+  }
+
+  #project-link:hover{
+    color: var(--primary-color-darker);
+
+  }
+
+  .language-divider{
+    color: var(--primary-color-darker);
+
+  }
