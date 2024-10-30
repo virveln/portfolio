@@ -1,0 +1,60 @@
+.container{
+    padding-top: 20px;
+}
+
+.welcome-text {
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .project-item {
+    position: relative;
+    margin: 10px;
+    width: 300px; /* Bredd på varje projekt */
+  }
+  
+  .project-link {
+    text-decoration: none; /* Ta bort understrykning */
+  }
+  
+  .thumbnail-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-thumbnail {
+    width: 100%;
+    height: auto; /* Gör att bilden behåller proportionerna */
+    border-radius: 8px; /* Rundade hörn */
+    transition: transform 0.3s; /* Gör en smidig zoom vid hovring */
+  }
+  
+  .thumbnail-container:hover .project-thumbnail {
+    transform: scale(1.05); /* Zooma in bilden vid hovring */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Halvtransparent svart bakgrund */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Döljer overlay */
+    transition: opacity 0.3s; /* Gör att overlay smidigt syns */
+  }
+  
+  .thumbnail-container:hover .overlay {
+    opacity: 1; /* Visa overlay vid hovring */
+  }
+  

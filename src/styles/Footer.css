@@ -1,0 +1,14 @@
+/* src/css/Footer.css */
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: #f1f1f1;
+  }
+  
+  .footer-icons a {
+    margin: 0 10px;
+    color: black;
+    font-size: 1.5rem;
+  }
+  

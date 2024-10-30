@@ -1,0 +1,25 @@
+/* src/components/Navbar.css */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-center {
+    flex-grow: 1;
+    text-align: center;
+}

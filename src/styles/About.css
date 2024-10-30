@@ -1,0 +1,28 @@
+/* src/css/About.css */
+.about-container {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .about-image {
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .about-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-form input,
+  .about-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .about-form button {
+    padding: 10px 20px;
+  }
+  
