@@ -21,7 +21,7 @@
   .project-item {
     position: relative;
     margin: 10px;
-    max-width: 850px; 
+    max-width: 650px; 
   }
   
   .project-link {
@@ -31,7 +31,7 @@
   .thumbnail-container {
     position: relative;
     overflow: hidden;
-    max-width: 850px;
+    max-width: 650px;
     max-height: 500px;
     border-radius: 8px; 
     
@@ -44,7 +44,7 @@
     object-position: center;
     display: block;
     border-radius: 8px; 
-    transition: transform 0.3s; /* Gör en smidig zoom vid hovring */
+    transition: transform 0.3s;
   }
   
   .thumbnail-container:hover .project-thumbnail {
@@ -58,6 +58,7 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.6); /* Halvtransparent svart bakgrund */
+    background-color: var(--primary-color-transparent);
     color: white;
     display: flex;
     flex-direction: column;

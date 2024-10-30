@@ -2,6 +2,8 @@
     --primary-color: #05BFDB;
     --primary-color-darker: #0299b1;
     --primary-color-hover: #048296;
+    --primary-color-transparent: rgb(5, 191, 219, 0.8);
+
 }
 
 .colorscheme {

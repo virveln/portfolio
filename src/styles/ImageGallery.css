@@ -1,0 +1,61 @@
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 1200px;
+  }
+  
+  .image-item {
+    flex: wrap; /* Flex-baserad layout */
+    margin: auto;
+    text-align: center;
+    max-width: 40vw;
+    
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+
+    max-height: 70vh;
+    max-width: fit-content;
+
+  }
+
+  .project-image:hover{
+    cursor: zoom-in;
+}
+
+/*==Bigger image==*/
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Mörk bakgrund */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Se till att den är överst */
+}
+
+.lightbox-content {
+    position: relative;
+}
+
+.large-image {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); 
+}

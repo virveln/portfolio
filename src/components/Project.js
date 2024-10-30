@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/General.css';
-import '../styles/Project.css'; 
+import '../styles/Project.css';
 import projectsData from './projectsData';
 
 
@@ -19,7 +19,16 @@ const Project = () => {
                                 <div className="overlay">
                                     <h3>{project.title}</h3>
                                     <p>{project.date}</p>
-                                    <p>{project.s_description}</p>
+                                    <p>
+                                        {project.language.map((lang, index) => (
+                                            <span key={index}>
+                                                {lang}
+                                                {index < project.language.length - 1 && (
+                                                    <span> | </span>
+                                                )}
+                                            </span>
+                                        ))}
+                                    </p>
                                 </div>
                             </div>
                         </Link>
