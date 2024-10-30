@@ -1,32 +1,29 @@
-import logo from './logo.svg';
+//npx create-react-app .
+//npm install react-router-dom
+//npm install react-icons
+
+
 import './App.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/Project.css'; 
-import '../styles/General.css';
-import projectsData from './projectsData';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Project from './components/Project';
+import About from './components/About';
+import ProjectDetail from './components/ProjectDetail';
+import projectsData from './components/projectsData';
 
 function App() {
   return (
-    <div className='colorscheme container'>
-      <h1 className='welcome-text'>Hallå där, välkommen att ta en kik på några av mina projekt</h1>
-      <div className="project-list">
-        {projectsData.slice().reverse().map(project => (
-          <div key={project.id} className="project-item">
-            <Link to={`/project/${project.id}`} className="project-link">
-              <div className="thumbnail-container">
-                <img src={project.thumbnail} alt={project.title} className="project-thumbnail" />
-                <div className="overlay">
-                  <h3>{project.title}</h3>
-                  <p>{project.date}</p>
-                  <p>{project.s_description}</p>
-                </div>
-              </div>
-            </Link>
-          </div>
-        ))}
-      </div>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Project />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/project/:projectId" element={<ProjectDetail />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
