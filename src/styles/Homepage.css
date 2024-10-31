@@ -24,9 +24,7 @@
     max-width: 650px; 
   }
   
-  .project-link {
-    text-decoration: none; /* Ta bort understrykning */
-  }
+
   
   .thumbnail-container {
     position: relative;

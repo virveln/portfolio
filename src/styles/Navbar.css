@@ -1,5 +1,13 @@
 @import url('./General.css');
 
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: var(--primary-color-hover);
+}
+
 .navbar {
     position: sticky;
     top: 0;
@@ -26,16 +34,21 @@
     font-weight: bold;
 }
 
-.nav-left{
-    justify-content: left;}
+.nav-menu{
+    justify-content: left;
+}
 
-.nav-right{
+.nav-menu a.active {
+    text-decoration: line-through;
+}
+
+.nav-icons{
     justify-content: right;
     font-size: 1.5em;
 }
 
 
-.nav-left, .nav-right {
+.nav-menu, .nav-icons {
     gap: 20px;
     margin: 0 100px;
     text-transform: uppercase;

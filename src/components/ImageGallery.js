@@ -25,7 +25,7 @@ function ImageGallery({ project }) {
                         className="project-image"
                         onClick={() => openImage(image)} // Öppna bilden vid klick
                     />
-                    <p>{image.description}</p>
+                    <p className='image-description'>{image.description}</p>
                 </div>
             ))}
 

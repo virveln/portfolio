@@ -12,9 +12,12 @@
     color: #EEEEEE;
     color: var(--primary-color);*/
 }
+.container{
+
+    margin: 0 5%;
+}
 
 a{
     color: black;
-    text-decoration: none;
 }
 

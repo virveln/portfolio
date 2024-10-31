@@ -3,7 +3,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import '../styles/General.css';
 import '../styles/ProjectDetail.css';
-import projectsData from './projectsData';
+import projectsData from '../data/projectsData';
 import ImageGallery from './ImageGallery';
 
 
@@ -12,7 +12,7 @@ const ProjectDetail = () => {
     const project = projectsData.find(p => p.id === parseInt(projectId));
 
     return (
-        <div className="colorscheme container">
+        <div className="colorscheme project-container contaner">
             {project ? (
                 <>
                     <div className='project-info-container'>

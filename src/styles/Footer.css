@@ -1,14 +1,42 @@
 /* src/css/Footer.css */
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 1rem;
     background: #f1f1f1;
+    margin-top: 20px;
+  }
+  
+  .footer-icons, .second-footer-container{
+    text-align: center;
+    margin: auto;
+  }
+
+  .second-footer-container{
+    font-size: 0.7em;
+  }
+
+  .second-footer-container *{
+    display: inline;
+    margin: 0 5px;
+  }
+
+  .second-footer-container a:hover{
+    color: var(--primary-color-hover);
+  }
+  .footer-divider {
+    color: var(--primary-color);
+    font-weight: 700;
   }
   
   .footer-icons a {
     margin: 0 10px;
-    color: black;
+    color: var(--primary-color);
     font-size: 1.5rem;
+  }
+
+  .footer-icons a:hover{
+    color: var(--primary-color-darker);
   }
   

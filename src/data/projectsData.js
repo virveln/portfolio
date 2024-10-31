@@ -63,7 +63,7 @@ const projectsData = [
       ],
       reason: 'projekt på universitet',
       link: '',
-      description: '<b>Uppgift:</> Skapa ett magasin inriktad till valfri målgrupp som följer de typografiska regler och designprinciper som finns. Den ska innehålla ett reportage med en intervju och minst 50% av bilderna/illustrationerna ska vara skapta av en själv.' 
+      description: '<b>Uppgift:</b> Skapa ett magasin inriktad till valfri målgrupp som följer de typografiska regler och designprinciper som finns. Den ska innehålla ett reportage med en intervju och minst 50% av bilderna/illustrationerna ska vara skapta av en själv.' 
                   +'<br><br><b>Resultat:</b> Lösningen blev ett inredningsmagasin med en målgrupp där personer är intresserade av inredning, tips för att inreda bra eller för att se de nya inredningstrenderna. Det blev ett stilrent, enkelt och elegant magasin som gör det lättillgängligt och lätt för läsaren att ta till sig informationen och applicera den i sitt eget hem. Fokus lades på en välbalanserad layout med tydlig hierarki, varierande typsnitt och färg på enstaka ställen för att knyta ihop designen.',
       thumbnail: require('../images/magasindesign/thumbnail.png'), 
       images: [

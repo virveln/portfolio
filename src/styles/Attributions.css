@@ -1,0 +1,31 @@
+.attribution-container{
+    min-height: 72vh;
+}
+
+.attribution-container h1{
+    text-align: center;
+}
+
+
+.attributions-list {
+    list-style-type: none; /* Ingen punkt */
+    padding: 0;
+    margin: auto;
+    max-width: 600px;
+
+}
+
+.attribution-item {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.attribution-item a {
+    font-weight: bold;
+    color: var(--primary-color-darker);
+    text-decoration: none;
+}
+
+.attribution-item a:hover {
+    text-decoration: underline;
+}

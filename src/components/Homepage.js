@@ -2,8 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/General.css';
-import '../styles/Project.css';
-import projectsData from './projectsData';
+import '../styles/Homepage.css';
+import projectsData from '../data/projectsData';
 
 
 const Project = () => {
@@ -13,7 +13,7 @@ const Project = () => {
             <div className="project-list">
                 {projectsData.slice().reverse().map(project => (
                     <div key={project.id} className="project-item">
-                        <Link to={`/project/${project.id}`} className="project-link">
+                        <Link to={`/portfolio/project/${project.id}`} className="project-link">
                             <div className="thumbnail-container">
                                 <img src={project.thumbnail} alt={project.title} className="project-thumbnail" />
                                 <div className="overlay">

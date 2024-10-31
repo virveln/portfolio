@@ -11,10 +11,10 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Project from './components/Project';
+import Homepage from './components/Homepage';
 import About from './components/About';
 import ProjectDetail from './components/ProjectDetail';
-import projectsData from './components/projectsData';
+import Attributions from './components/Attributions';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -32,9 +32,10 @@ function App() {
       <ScrollToTop /> 
       <Navbar />
       <Routes>
-        <Route path="/" element={<Project />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/project/:projectId" element={<ProjectDetail />} />
+        <Route path="/portfolio" element={<Homepage />} />
+        <Route path="/portfolio/about" element={<About />} />
+        <Route path="/portfolio/project/:projectId" element={<ProjectDetail />} />
+        <Route path="portfolio/attributions" element={<Attributions />} />
       </Routes>
       <Footer />
     </Router>

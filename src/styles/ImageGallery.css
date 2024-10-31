@@ -27,6 +27,12 @@
     cursor: zoom-in;
 }
 
+.image-description {
+  color: rgb(125, 125, 125);
+  font-size: 0.8em;
+  margin-bottom: 40px;
+}
+
 /*==Bigger image==*/
 .lightbox {
     position: fixed;

@@ -1,7 +1,7 @@
 @import url('./General.css');
 
-.container {
-    padding: 5%;
+.project-container {
+    padding: 0 5%;
 
 }
 
@@ -26,7 +26,6 @@
 }
 
 .project-link {
-  text-decoration: underline;
   color: var(--primary-color);
 }
 
