@@ -1,15 +1,16 @@
-@import url('./General.css');
-
+/*override standard to get pictures out the edges*/
 .container{
-    padding-top: 20px;
+  margin: 150px 0 0 0;
+
 }
 
-.welcome-text {
+.hero-text {
     text-align: center;
-    margin: 50px auto 100px auto;
-    width: 700px;
+    margin: 0 auto 100px auto;
+    padding: 0 5vw 0 5vw;
+    max-width: 700px;
     color: var(--primary-color);
-    font-size: 3em;
+    font-size: 4vw;
 }
 
 .project-list {
@@ -20,18 +21,15 @@
   
   .project-item {
     position: relative;
-    margin: 10px;
+    margin-bottom: 10px;
     max-width: 650px; 
   }
-  
-
   
   .thumbnail-container {
     position: relative;
     overflow: hidden;
     max-width: 650px;
     max-height: 500px;
-    border-radius: 8px; 
     
   }
   /*bild fyller inte ut container*/
@@ -41,7 +39,6 @@
     object-fit: cover;
     object-position: center;
     display: block;
-    border-radius: 8px; 
     transition: transform 0.3s;
   }
   
@@ -70,3 +67,15 @@
     opacity: 1; /* Visa overlay vid hovring */
   }
   
+
+  @media screen and (min-width: 768px){
+    
+  }
+  
+  /*DESKTOP*/
+  @media screen and (min-width: 992px) {
+    .hero-text {
+      font-size: 3em;
+      padding: 0;
+  }
+  }
