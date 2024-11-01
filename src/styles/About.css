@@ -1,26 +1,26 @@
 .about-container {
-    text-align: center;
-    padding: 100px 20px;
-  }
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-image {
+  width: 200px;
+}
+
+.about-text{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   
-  .about-image {
-    width: 200px;
-  }
-  
-  .about-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .about-form input,
-  .about-form textarea {
-    margin: 10px 0;
-    padding: 10px;
-    width: 300px;
-  }
-  
-  .about-form button {
-    padding: 10px 20px;
-  }
-  
+}
+
+.about-text a{
+  color: var(--primary-color);
+  margin: 0 0.3em;
+}
+
+.about-text a:hover{
+  color: var(--primary-color-hover);
+}

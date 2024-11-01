@@ -3,7 +3,7 @@ const attributionsData = [
         id: 1,
         url: 'https://www.mockupworld.co/free/smartphone-screens-mockup/', 
         from: 'Mockupworld',
-        desc: 'Mockup of five smartphone screens.'
+        desc: 'A mockup of five smartphone screens.'
     },
     {
         id: 2,
@@ -33,33 +33,14 @@ const attributionsData = [
         id: 6,
         url: 'https://www.free-mockup.com/mockups/magazine-free-psd-mockup-2/', 
         from: 'Free-mockup',
-        desc: 'Magazine Mockup to showcase your cover design.'
-    }, {
+        desc: 'Magazine Mockup to showcase cover design.'
+    }, 
+    {
         id: 7,
         url: '', 
         from: '',
         desc: ''
-    }, {
-        id: 8,
-        url: '', 
-        from: '',
-        desc: ''
-    }, {
-        id: 9,
-        url: '', 
-        from: '',
-        desc: ''
-    }, {
-        id: 10,
-        url: '', 
-        from: '',
-        desc: ''
-    }, {
-        id: 11,
-        url: '', 
-        from: '',
-        desc: ''
-    },
+    }, 
 ]
 
 export default attributionsData;

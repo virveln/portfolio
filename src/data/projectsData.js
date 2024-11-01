@@ -103,7 +103,7 @@ const projectsData = [
       reason: 'projekt på universitet',
       link: 'https://github.com/virveln/cocktails-and-dreams',
       description: '<b>Uppgift:</b> Skapa en interaktiv och responsiv webbsida som presenterar innehåll från ett rest-API via JSON.'
-                  +'<br><br><b>Resultat:</br> Lösningen blev en webbsida där man kan söka efter cocktailrecept utefter olika sökalternativ och filter. Sidan är interaktiv och man kan på många olika sätt komma åt de olika kategorierna och recepten.',
+                  +'<br><br><b>Resultat:</b> Lösningen blev en webbsida där man kan söka efter cocktailrecept utefter olika sökalternativ och filter. Sidan är interaktiv och man kan på många olika sätt komma åt de olika kategorierna och recepten.',
       thumbnail: require('../images/cocktailsanddreams/thumbnail.png'), 
       images: [
         { url: cocktailsanddreamsImages[0], description: "Startsida med sökfunktion och filtrering" },

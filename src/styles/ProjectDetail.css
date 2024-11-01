@@ -6,13 +6,16 @@
 }
 
 .project-info-container {
-  max-width: 800px;
   margin: auto;
-
+  max-width: 800px;
 }
 
 .project-title {
   text-align: center;
+}
+
+.project-description{
+
 }
 
 .project-language {
