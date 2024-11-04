@@ -37,10 +37,47 @@ const attributionsData = [
     }, 
     {
         id: 7,
+        url: 'https://www.flaticon.com/free-icons/event', 
+        from: 'Flaticon',
+        desc: 'Event icons created by Dooder'
+    }, 
+    {
+        id: 8,
+        url: 'https://www.flaticon.com/free-icons/jump', 
+        from: 'Flaticon',
+        desc: 'Jump icons created by Freepik'
+    }, 
+    {
+        id: 9,
+        url: 'https://www.flaticon.com/free-icons/support', 
+        from: 'Flaticon',
+        desc: 'Support icons created by Freepik'
+    }, 
+    {
+        id: 10,
+        url: 'https://www.flaticon.com/free-icons/backpack', 
+        from: 'Flaticon',
+        desc: 'Backpack icons created by deemakdaksina'
+    }, 
+    {
+        id: 11,
+        url: 'https://www.flaticon.com/free-icons/diploma', 
+        from: 'Flaticon',
+        desc: 'Diploma icons created by Wira Stocker'
+    }, 
+    {
+        id: 12,
+        url: 'https://www.flaticon.com/free-icons/puzzle', 
+        from: 'Flaticon',
+        desc: 'Puzzle icons created by Hilmy Abiyyu A'
+    }, 
+    /*
+    {
+        id: 13,
         url: '', 
         from: '',
         desc: ''
-    }, 
+    }, */
 ]
 
 export default attributionsData;

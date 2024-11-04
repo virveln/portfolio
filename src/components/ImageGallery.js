@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import '../styles/ImageGallery.css';
+import React, { useState } from 'react';
 
 function ImageGallery({ project }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ function ImageGallery({ project }) {
     return (
         <div className="image-gallery">
             {project.images.map((image, index) => (
-                <div key={index} className="image-item">
+                <div key={index} className={`image-container ${project.images.length === 1 ? 'single-image' : 'multiple-images'}`}>
                     <img
                         src={image.url}
                         alt={image.description}

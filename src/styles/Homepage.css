@@ -1,81 +1,151 @@
 /*override standard to get pictures out the edges*/
-.container{
-  margin: 150px 0 0 0;
+.homepage-container {
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 150px
+}
 
+/*SECTION HERO*/
+.hero-text-container {
+  position: fixed;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 700px;
+  width: 100%;
+  z-index: -10;
 }
 
 .hero-text {
-    text-align: center;
-    margin: 0 auto 100px auto;
-    padding: 0 5vw 0 5vw;
-    max-width: 700px;
-    color: var(--primary-color);
-    font-size: 4vw;
+  text-align: center;
+  margin: 0 auto 100px auto;
+  padding: 0 5vw 0 5vw;
+  padding: 0;
+  color: var(--primary-color);
+  font-size: 4vw;
+  font-weight: 400;
 }
 
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-  }
-  
-  .project-item {
-    position: relative;
-    margin-bottom: 10px;
-    max-width: 650px; 
-  }
-  
-  .thumbnail-container {
-    position: relative;
-    overflow: hidden;
-    max-width: 650px;
-    max-height: 500px;
-    
-  }
-  /*bild fyller inte ut container*/
-  .project-thumbnail {
-    width: 100%;
-    height: 100%; 
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    transition: transform 0.3s;
-  }
-  
-  .thumbnail-container:hover .project-thumbnail {
-    transform: scale(1.05); /* Zooma in bilden vid hovring */
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6); /* Halvtransparent svart bakgrund */
-    background-color: var(--primary-color-transparent);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0; /* Döljer overlay */
-    transition: opacity 0.3s; /* Gör att overlay smidigt syns */
-  }
-  
-  .thumbnail-container:hover .overlay {
-    opacity: 1; /* Visa overlay vid hovring */
-  }
-  
+.hero-text-enter {
+  display: block;
+}
 
-  @media screen and (min-width: 768px){
-    
+/*PROJECTS IMAGES*/
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 220px;
+  margin-top: 40vw;
+  z-index: 2;
+  background-color: white;
+  box-shadow: 0px -80px 100px rgba(255, 255, 255, 0.8);
+}
+
+.thumbnail-container {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail-container:hover {
+  transform: translateY(-5px);
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.3s;
+  aspect-ratio: 5/3;
+}
+
+/*OVERLAY*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--primary-color-transparent);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  gap: 10px;
+}
+
+.thumbnail-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.overlay-date {
+  display: none;
+  font-weight: bold;
+}
+
+.overlay-language {
+  font-weight: 400;
+}
+
+
+/*SMALL SCREEN*/
+@media screen and (min-width: 540px) {
+  .project-item {
+    width: calc(50% - 5px);
   }
-  
-  /*DESKTOP*/
-  @media screen and (min-width: 992px) {
-    .hero-text {
-      font-size: 3em;
-      padding: 0;
+
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) {
+  .hero-text-container {
+    top: 200px;
   }
+
+  .project-list {
+    margin-top: 300px;
+    box-shadow: 0px -100px 100px rgba(255, 255, 255, 0.8);
   }
+
+  .project-item {
+    width: calc(50% - 5px);
+  }
+
+  .overlay-date {
+    display: block;
+  }
+
+  .hero-text {
+    font-weight: 100;
+  }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 992px) {
+  .hero-text {
+    font-size: 3em;
+  }
+
+  .project-list {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .project-item {
+    max-width: 1200px;
+  }
+
+}
