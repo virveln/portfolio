@@ -7,7 +7,7 @@ const aboutData = [
             mailTitle: 'jessica.hvirfvel@hotmail.com',
             github: 'https://github.com/virveln',
             githubTitle: 'github.com/virveln',
-            resume: require('../data/Hvirfvel_CV.pdf')
+            resume: require('../../data/Hvirfvel_CV.pdf')
         },
         introduction: {
             p1: 'I\'m Jessica Hvirfvel - a creative, logical thinker with a passion for crafting, organizing, and problem-solving. I\'m driven by a desire to learn and understand how things work together. I\'ve long been interested in IT and graphic design but wasn\'t sure how to pursue it. That changed in 2020 when my sister introduced me to HTML and CSS, and from that moment on, I was sold. ',
@@ -16,32 +16,32 @@ const aboutData = [
         },
         funfacts: [
             {
-                icon: require('../images/icons/tools.png'),
+                icon: require('../../images/icons/tools.png'),
                 alt: 'Tools Icon',
                 fact: 'Give me an unopened package from Ikea and I will happily assemble it'
             },
             {
-                icon: require('../images/icons/backpack.png'),
+                icon: require('../../images/icons/backpack.png'),
                 alt: 'Backback Icon',
                 fact: 'I\'ve been backpacking for 1.5 years in Southeast Asia och Europe'
             },
             {
-                icon: require('../images/icons/event.png'),
+                icon: require('../../images/icons/event.png'),
                 alt: 'Event Icon',
                 fact: 'I\'ve been responsible for a two-week long event for 250 people'
             },
             {
-                icon: require('../images/icons/parachute.png'),
+                icon: require('../../images/icons/parachute.png'),
                 alt: 'Parachute Icon',
                 fact: 'I\'ve parachuted from a height of 4000 meters'
             },
             {
-                icon: require('../images/icons/diploma.png'),
+                icon: require('../../images/icons/diploma.png'),
                 alt: 'Diploma Icon',
                 fact: 'I\'ve received a diploma for my graphical contribution in my student association'
             },
             {
-                icon: require('../images/icons/puzzle.png'),
+                icon: require('../../images/icons/puzzle.png'),
                 alt: 'Puzzle Icon',
                 fact: 'I\'m great at puzzles and never stop until every piece is perfectly in place'
             },

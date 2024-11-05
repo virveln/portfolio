@@ -26,6 +26,20 @@
     font-weight: 600;
 }
 
+.language-btn{
+    border: 0;
+    background-color: #fff;
+    font-size: 1.1em;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.2s ease;
+    margin-left: 10px;
+}
+
+.language-btn:hover{
+    color: var(--primary-color-hover);
+    transform: translateY(-2px);
+}
+
 /*MOBILE*/
 .nav-desktop {
     display: none;
@@ -128,6 +142,10 @@
         margin-right: 100px;
         margin-left: 50px;
         font-size: 1.5em;
+    }
+
+    .language-btn{
+        padding-top: 2px;
     }
 
 }

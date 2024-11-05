@@ -1,0 +1,23 @@
+{
+    "heroText": "Hallå där, välkommen att ta en kik på några av mina projekt",
+    "headings": {
+        "intro": "vem jag är",
+        "funfacts": "rolig kuriosa om mig",
+        "experiences": "tekniska erfarenheter"
+    },
+    "buttons": {
+        "resume": "CV",
+        "showMore": "Visa mer"
+    },
+    "experiences": {
+        "web": "Webbutveckling",
+        "system": "Systemutveckling, OOP och affärssystem",
+        "design": "Design och UX",
+        "database": "Databashantering",
+        "tools": "Utvecklingsverktyg",
+        "testing": "Mjukvarutestning",
+        "server": "Serverprogrammering",
+        "api": "Arbetat med APIer",
+        "android": "Androida mobilapplikationer"
+    }
+}

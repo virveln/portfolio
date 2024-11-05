@@ -1,0 +1,133 @@
+{
+    "contactInfo": {
+        "linkedin": "https://www.linkedin.com/in/jessica-hvirfvel/",
+        "linkedinTitle": "linkedin.com/in/jessica-hvirfvel",
+        "mail": "mailto:jessica.hvirfvel@hotmail.com",
+        "mailTitle": "jessica.hvirfvel@hotmail.com",
+        "github": "https://github.com/virveln",
+        "githubTitle": "github.com/virveln",
+        "resume": "../../data/Hvirfvel_CV.pdf"
+    },
+    "introduction": {
+        "p1": "Jag är Jessica Hvirfvel - en kreativ, logiskt tänkande pysselfantast som gillar att organisera och problemlösa. Att lära mig nytt och få en förståelse för hur saker hänger ihop är en drivkraft för mig. Jag har länge varit intresserad av IT och grafisk design men inte varit säker på hur jag skulle fullfölja det. Det förändrades 2020 när min syster introducerade mig för HTML och CSS, och från det ögonblicket var jag såld.",
+        "p2": "Snabbspolning till idag har jag en kandidatexamen i informationssystem från Karlstads universitet, och jag är fullt intresserad av full-stack utveckling.",
+        "p3": "Let's connect!"
+    },
+    "funfacts": [
+        {
+            "icon": "tools",
+            "alt": "Tools Icon",
+            "fact": "Ge mig ett oöppnat paket från Ikea och jag kommer med glädje bygga ihop den"
+        },
+        {
+            "icon": "backpack",
+            "alt": "Backback Icon",
+            "fact": "Jag har backpackat i 1,5 år i sydostasien och europa"
+        },
+        {
+            "icon": "event",
+            "alt": "Event Icon",
+            "fact": "Jag har varit ansvarig över ett två veckor långt event för 250 pers"
+        },
+        {
+            "icon": "parachute",
+            "alt": "Parachute Icon",
+            "fact": "Jag har hoppat fallskärm från 4000 meters höjd"
+        },
+        {
+            "icon": "diploma",
+            "alt": "Diploma Icon",
+            "fact": "Jag har mottagit ett diplom för mitt grafiska bidragande till min dåvarande studentförening"
+        },
+        {
+            "icon": "puzzle",
+            "alt": "Puzzle Icon",
+            "fact": "Jag är grym på pussel och slutar inte förrän alla bitar är på sin plats"
+        }
+    ],
+    "currently": "På min fritid arbetar jag med att förbättra detta portfolio, samt att skapa en applikation för ett Jeopardy spel. Båda utvecklas via React.",
+    "experienceText": {
+        "text": "Erfarenhet från Karsltad universitet och egen lärning. Part ",
+        "coder": "kodare.",
+        "designer": "designer."
+
+    },
+    "experience": [
+        {
+            "title": "Webbutveckling",
+            "language": [
+                "HTML & CSS",
+                "Bootstrap",
+                "JavaScript",
+                "React",
+                "WordPress",
+                "PHP"
+            ]
+        },
+        {
+            "title": "Systemutveckling, OOP och affärssystem",
+            "language": [
+                "C",
+                "C#",
+                ".NET",
+                "Java"
+            ]
+        },
+        {
+            "title": "Design och UX",
+            "language": [
+                "Adobe Photoshop",
+                "Adobe Illustrator",
+                "Adobe InDesign",
+                "Figma",
+                "Prototyping",
+                "2c8",
+                "Accessibility"
+            ]
+        },
+        {
+            "title": "Databashantering",
+            "language": [
+                "MySQL",
+                "MongoDB",
+                "XAMPP"
+            ]
+        },
+        {
+            "title": "Utvecklarverktyg",
+            "language": [
+                "Git & GitHub"
+            ]
+        },
+        {
+            "title": "Mjukvarutestning",
+            "language": [
+                "Python",
+                "Java"
+            ]
+        },
+        {
+            "title": "Serverprogrammering",
+            "language": [
+                "NodeJS",
+                "Express"
+            ]
+        },
+        {
+            "title": "Arbete med APIer",
+            "language": [
+                "API",
+                "JSON",
+                "XML",
+                "REST API"
+            ]
+        },
+        {
+            "title": "Mobila applikationer",
+            "language": [
+                "Android Studio",
+                "Java"
+            ]
+        }
+    ]
+}

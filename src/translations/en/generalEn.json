@@ -1,0 +1,23 @@
+{
+    "heroText": "Oh hello there! Take a peek at some of my projects",
+    "headings": {
+        "intro": "Who am i",
+        "funfacts": "Fun facts about me",
+        "experiences": "Technical experiences"
+    },
+    "buttons": {
+        "resume": "Resumé",
+        "showMore": "Show more"
+    },
+    "experiences": {
+        "web": "Web Development",
+        "system": "System Development, OOP and Business Systems",
+        "design": "Design and UX",
+        "database": "Database Management",
+        "tools": "Development Tools",
+        "testing": "Software Testing",
+        "server": "Server Programming",
+        "api": "Working with APIs",
+        "android": "Android Mobile Applications"
+    }
+}

@@ -3,6 +3,7 @@
 //npm install react-icons
 //npm install react-helmet - för att ändra title beroende på sida
 //npm install react-typed - för att ha typing effekt
+//npm install react-i18next i18next - för översättning
 
 //npm run deploy *vilket betyder att sidan uppdateras till domänen*
 
@@ -18,6 +19,7 @@ import Homepage from './components/Homepage';
 import About from './components/About';
 import ProjectDetail from './components/ProjectDetail';
 import Attributions from './components/Attributions';
+import './i18n';
 
 function ScrollToTop() {
   const { pathname } = useLocation();

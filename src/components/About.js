@@ -1,22 +1,57 @@
 // src/components/About.js
 import '../styles/General.css';
 import '../styles/About.css';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import { useState } from 'react';
 import { ReactTyped } from "react-typed";
 import { FaLinkedin, FaFile, FaEnvelope } from 'react-icons/fa';
-import aboutData from '../data/aboutData';
+//import aboutData from '../data/aboutData';
 import logo from '../logo.svg';
+import { useTranslation } from 'react-i18next';
+
+import toolsIcon from '../images/icons/tools.png';
+import backpackIcon from '../images/icons/backpack.png';
+import diplomaIcon from '../images/icons/diploma.png';
+import eventIcon from '../images/icons/event.png';
+import parachuteIcon from '../images/icons/parachute.png';
+import puzzleIcon from '../images/icons/puzzle.png';
+import contactData from '../data/contactData.json';
 
 const About = () => {
+    const { t, i18n } = useTranslation('generalData');
     const [showAll, setShowAll] = useState(false);
-    const contactinfo = aboutData[0].contactInfo;
-    const introduction = aboutData[0].introduction;
-    const funfacts = aboutData[0].funfacts;
-    const currently = aboutData[0].currently;
-    const experiences = aboutData[0].experience;
-    const itemsToShow = showAll ? experiences : experiences.slice(0, 4);
+    const [aboutData, setAboutData] = useState(null);
+
+    useEffect(() => {
+        const loadAboutData = async () => {
+            const lang = i18n.language === 'sv' ? 'sv' : 'en'; // Hämta aktuell språk-kod
+            const data = await import(`../translations/${lang}/aboutData${lang === 'sv' ? 'Sv' : 'En'}.json`);
+            setAboutData(data.default);
+        };
+        loadAboutData();
+    }, [i18n.language]);
+
+    
+    if (!aboutData) {
+        return <p>Loading...</p>; // Visa en laddningsindikator om datan inte är hämtad ännu
+    }
+/*
+    const contactinfo = aboutData.contactInfo;
+    const introduction = aboutData.introduction;
+    const funfacts = aboutData.funfacts;
+    const currently = aboutData.currently;
+    const experienceText = aboutData.experienceText;
+    const experiences = aboutData.experience;*/
+    const itemsToShow = showAll ? aboutData.experience : aboutData.experience.slice(0, 4);
+
+    const iconMap = {
+        "tools": toolsIcon,
+        "backpack": backpackIcon,
+        "diploma": diplomaIcon,
+        "event": eventIcon,
+        "parachute": parachuteIcon,
+        "puzzle": puzzleIcon,
+    };
 
     return (
         <div className='about-outer-container'>
@@ -44,14 +79,14 @@ const About = () => {
                         <div className='about-container-text'>
                             <h2>Who am I<span className='colorfulend'>.</span></h2>
                             {/* <h2>Some facts about me and how I ended up in developing.</h2>*/}
-                            <p className='about-text'>{introduction.p1}</p>
-                            <p className='about-text'>{introduction.p2}</p>
-                            <p className='about-text connect-text'>{introduction.p3}</p>
+                            <p className='about-text'>{aboutData.introduction.p1}</p>
+                            <p className='about-text'>{aboutData.introduction.p2}</p>
+                            <p className='about-text connect-text'>{aboutData.introduction.p3}</p>
 
                             <div className='about-container-btn'>
-                                <a className='btn about-btn' href={contactinfo.linkedin} target="_blank" rel="noopener noreferrer" title='linkedin.com/in/jessica-hvirfvel/'><span className='externallink-icon'><FaLinkedin /></span> LinkedIn </a>
-                                <a className='btn about-btn' href={contactinfo.mail} title='jessica.hvirfvel@hotmail.com'><span className='externallink-icon'><FaEnvelope /></span> E-mail </a>
-                                <a className='btn about-btn' href={contactinfo.resume} target="_blank" rel="noopener noreferrer"><span className='externallink-icon'><FaFile /></span>Resumé</a>
+                                <a className='btn about-btn' href={contactData.linkedin} target="_blank" rel="noopener noreferrer" title={contactData.linkedinTitle} ><span className='externallink-icon'><FaLinkedin /></span> LinkedIn </a>
+                                <a className='btn about-btn' href={contactData.mail} title={contactData.mailTitle}><span className='externallink-icon'><FaEnvelope /></span> E-mail </a>
+                                <a className='btn about-btn' href={contactData.resume} target="_blank" rel="noopener noreferrer"><span className='externallink-icon'><FaFile /></span>{t('buttons.resume')}</a>
                             </div>
                         </div>
                         <img src={require('../images/me.JPG')} alt="About Me" className="about-image" />
@@ -60,9 +95,9 @@ const About = () => {
                     <div className='funfacts-container new-container'>
                         <h2>Fun facts about me<span className='colorfulend'>.</span></h2>
                         <div className='funfacts-inner-container'>
-                            {funfacts.map((funfact, index) => (
+                            {aboutData.funfacts.map((funfact, index) => (
                                 <div key={index} className='funfact-item'>
-                                    <img src={funfact.icon} alt={funfact.alt} className='funfact-icon' />
+                                    <img src={iconMap[funfact.icon]} alt={funfact.alt} className='funfact-icon' />
                                     <p className='funfact-text'>{funfact.fact}</p>
                                 </div>
                             ))}
@@ -72,13 +107,13 @@ const About = () => {
                     <div className='current-container new-container'>
                         <div>
                             <img className='react-logo' src={logo} alt='React logo' />
-                            <p>{currently}</p>
+                            <p>{aboutData.currently}</p>
                         </div>
                     </div>
 
                     <div className='language-container new-container'>
                         <h2>Technical experiences<span className='colorfulend'>.</span></h2>
-                        <p>Experienced from Karlstad University and private learning. Part <ReactTyped
+                        <p>{aboutData.experienceText.text}<ReactTyped
                             strings={["Coder.", "Designer."]}
                             typeSpeed={100}
                             loop backSpeed={50}
@@ -104,7 +139,7 @@ const About = () => {
                             ))}
                             {!showAll && (
                                 <button className="btn show-all-btn" onClick={() => setShowAll(true)}>
-                                    Show more
+                                    {t('buttons.showMore')}
                                 </button>
                             )}
                         </div>

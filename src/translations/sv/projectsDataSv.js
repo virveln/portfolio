@@ -3,18 +3,18 @@
 //import images from folder
 const importImages = (requireContext) => requireContext.keys().map(requireContext);
 
-const graphicProfileImages = importImages(require.context('../images/graphicprofile', false, /\.(png|jpe?g|svg)$/));
-const hammaroadventureImages = importImages(require.context('../images/hammaroadventure', false, /\.(png|jpe?g|svg)$/));
-const brunchncrunchImages = importImages(require.context('../images/brunchncrunch', false, /\.(png|jpe?g|svg)$/));
-const cocktailsanddreamsImages = importImages(require.context('../images/cocktailsanddreams', false, /\.(png|jpe?g|svg)$/));
-const hangmanImages = importImages(require.context('../images/hangman', false, /\.(png|jpe?g|svg)$/));
-const magasindesignImages = importImages(require.context('../images/magasindesign', false, /\.(png|jpe?g|svg)$/));
-const affarssystemImages = importImages(require.context('../images/affarssystem', false, /\.(png|jpe?g|svg)$/));
-const showcaseImages = importImages(require.context('../images/showcase', false, /\.(png|jpe?g|svg)$/));
-const nollningsmarkenImages = importImages(require.context('../images/nollningsmarken', false, /\.(png|jpe?g|svg)$/));
-const nollningsbiblarImages = importImages(require.context('../images/nollningsbiblar', false, /\.(png|jpe?g|svg)$/));
+const graphicProfileImages = importImages(require.context('../../images/graphicprofile', false, /\.(png|jpe?g|svg)$/));
+const hammaroadventureImages = importImages(require.context('../../images/hammaroadventure', false, /\.(png|jpe?g|svg)$/));
+const brunchncrunchImages = importImages(require.context('../../images/brunchncrunch', false, /\.(png|jpe?g|svg)$/));
+const cocktailsanddreamsImages = importImages(require.context('../../images/cocktailsanddreams', false, /\.(png|jpe?g|svg)$/));
+const hangmanImages = importImages(require.context('../../images/hangman', false, /\.(png|jpe?g|svg)$/));
+const magasindesignImages = importImages(require.context('../../images/magasindesign', false, /\.(png|jpe?g|svg)$/));
+const affarssystemImages = importImages(require.context('../../images/affarssystem', false, /\.(png|jpe?g|svg)$/));
+const showcaseImages = importImages(require.context('../../images/showcase', false, /\.(png|jpe?g|svg)$/));
+const nollningsmarkenImages = importImages(require.context('../../images/nollningsmarken', false, /\.(png|jpe?g|svg)$/));
+const nollningsbiblarImages = importImages(require.context('../../images/nollningsbiblar', false, /\.(png|jpe?g|svg)$/));
 
-const projectsData = [
+const projectsDataSv = [
   {
     id: 1,
     title: 'Campaign',
@@ -22,13 +22,13 @@ const projectsData = [
     language: [
       'Photoshop'
     ],
-    reason: 'group project at university',
+    reason: 'grupprojekt på universitet',
     link: '',
-    description: '<b>Task:</b> The task was to create a fictive campaign based on climate and sustainability, with the theme of meat consumption, emissions from the consumption of goods and services, or emissions from domestic transport. By choosing a sender and defining the target group, we would thus create an idea for a campaign that had a chance to influence the intended target group.'
-                +'<br><br><b>Result:</b> This resulted in a campaign to choose the menstrual cup instead of disposable products such as tampons and pads. Below is a poster I created in the group project.',
-    thumbnail: require('../images/kampanj/kampanj.png'),
+    description: '<b>Task:</b> Uppgiften gick ut på att skapa en fiktiv kampanj utifrån klimat och hållbarhet, med tema köttkoncumtion, utsläpp från konsumtion av varor och tjänster, eller utsläpp från inrikes transport. Genom att välja en avsändare och definiera målgrupp skulle vi därmed skapa en idé för en kampanj som hade en chans att påverka den tänkta målgruppen.'
+                +'<br><br><b>Result:</b> Detta resulterade i en kampanj om att välja menskopp istället för engångsprodukter som tampong och binda. Nedan visas en affisch som jag skapade i grupprojektet.',
+    thumbnail: require('../../images/kampanj/kampanj.png'),
     images: [
-      { url: require('../images/kampanj/kampanj.png'), description: "" },
+      { url: require('../../images/kampanj/kampanj.png'), description: "" },
 
     ]
   },
@@ -39,11 +39,11 @@ const projectsData = [
     language: [
       'Adobe InDesign',
     ],
-    reason: 'solo project at university',
+    reason: 'soloprojekt på universitet',
     link: '',
     description: '<b>Uppgift:</b> Uppdatera Swenströmskas stenugnsbageris grafiska profil genom att utföra en varumärkes- omvärlds-, målgrupps- och konkurrensanalys. Skapa en enklare grafisk manual där man visar riktlinjer för logotyp, färgval, bildmanér, typografi samt exemplifierar hur den nya identiteten appliceras på relevanta profilmaterial.'
       + '<br><br><b>Resultat:</b> Lösningen blev en enkel grafisk manual innehållande illustrationer och beskrivande text om hur det uppdaterade varumärket får användas. Ledorden för varumärket är hantverk, närhet, lugn och erfarenhet. Målgruppen är miljömedvetna kunder som uppskattar naturliga och lokalt producerade råvaror. Aktuella trender att ta vara på är hållbarhet, miljömedvetenhet och lokala förankringar. För att sticka ut bland konkurrenter har en alternativ logotyp valts som speglar företagets affärsidé och kultur genom att förmedla känslan av hantverk, ekologiskt och närhet. Färgerna är varma och naturnära, och typografin är handskriven för att ge en personlig och unik känsla. Grafiska element används för att dekorera och visualisera varumärket, och bilderna som används är varma, hemtrevliga och nära.',
-    thumbnail: require('../images/graphicprofile/thumbnail.png'),
+    thumbnail: require('../../images/graphicprofile/thumbnail.png'),
     images: [
       { url: graphicProfileImages[0], description: "" },
       { url: graphicProfileImages[1], description: "" },
@@ -58,11 +58,11 @@ const projectsData = [
     language: [
       'Adobe Illustrator',
     ],
-    reason: 'solo project at university',
+    reason: 'soloprojekt på universitet',
     link: '',
     description: '<b>Uppgift:</b> Skapa en design till en applikation som gör det intressant för människor att besöka Hammarö kommun.'
       + '<br><br><b>Resultat:</b> Lösningen blev en design till en applikation där man kan samla poäng genom att svara rätt på quiz och besöka platser på Hammarö. Dessa poäng resulterar i olika belöningar, såsom rabatter eller gratis inträde på event eller platser på Hammarö, via en belöningstrappa. Målgruppen är barnfamiljer där tanken främst är för barnen, men det ska heller inte kännas för barnsligt för en förälder att använda applikationen. Därav dess designval med lekfulla färger, illustrationer och tydlighet.',
-    thumbnail: require('../images/hammaroadventure/thumbnail.png'),
+    thumbnail: require('../../images/hammaroadventure/thumbnail.png'),
     images: [
       { url: hammaroadventureImages[0], description: "" },
       { url: hammaroadventureImages[1], description: "" },
@@ -80,11 +80,11 @@ const projectsData = [
     language: [
       'Adobe InDesign',
     ],
-    reason: 'solo project at university',
+    reason: 'soloprojekt på universitet',
     link: '',
     description: '<b>Uppgift:</b> Skapa ett magasin inriktad till valfri målgrupp som följer de typografiska regler och designprinciper som finns. Den ska innehålla ett reportage med en intervju och minst 50% av bilderna/illustrationerna ska vara skapta av en själv.'
       + '<br><br><b>Resultat:</b> Lösningen blev ett inredningsmagasin med en målgrupp där personer är intresserade av inredning, tips för att inreda bra eller för att se de nya inredningstrenderna. Det blev ett stilrent, enkelt och elegant magasin som gör det lättillgängligt och lätt för läsaren att ta till sig informationen och applicera den i sitt eget hem. Fokus lades på en välbalanserad layout med tydlig hierarki, varierande typsnitt och färg på enstaka ställen för att knyta ihop designen.',
-    thumbnail: require('../images/magasindesign/thumbnail.png'),
+    thumbnail: require('../../images/magasindesign/thumbnail.png'),
     images: [
       { url: magasindesignImages[0], description: "" },
       { url: magasindesignImages[1], description: "" },
@@ -99,13 +99,13 @@ const projectsData = [
     language: [
       'Java',
     ],
-    reason: 'solo project at university',
+    reason: 'soloprojekt på universitet',
     link: '',
     description: '<b>Uppgift:</b> Skapa ett ritprogram enligt MVC genom att implementera en färdigprogrammerad ritmotor.'
       + '<br><br><b>Resultat:</b> Lösningen blev ett enkelt program där användaren kan skapa cirklar, rektanglar och linjer i valfri linjetjocklek och färg. Vid val av cirkel eller rektangel kan även en ifyllnadsfärg väljas. Vid start av programmet öppnas en fil om den redan finns annars skapas en ny och vid avslut sparas filen med ritningen. Lösningen består av mönstrena MVC, facade och composite.',
-    thumbnail: require('../images/riteditor.png'),
+    thumbnail: require('../../images/riteditor.png'),
     images: [
-      { url: require('../images/riteditor.png'), description: "" },
+      { url: require('../../images/riteditor.png'), description: "" },
 
     ]
   },
@@ -119,12 +119,12 @@ const projectsData = [
       'CSS',
       'JSON',
     ],
-    reason: 'solo project at university',
+    reason: 'soloprojekt på universitet',
     link: 'https://github.com/virveln/cocktails-and-dreams',
     website: 'https://virveln.github.io/cocktails-and-dreams/',
     description: '<b>Uppgift:</b> Skapa en interaktiv och responsiv webbsida som presenterar innehåll från ett rest-API via JSON.'
       + '<br><br><b>Resultat:</b> Lösningen blev en webbsida där man kan söka efter cocktailrecept utefter olika sökalternativ och filter. Sidan är interaktiv och man kan på många olika sätt komma åt de olika kategorierna och recepten.',
-    thumbnail: require('../images/cocktailsanddreams/thumbnail.png'),
+    thumbnail: require('../../images/cocktailsanddreams/thumbnail.png'),
     images: [
       { url: cocktailsanddreamsImages[0], description: "Startsida med sökfunktion och filtrering" },
       { url: cocktailsanddreamsImages[1], description: "Resultat efter att sökning via ingredient" },
@@ -142,12 +142,12 @@ const projectsData = [
       'CSS',
       'JavaScript'
     ],
-    reason: 'solo project at university',
+    reason: 'soloprojekt på universitet',
     link: 'https://github.com/virveln/brunch-n-crunch',
     website: 'https://virveln.github.io/brunch-n-crunch/',
     description: '<b>Uppgift:</b> Skapa en fiktiv webbsida m.h.a. Bootstrap där fokus ligger på designprocessen. Krav är att den ska ha minst fyra sektioner, vara mobile first, responsiv, ha en global meny och animeringar.'
       + '<br><br><b>Resultat:</b> Lösningen blev en single-page webbsida åt en brunch-restaurang med enkel navigering och färger som representerar ekologiskt och energi. På mobilversion animeras texterna i de olika sektionerna fram i en fade underifrån. Vid bredare skärm animeras texterna fram från sidorna. Detta för att skapa ett mer djup i webbsidan.',
-    thumbnail: require('../images/brunchncrunch/thumbnail.png'),
+    thumbnail: require('../../images/brunchncrunch/thumbnail.png'),
     images: [
       { url: brunchncrunchImages[0], description: "Startsida" },
       { url: brunchncrunchImages[1], description: "Veckans deal och öppettider" },
@@ -168,13 +168,13 @@ const projectsData = [
       'CSS',
       'PHP'
     ],
-    reason: 'group project at university',
+    reason: 'grupprojekt på universitet',
     link: 'https://github.com/virveln/showcase',
     description: '<b>Uppgift:</b> I team skapa en webbsida där studenter kan skapa ett konto och lägga upp projekt tillsammans med andra studenter som resulterar i ett portfolio. Målgruppen beskrivs som unga och kreativa studenter som är intresserade av att uttrycka sin kreativitet, inspirera och hitta en gemenskap. Detta framställs via ett eget skapat tema i WordPress och med hjälp av plugins. Projektets fokus ligger i designprocessen.'
       + '<br><br><b>Roll:</b> Min huvudsakliga roll var att koda CSS och justera plugins för att kunna skapa egna PODS,  templates och lämplig funktionalitet i WordPress. Hela teamet var del av designprocessen och konceptet.'
       + '<br><br><b>Resultat:</b> Lösningen blev en webbsida med enkel navigering och kreativa färger för att skapa kontrast mot den vita bakgrunden och hålla fokus på projektbilderna. Ett projekt kan vara kopplat till flera konton och länkas till en kurs som man kan klicka på och komma vidare till alla projekt för det kontot/kursen.'
       + '<br><br><b>Varumärkeslöfte:</b> På ShowCase lovar vi att förse studenter med en plattform där de får visa upp sin kreativitet, dela intresse med likasinnade individer, och bygga en gemenskap som inspirerar till innovation och utveckling.',
-    thumbnail: require('../images/showcase/thumbnail.png'),
+    thumbnail: require('../../images/showcase/thumbnail.png'),
     images: [
       { url: showcaseImages[0], description: "Startsida" },
       { url: showcaseImages[1], description: "Galleri som visar alla uppladdade projekt" },
@@ -194,11 +194,11 @@ const projectsData = [
       'Android Studio',
       'Java'
     ],
-    reason: 'solo project at university',
+    reason: 'soloprojekt på universitet',
     link: 'https://github.com/virveln/hangman-game',
     description: '<b>Uppgift:</b> Skapa en applikation för spelet Hangman (Hänga gubbe). Vid start av spel ska ett ord slumpas och spelaren ska försöka att gissa ordet genom att välja en bokstav åt gången. Om man gissar på en bokstav som inte finns med i ordet tappar man ett liv och illustrationen börjar ritas. Har man valt fel bokstav 7 gånger förlorar man. Lyckas man gissa rätt bokstäver innan 7 felförsök vinner man.'
       + '<br><br><b>Resultat:</b> Lösningen blev en applikation med en startsida som introduserar en till spelet. Där kan man välja att starta spelet eller läsa spelinstruktioner. När man spelar spelet fungerar det som uppgiftsbeskrivningen.',
-    thumbnail: require('../images/hangman/thumbnail.png'),
+    thumbnail: require('../../images/hangman/thumbnail.png'),
     images: [
       { url: hangmanImages[0], description: "Startsida på spel" },
       { url: hangmanImages[1], description: "När man klickar på \"?\" visas spelregler" },
@@ -214,15 +214,15 @@ const projectsData = [
     title: 'Text Editor',
     date: '2024',
     language: [
-      'C# .NET using UWP'
+      'C# .NET med UWP'
     ],
-    reason: 'solo project at university',
+    reason: 'soloprojekt på universitet',
     link: '',
     description: '<b>Uppgift:</b> Skapa en texteditor där man kan skapa ny, öppna och spara fil.'
       + '<br><br><b>Resultat:</b> Lösningen blev ett program enligt uppgiftsbeskrivningen. Användaren blir även tillfrågad om den vill spara en osparad fil innan programmet stängs eller användaren vill öppna en fil. Karakäter, ord och rader räknas och presenteras också.',
-    thumbnail: require('../images/texteditor.png'),
+    thumbnail: require('../../images/texteditor.png'),
     images: [
-      { url: require('../images/texteditor.png'), description: "" },
+      { url: require('../../images/texteditor.png'), description: "" },
 
     ]
   },
@@ -231,13 +231,13 @@ const projectsData = [
     title: 'Business System',
     date: '2024',
     language: [
-      'C# .NET using UWP'
+      'C# .NET med UWP'
     ],
-    reason: 'solo project at university',
+    reason: 'soloprojekt på universitet',
     link: 'https://github.com/virveln/business_system_24',
     description: '<b>Uppgift:</b> Designa och implementera ett affärssystem, som ska kunna användas till en fysisk affär som säljer media (t.ex. böcker, filmer, spel). Systemet ska användas av anställda i affären och kunna hantera både kassahantering och lagerhållning. Sedan ska butiken integreras med ett centrallager som exponeras mot webben. Programmet ska synkronisera lagerstatus och pris mot centrallagret.'
       + '<br><br><b>Resultat:</b> Lösningen blev ett program enligt uppgiftsbeskrivningen, där användaren kan välja mellan två olika huvudvyer, en för lagerhantering och en för kassahantering. Via lagerhanteringsvyn kan användaren lägga till nya produkter, ta bort produkter, och öka antalet av varor i systemet. Via kassahanteringsvyn kan användaren lägga produkter i en varukorg och ”sälja” en produkt, alltså minska antal av produkter i systemet. I båda vyerna finns det en produktlista anpassad utefter behov och de arbetar mot samma csv-fil. Denna csv-fil öppnas vid start av programmet och sparas vid avslut. Systemet integreras med ett centrallager som exponeras mot webben via ett API. De attribut som ska integreras och uppdateras är de lokala produkternas pris och lagerstatus, när användaren klickar på en knapp i lagerhanteringsvyn',
-    thumbnail: require('../images/affarssystem/affarssystem1.png'),
+    thumbnail: require('../../images/affarssystem/affarssystem1.png'),
     images: [
       { url: affarssystemImages[0], description: "Vy för lagerhantering" },
       { url: affarssystemImages[1], description: "Vy för att lägga till ny produkt i systemet" },
@@ -253,14 +253,14 @@ const projectsData = [
     language: [
       'Adobe Photoshop'
     ],
-    reason: 'group project',
+    reason: 'grupprojekt',
     link: '',
     description: 'Tillsammans med två andra har jag designat dessa märken för min dåvarande programförening Linda Carlstad, till Karlstads universitets introduktionsveckor. Dessa är till för att pryda studentoverallerna och visar årets nollningstema',
-    thumbnail: require('../images/nollningsmarken/thumbnail.png'),
+    thumbnail: require('../../images/nollningsmarken/thumbnail.png'),
     images: [
-      { url: nollningsmarkenImages[0], description: "2022 theme Super Mario" },
-      { url: nollningsmarkenImages[1], description: "2023 theme Scooby Doo" },
-      { url: nollningsmarkenImages[2], description: "2024 theme Pokémon" },
+      { url: nollningsmarkenImages[0], description: "2022 tema Super Mario" },
+      { url: nollningsmarkenImages[1], description: "2023 tema Scooby Doo" },
+      { url: nollningsmarkenImages[2], description: "2024 tema Pokémon" },
 
     ]
   },
@@ -271,17 +271,17 @@ const projectsData = [
     language: [
       'Adobe InDesign'
     ],
-    reason: 'group project',
+    reason: 'grupprojekt',
     link: '',
     description: 'Tillsammans med en annan har jag designat dessa brochyrer för min dåvarande programförening Linda Carlstad, till Karlstads universitets introduktionsveckor. Dessa är till för att informera de nya och gamla studenterna om vad introduktionen kommer handla om. Designen representerar årets nollningstema',
-    thumbnail: require('../images/nollningsbiblar/thumbnail.png'),
+    thumbnail: require('../../images/nollningsbiblar/thumbnail.png'),
     images: [
-      { url: nollningsbiblarImages[0], description: "Front and back of brochure 2022, theme Super Mario" },
-      { url: nollningsbiblarImages[1], description: "Example of inside of brochure 2022, theme Super Mario" },
-      { url: nollningsbiblarImages[2], description: "Front and back of brochure 2023, theme Scooby Doo" },
-      { url: nollningsbiblarImages[3], description: "Example of inside of brochure 2023, theme Scooby Doo" },
-      { url: nollningsbiblarImages[4], description: "Front and back of brochure 2024, theme Pokémon" },
-      { url: nollningsbiblarImages[5], description: "Example of inside of brochure 2024, theme Pokémon" },
+      { url: nollningsbiblarImages[0], description: "Fram- och baksida av broschyr 2022, tema Super Mario" },
+      { url: nollningsbiblarImages[1], description: "Exempel på insida av brochure 2022, tema Super Mario" },
+      { url: nollningsbiblarImages[2], description: "Fram- och baksida av broschyr 2023, tema Scooby Doo" },
+      { url: nollningsbiblarImages[3], description: "Exempel på insida av brochure 2023, tema Scooby Doo" },
+      { url: nollningsbiblarImages[4], description: "Fram- och baksida av broschyr 2024, tema Pokémon" },
+      { url: nollningsbiblarImages[5], description: "Exempel på insida av brochure 2024, tema Pokémon" },
 
     ]
   },
@@ -306,4 +306,4 @@ const projectsData = [
   */
 ];
 
-export default projectsData;
+export default projectsDataSv;
