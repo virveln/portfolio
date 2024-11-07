@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e5a02654.css",
+    "main.css": "/portfolio/static/css/main.01bb7c09.css",
     "main.js": "/portfolio/static/js/main.ab448bd6.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/kampanj.png": "/portfolio/static/media/kampanj.f11a07c4ea0ed9914a2b.png",
@@ -67,12 +67,12 @@
     "static/media/Boiling-BlackDemo.ttf": "/portfolio/static/media/Boiling-BlackDemo.094b93a11123d31db4f5.ttf",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "main.e5a02654.css.map": "/portfolio/static/css/main.e5a02654.css.map",
+    "main.01bb7c09.css.map": "/portfolio/static/css/main.01bb7c09.css.map",
     "main.ab448bd6.js.map": "/portfolio/static/js/main.ab448bd6.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5a02654.css",
+    "static/css/main.01bb7c09.css",
     "static/js/main.ab448bd6.js"
   ]
 }
