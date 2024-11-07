@@ -26,11 +26,15 @@
     font-weight: 700;
 }
 
+.nav-icons>*{
+    display: inline-flex;
+}
+
 .language-btn {
     border: 0;
     background-color: #fff;
+    color: #000;
     font-size: 1.1em;
-    align-items: center;
     transition: color 0.3s ease, transform 0.2s ease;
     margin-left: 10px;
 }
@@ -112,6 +116,7 @@
     position: absolute;
     bottom: 40px;
     font-size: 1.5em;
+    align-items: center;
 }
 
 /*DESKTOP*/
@@ -153,9 +158,4 @@
         margin-left: 50px;
         font-size: 1.5em;
     }
-
-    .language-btn {
-        padding-top: 2px;
-    }
-
 }
