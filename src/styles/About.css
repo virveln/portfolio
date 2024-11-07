@@ -36,7 +36,7 @@
 }
 
 .about-container h2 {
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 0.5em;
   text-transform: lowercase;
 }
@@ -48,12 +48,16 @@
 /*SECTION ABOUT INTRO*/
 .about-container-intro {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /*flex-wrap: wrap;*/
   gap: 20px;
+  width: 100%;
 }
 
-.about-container .about-text {
-  margin-bottom: 1em;
+.about-container-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .externallink-icon {
@@ -73,20 +77,17 @@
   text-align: center;
 }
 
+.about-image-container {
+  /*margin-top: 1em;*/
+  margin: auto;
+
+}
+
 .about-container .about-image {
   width: 100%;
   max-width: 400px;
-  margin: auto;
-  margin-top: 1em;
   border-radius: 5px;
 }
-
-/*
-.about-link {
-  font-size: 1.5em;
-  color: var(--primary-color);
-  margin-right: 1em;
-}*/
 
 /*SECTION FUN FACTS*/
 .funfacts-inner-container {
@@ -146,7 +147,7 @@
   }
 }
 
-/*SECTION EXPEROENCES*/
+/*SECTION EXPERIENCES*/
 .language-container>p {
   margin-bottom: 1em;
 }
@@ -170,14 +171,13 @@
 
 .language-container h4 {
   margin-bottom: 0.5em;
-  font-weight: 600;
 }
 
 .language-divider {
   color: var(--primary-color);
 }
 
-.show-all-btn{
+.show-all-btn {
   font-size: 0.9em;
 }
 
@@ -195,9 +195,6 @@
 
   .about-btn {
     width: calc(33% - 6px);
-  }
-
-  .about-container .about-image {
   }
 
   .funfacts-inner-container .funfact-item {
@@ -221,16 +218,28 @@
     padding: 0 50px;
   }
 
+  .about-container-intro {
+    flex-direction: row;
+  }
+
   .about-container-text {
-    width: calc(65% - 10px);
-    max-width: 490px;
+    flex: 1;
+  }
+
+  .about-image-container {
+    display: flex;
+    flex: 1;
+    max-width: 270px;
   }
 
   .about-container .about-image {
-    width: calc(35% - 10px);
-    max-width: 260px;
-    margin-right: 0;
     border-radius: 5px;
+    width: 100%;
+    height: auto;
+  }
+
+  .connect-text{
+    margin-top: auto;
   }
 
   .current-container>div {
@@ -244,14 +253,6 @@
 @media screen and (min-width: 992px) {
   .about-container h1 {
     text-align: center;
-  }
-
-  .about-container-text {
-    max-width: 550px;
-  }
-
-  .about-container .about-image {
-    max-width: 260px;
   }
 
   .funfacts-inner-container .funfact-item {

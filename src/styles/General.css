@@ -1,9 +1,4 @@
 :root {
-    --primary-color: #05BFDB;
-    --primary-color-darker: #0299b1;
-    --primary-color-hover: #048296;
-    --primary-color-transparent: rgb(5, 191, 219, 0.9);
-
     --primary-color: #04A0B8;
     --primary-color-hover: #037C8F;
     --primary-color-darker: #025966;
@@ -26,6 +21,15 @@ a {
     color: black;
 }
 
+* {
+    font-family: 'Quicksand';
+}
+
+p {
+    font-weight: 500;
+    line-height: 1.4;
+}
+
 h1 {
     font-weight: 400;
     text-transform: lowercase;
@@ -38,7 +42,6 @@ h1 {
     font-weight: 600;
     color: white;
     background-color: var(--primary-color);
-    /* Bootstrap-blå */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -48,24 +51,17 @@ h1 {
 
 .btn:hover {
     background-color: var(--primary-color-hover);
-    /* Mörkare blå vid hover */
     transform: translateY(-2px);
-    /* Lyfter knappen vid hover */
 }
 
 .btn:active {
     background-color: var(--primary-color-darker);
-    /* Ännu mörkare blå vid klick */
     transform: translateY(1px);
-    /* Tryck-effekt vid klick */
 }
 
 .btn:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
-    /* Ljusblå focus-ring */
     box-shadow: 0 0 0 3px rgb(3, 124, 143, 0.5);
-    /* Ljusblå focus-ring */
 }
 
 .colorfulend {

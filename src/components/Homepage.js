@@ -1,11 +1,11 @@
 // src/components/Project.js
 import '../styles/General.css';
 import '../styles/Homepage.css';
-import React, { useEffect} from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import projectsData from '../data/projectsData';
 import { useTranslation } from 'react-i18next';
+import projectsData from '../translations/en/projectsDataEn';
 
 function formatTitleForUrl(title) {
     return title.toLowerCase().replace(/ /g, '-').replace('å', 'a').replace('ä', 'a').replace('ö', 'o').replace(/[^a-z0-9-]/g, ''); // Konverterar till små bokstäver, ersätter mellanslag med bindestreck och tar bort specialtecken
@@ -21,7 +21,6 @@ const Homepage = () => {
             </Helmet>
             <div className='colorscheme'>
                 <div className='hero-text-container'>
-                    {/*<h1 className='hero-text'>Oh hello there! Take a peek at<span className='hero-text-enter'> </span> some of my projects</h1>*/}
                     <h1 className='hero-text'>{t('heroText')}</h1>
                 </div>
                 <div className="project-list">

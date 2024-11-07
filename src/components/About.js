@@ -5,10 +5,8 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { ReactTyped } from "react-typed";
 import { FaLinkedin, FaFile, FaEnvelope } from 'react-icons/fa';
-//import aboutData from '../data/aboutData';
-import logo from '../logo.svg';
 import { useTranslation } from 'react-i18next';
-
+import logo from '../logo.svg';
 import toolsIcon from '../images/icons/tools.png';
 import backpackIcon from '../images/icons/backpack.png';
 import diplomaIcon from '../images/icons/diploma.png';
@@ -31,17 +29,11 @@ const About = () => {
         loadAboutData();
     }, [i18n.language]);
 
-    
+
     if (!aboutData) {
         return <p>Loading...</p>; // Visa en laddningsindikator om datan inte är hämtad ännu
     }
-/*
-    const contactinfo = aboutData.contactInfo;
-    const introduction = aboutData.introduction;
-    const funfacts = aboutData.funfacts;
-    const currently = aboutData.currently;
-    const experienceText = aboutData.experienceText;
-    const experiences = aboutData.experience;*/
+
     const itemsToShow = showAll ? aboutData.experience : aboutData.experience.slice(0, 4);
 
     const iconMap = {
@@ -59,9 +51,8 @@ const About = () => {
                 <title>Jessica Hvirfvel - About</title>
             </Helmet>
             <div className=" ">
-                {/*<h1> About.</h1>*/}
                 <div className='about-hero'>
-                    <h5 className='about-hero-text-start about-hero-all-text'>Hello, my name is </h5>
+                    <h5 className='about-hero-text-start about-hero-all-text'>Hi, my name is </h5>
                     <h3 className='about-hero-all-text '>
                         <ReactTyped
                             strings={["Jessica Hvirfvel"]}
@@ -75,21 +66,25 @@ const About = () => {
                 </div>
 
                 <div className='container about-container'>
-                    <div className="about-container-intro">
-                        <div className='about-container-text'>
-                            <h2>Who am I<span className='colorfulend'>.</span></h2>
-                            {/* <h2>Some facts about me and how I ended up in developing.</h2>*/}
-                            <p className='about-text'>{aboutData.introduction.p1}</p>
-                            <p className='about-text'>{aboutData.introduction.p2}</p>
-                            <p className='about-text connect-text'>{aboutData.introduction.p3}</p>
+                    <div>
 
-                            <div className='about-container-btn'>
-                                <a className='btn about-btn' href={contactData.linkedin} target="_blank" rel="noopener noreferrer" title={contactData.linkedinTitle} ><span className='externallink-icon'><FaLinkedin /></span> LinkedIn </a>
-                                <a className='btn about-btn' href={contactData.mail} title={contactData.mailTitle}><span className='externallink-icon'><FaEnvelope /></span> E-mail </a>
-                                <a className='btn about-btn' href={contactData.resume} target="_blank" rel="noopener noreferrer"><span className='externallink-icon'><FaFile /></span>{t('buttons.resume')}</a>
+                        <h2>Who am I<span className='colorfulend'>.</span></h2>
+                        <div className="about-container-intro">
+                            <div className='about-container-text'>
+                                <p className='about-text'>{aboutData.introduction.p1}</p>
+                                <p className='about-text'>{aboutData.introduction.p2}</p>
+                                <p className='about-text connect-text'>{aboutData.introduction.p3}</p>
+
+                                <div className='about-container-btn'>
+                                    <a className='btn about-btn' href={contactData.linkedin} target="_blank" rel="noopener noreferrer" title={contactData.linkedinTitle} ><span className='externallink-icon'><FaLinkedin /></span> LinkedIn </a>
+                                    <a className='btn about-btn' href={contactData.mail} title={contactData.mailTitle}><span className='externallink-icon'><FaEnvelope /></span> E-mail </a>
+                                    <a className='btn about-btn' href={contactData.resume} target="_blank" rel="noopener noreferrer"><span className='externallink-icon'><FaFile /></span>{t('buttons.resume')}</a>
+                                </div>
+                            </div>
+                            <div className='about-image-container'>
+                                <img src={require('../images/me.JPG')} alt="About Me" className="about-image" />
                             </div>
                         </div>
-                        <img src={require('../images/me.JPG')} alt="About Me" className="about-image" />
                     </div>
 
                     <div className='funfacts-container new-container'>

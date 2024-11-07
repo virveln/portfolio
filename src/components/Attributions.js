@@ -3,7 +3,7 @@ import '../styles/General.css';
 import '../styles/Attributions.css';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import attributionsData from '../data/attributionsData';
+import attributionsData from '../data/attributionsData.json';
 
 const Attributions = () => {
     return (

@@ -35,6 +35,7 @@
 .second-footer-container * {
   display: inline;
   margin: 0 5px;
+  font-weight: 600;
 }
 
 .second-footer-container a:hover {

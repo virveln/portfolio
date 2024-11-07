@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1,
+        "title": "Campaign for climate and sustainability",
+        "date": "2023",
+        "language": [
+            "Photoshop"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Graphic Profile",
+        "date": "2023",
+        "language": [
+            "Adobe InDesign"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Hammarö Adventure",
+        "date": "2023",
+        "language": [
+            "Adobe Illustrator"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Lifestyle Magazine",
+        "date": "2023",
+        "language": [
+            "Adobe InDesign"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Drawing Program",
+        "date": "2023",
+        "language": [
+            "Java"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Cocktails & Dreams",
+        "date": "2022",
+        "language": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "JSON"
+        ],
+        "link": "https://github.com/virveln/cocktails-and-dreams",
+        "website": "https://virveln.github.io/cocktails-and-dreams/"
+    },
+    {
+        "id": 7,
+        "title": "brunch n' crunch",
+        "date": "2023",
+        "language": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "link": "https://github.com/virveln/brunch-n-crunch",
+        "website": "https://virveln.github.io/brunch-n-crunch/"
+    },
+    {
+        "id": 8,
+        "title": "Showcase",
+        "date": "2023",
+        "language": [
+            "WordPress",
+            "CSS",
+            "PHP"
+        ],
+        "link": "https://github.com/virveln/showcase"
+    },
+    {
+        "id": 9,
+        "title": "Hangman Game",
+        "date": "2023",
+        "language": [
+            "Android Studio",
+            "Java"
+        ],
+        "link": "https://github.com/virveln/hangman-game"
+    },
+    {
+        "id": 10,
+        "title": "Text Editor",
+        "date": "2024",
+        "language": [
+            "C# .NET UWP"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Business System for a store",
+        "date": "2024",
+        "language": [
+            "C# .NET UWP"
+        ],
+        "link": "https://github.com/virveln/business_system_24"
+    },
+    {
+        "id": 12,
+        "title": "Designing 'Nollningsmärken'",
+        "date": "2022-2024",
+        "language": [
+            "Adobe Photoshop"
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Designing 'Nollningsbiblar'",
+        "date": "2022-2024",
+        "language": [
+            "Adobe InDesign"
+        ]
+    }
+]

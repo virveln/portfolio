@@ -1,15 +1,16 @@
 import '../../styles/Navbar.css';
 import { useState } from "react";
 import { Link } from 'react-router-dom';
-import { MdOutlineMenu, MdClose } from 'react-icons/md';
+import { HiOutlineMenu } from "react-icons/hi";
+import { IoClose } from "react-icons/io5";
 import NavIcons from './NavIcons';
-import NavLinks from './NavLinks';
+import NavMenu from './NavMenu';
 
 const NavMobile = () => {
     const [click, setClick] = useState(false);
 
-    const Hamburger = <MdOutlineMenu className="HamburgerMenu" size="40px" onClick={() => setClick(!click)} />
-    const Close = <MdClose className="HamburgerMenu close-btn" size="40px" onClick={() => setClick(!click)} />
+    const Hamburger = <HiOutlineMenu className="hamburgerMenu" size="40px" onClick={() => setClick(!click)} />
+    const Close = <IoClose className="hamburgerMenu close-btn" size="40px" onClick={() => setClick(!click)} />
 
     const toggleMenu = () => {
         setClick(!click);
@@ -22,9 +23,9 @@ const NavMobile = () => {
             <div onClick={toggleMenu}>
                 {click ? Close : Hamburger}
             </div>
-            <div className={`nav-overlay ${click ? 'active' : ''}`}>
-                {click && <NavLinks closeMenu={toggleMenu}/> }
-                {click && <NavIcons /> }
+            <div className={`nav-overlay ${click ? 'active' : 'out'}`}>
+                {click && <NavMenu closeMenu={toggleMenu}/> }
+                {click && <NavIcons closeMenu={toggleMenu}/> }
             </div>
         </nav>
     );

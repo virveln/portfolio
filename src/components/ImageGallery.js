@@ -1,9 +1,10 @@
 import '../styles/ImageGallery.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function ImageGallery({ project }) {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
+    const [images, setImages] = useState([]);
 
     const openImage = (image) => {
         setSelectedImage(image);
@@ -15,15 +16,40 @@ function ImageGallery({ project }) {
         setIsOpen(false);
     };
 
+    useEffect(() => {
+        // Vänta på att alla bilder laddats och deras dimensioner kontrollerats
+        const loadImages = async () => {
+            const updatedImages = await Promise.all(
+                project.images.map((image) => {
+                    return new Promise((resolve) => {
+                        const img = new Image();
+                        img.src = image.url;
+
+                        img.onload = () => {
+                            // När bilden laddats, kolla om höjden är större än bredden
+                            const isPortrait = img.height > img.width;
+                            resolve({ ...image, portrait: isPortrait });
+                        };
+                    });
+                })
+            );
+
+            // Uppdatera state med de bearbetade bilderna
+            setImages(updatedImages);
+        };
+
+        loadImages();
+    }, [project]);
+
     return (
         <div className="image-gallery">
-            {project.images.map((image, index) => (
-                <div key={index} className={`image-container ${project.images.length === 1 ? 'single-image' : 'multiple-images'}`}>
+            {images.map((image, index) => (
+                <div key={index} className={`image-container ${image.portrait ? 'portrait' : ''}  ${project.images.length === 1 ? 'single-image' : 'multiple-images'}`}>
                     <img
                         src={image.url}
                         alt={image.description}
-                        className="project-image"
-                        onClick={() => openImage(image)} // Öppna bilden vid klick
+                        className='project-image'
+                        onClick={() => openImage(image)}
                     />
                     <p className='image-description'>{image.description}</p>
                 </div>
