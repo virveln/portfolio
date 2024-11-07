@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.065d682c.css",
-    "main.js": "/portfolio/static/js/main.1f0790e1.js",
+    "main.css": "/portfolio/static/css/main.e5a02654.css",
+    "main.js": "/portfolio/static/js/main.ab448bd6.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/kampanj.png": "/portfolio/static/media/kampanj.f11a07c4ea0ed9914a2b.png",
+    "static/media/mockup-marke-23-2.png": "/portfolio/static/media/mockup-marke-23-2.fd28e9e444f199b61e05.png",
+    "static/media/mockup-marke-24-2.png": "/portfolio/static/media/mockup-marke-24-2.b26081da836228309f63.png",
+    "static/media/mockup-marke-22-2.png": "/portfolio/static/media/mockup-marke-22-2.328d653d65e382bf5a8e.png",
     "static/media/thumbnail.png": "/portfolio/static/media/thumbnail.2e4ab81be6a87f9d0215.png",
     "static/media/magasin2.png": "/portfolio/static/media/magasin2.828531bfd030ec3d8c0e.png",
     "static/media/magasin3.png": "/portfolio/static/media/magasin3.afa5d27ebf6a2c94d277.png",
     "static/media/magasin1.png": "/portfolio/static/media/magasin1.52111ba04d17a83c4a61.png",
     "static/media/bnc7.png": "/portfolio/static/media/bnc7.0da7ac11ba84de45100f.png",
     "static/media/bnc4.png": "/portfolio/static/media/bnc4.c6617389eca5174a4389.png",
-    "static/media/mockup-marke-23.png": "/portfolio/static/media/mockup-marke-23.df04492cb9ea587a0c98.png",
-    "static/media/mockup-marke-22.png": "/portfolio/static/media/mockup-marke-22.0404c7e0f65170ef2a30.png",
-    "static/media/mockup-marke-24.png": "/portfolio/static/media/mockup-marke-24.ef2c6a2efeb4621ecdbb.png",
+    "static/media/mockup-marke-23-1.png": "/portfolio/static/media/mockup-marke-23-1.df04492cb9ea587a0c98.png",
+    "static/media/mockup-marke-22-1.png": "/portfolio/static/media/mockup-marke-22-1.0404c7e0f65170ef2a30.png",
+    "static/media/mockup-marke-24-1.png": "/portfolio/static/media/mockup-marke-24-1.ef2c6a2efeb4621ecdbb.png",
     "static/media/affarssystem3.png": "/portfolio/static/media/affarssystem3.45bffdb9e6a22095c7fc.png",
     "static/media/affarssystem1.png": "/portfolio/static/media/affarssystem1.b6792c2ab03a6d89664b.png",
     "static/media/affarssystem2.png": "/portfolio/static/media/affarssystem2.a379c278bbb38b99bf51.png",
@@ -54,7 +57,6 @@
     "static/media/5belöningar.png": "/portfolio/static/media/5belöningar.98514e43948b1d776ac1.png",
     "static/media/4karta.png": "/portfolio/static/media/4karta.78c5b144259a05d2a7c5.png",
     "static/media/6quiz.png": "/portfolio/static/media/6quiz.191fc56851caca218f37.png",
-    "static/media/Hvirfvel_CV.pdf": "/portfolio/static/media/Hvirfvel_CV.103f5cbcdf2f246953c8.pdf",
     "static/media/hm2.png": "/portfolio/static/media/hm2.ba7a1260f8aa54179098.png",
     "static/media/Bright Melody Display Typeface.otf": "/portfolio/static/media/Bright Melody Display Typeface.113a81c49da35e70de7a.otf",
     "static/media/hm5.png": "/portfolio/static/media/hm5.c327e1e41b72629a5225.png",
@@ -65,12 +67,12 @@
     "static/media/Boiling-BlackDemo.ttf": "/portfolio/static/media/Boiling-BlackDemo.094b93a11123d31db4f5.ttf",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "main.065d682c.css.map": "/portfolio/static/css/main.065d682c.css.map",
-    "main.1f0790e1.js.map": "/portfolio/static/js/main.1f0790e1.js.map",
+    "main.e5a02654.css.map": "/portfolio/static/css/main.e5a02654.css.map",
+    "main.ab448bd6.js.map": "/portfolio/static/js/main.ab448bd6.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.065d682c.css",
-    "static/js/main.1f0790e1.js"
+    "static/css/main.e5a02654.css",
+    "static/js/main.ab448bd6.js"
   ]
 }
