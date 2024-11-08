@@ -65,7 +65,7 @@
 .hamburgerMenu {
     position: absolute;
     top: 17px;
-    right: 2%;
+    right: 3%;
     cursor: pointer;
     z-index: 3000;
     color: black;

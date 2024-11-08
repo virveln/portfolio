@@ -6,7 +6,7 @@
   padding: 1rem;
   background: #f1f1f1;
   margin-top: 70px;
-  height: 80px;
+  height: 110px;
   width: 100%;
 }
 
@@ -17,7 +17,9 @@
 }
 
 .footer-icons a {
+  display: inline-flex;
   margin: 0 10px;
+  margin-top: 5px;
   color: var(--primary-color);
   font-size: 1.5rem;
   transition: color 0.3s ease, transform 0.2s ease;
@@ -30,12 +32,15 @@
 
 .second-footer-container {
   font-size: 0.7em;
+  display: flex;
+  flex-direction: column;
 }
 
-.second-footer-container * {
+.second-footer-container>* {
   display: inline;
   margin: 0 5px;
   font-weight: 600;
+  margin-top: 10px;
 }
 
 .second-footer-container a:hover {
@@ -45,4 +50,16 @@
 .footer-divider {
   color: var(--primary-color);
   font-weight: 700;
+  display: none;
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) {
+  .second-footer-container{
+  flex-direction: row;
+}
+
+.footer-divider {
+    display: inline;
+  }
 }
