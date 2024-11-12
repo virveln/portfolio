@@ -11,18 +11,20 @@ const NavIcons = ({ closeMenu }) => {
 
     const toggleLanguage = () => {
         const newLanguage = i18n.language === 'sv' ? 'en' : 'sv';
-        i18n.changeLanguage(newLanguage); 
+        i18n.changeLanguage(newLanguage);
 
         if (closeMenu) {
-            closeMenu(); 
+            closeMenu();
         }
     };
 
     return (
         <div className="nav-icons nav-item" >
-            <a href={contactData.linkedin} target="_blank" rel="noopener noreferrer" title={contactData.linkedinTitle}> <FaLinkedin /></a >
-            <a href={contactData.github} target="_blank" rel="noopener noreferrer" title={contactData.githubTitle}> <FaGithub /></a >
-            <a href={contactData.mail} title={contactData.mailTitle}> <FaEnvelope /></a >
+            <div className='icons-container'>
+                <a href={contactData.linkedin} target="_blank" rel="noopener noreferrer" title={contactData.linkedinTitle}> <FaLinkedin /></a >
+                <a href={contactData.github} target="_blank" rel="noopener noreferrer" title={contactData.githubTitle}> <FaGithub /></a >
+                <a href={contactData.mail} title={contactData.mailTitle}> <FaEnvelope /></a >
+            </div>
             <button className='language-btn' onClick={toggleLanguage} title={i18n.language === 'en' ? 'SV' : 'EN'}> <MdLanguage /> </button>
         </div>
     );

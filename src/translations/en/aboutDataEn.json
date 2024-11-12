@@ -22,7 +22,7 @@
         {
             "icon": "backpack",
             "alt": "Backback Icon",
-            "fact": "I've been backpacking for 1.5 years in Southeast Asia och Europe"
+            "fact": "I've been backpacking for approx. 1.5 years in Southeast Asia och Europe"
         },
         {
             "icon": "event",
@@ -45,7 +45,7 @@
             "fact": "I'm great at puzzles and never stop until every piece is perfectly in place"
         }
     ],
-    "currently": "In my spare time I'm currently working on improving this portfolio and creating an application for a Jeopardy game, both using React.",
+    "currently": "In my spare time I'm currently working on improving this portfolio and creating a web application for a Jeopardy game, both using React.",
     "experienceText": {
         "text": "Experienced from Karlstad University and private learning. Part ",
         "coder": "Coder.",
@@ -56,7 +56,8 @@
         {
             "title": "Web Development",
             "language": [
-                "HTML & CSS",
+                "HTML",
+                "CSS",
                 "Bootstrap",
                 "JavaScript",
                 "React",
@@ -77,8 +78,8 @@
             "title": "Design and UX",
             "language": [
                 "Adobe Photoshop",
-                "Adobe Illustrator",
-                "Adobe InDesign",
+                "-Illustrator",
+                "-InDesign",
                 "Figma",
                 "Prototyping",
                 "2c8",
@@ -125,8 +126,9 @@
         {
             "title": "Mobile Applications",
             "language": [
-                "Java",
-                "Android Studio"
+                "Android Studio",
+                "Java"
+                
             ]
         }
     ]

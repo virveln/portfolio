@@ -86,7 +86,6 @@
 .about-container .about-image {
   width: 100%;
   max-width: 400px;
-  border-radius: 5px;
 }
 
 /*SECTION FUN FACTS*/
@@ -230,10 +229,11 @@
     display: flex;
     flex: 1;
     max-width: 270px;
+    margin: 0;
+    margin-top: auto;
   }
 
   .about-container .about-image {
-    border-radius: 5px;
     width: 100%;
     height: auto;
   }

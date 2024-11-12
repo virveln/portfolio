@@ -22,7 +22,7 @@
         {
             "icon": "backpack",
             "alt": "Backback Icon",
-            "fact": "Jag har backpackat i 1,5 år i sydostasien och europa"
+            "fact": "Jag har backpackat i ca 1,5 år i sydostasien och europa"
         },
         {
             "icon": "event",
@@ -45,7 +45,7 @@
             "fact": "Jag är grym på pussel och slutar inte förrän alla bitar är på sin plats"
         }
     ],
-    "currently": "På min fritid arbetar jag just nu med att förbättra detta portfolio, samt att skapa en applikation för ett Jeopardy spel, båda med hjälp av React.",
+    "currently": "På min fritid arbetar jag just nu med att förbättra detta portfolio, samt att skapa en webbapplikation för ett Jeopardy spel, båda med hjälp av React.",
     "experienceText": {
         "text": "Erfarenhet från Karsltad universitet och egen lärning. Part ",
         "coder": "kodare.",
@@ -56,7 +56,8 @@
         {
             "title": "Webbutveckling",
             "language": [
-                "HTML & CSS",
+                "HTML",
+                "CSS",
                 "Bootstrap",
                 "JavaScript",
                 "React",
@@ -77,12 +78,12 @@
             "title": "Design och UX",
             "language": [
                 "Adobe Photoshop",
-                "Adobe Illustrator",
-                "Adobe InDesign",
+                "-Illustrator",
+                "-InDesign",
                 "Figma",
-                "Prototyping",
+                "Prototypskapande",
                 "2c8",
-                "Accessibility"
+                "Tillgänglighet"
             ]
         },
         {
