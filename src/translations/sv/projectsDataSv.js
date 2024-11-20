@@ -147,7 +147,7 @@ const projectsDataSv = [
     reason: 'grupprojekt på universitet',
     link: projectDataStatic.find((project) => project.id === 8)?.link || "Unknown",
     description: '<b>Uppgift:</b> I team skapa en webbsida där studenter kan skapa ett konto och lägga upp projekt tillsammans med andra studenter som resulterar i ett portfolio. Målgruppen beskrivs som unga och kreativa studenter som är intresserade av att uttrycka sin kreativitet, inspirera och hitta en gemenskap. Detta ska framställas via ett eget skapat tema i WordPress och med hjälp av plugins. Projektets fokus ligger i designprocessen.'
-      + '<br><br><b>Roll:</b> Min huvudsakliga roll var att koda CSS och justera plugins för att kunna skapa egna PODS,  templates och lämplig funktionalitet i WordPress. Hela teamet var del av designprocessen och konceptet.'
+      + '<br><br><b>Roll:</b> Min huvudsakliga roll var att koda CSS och justera plugins för att kunna skapa egna PODS, templates och lämplig funktionalitet i WordPress. Hela teamet var del av designprocessen och konceptet.'
       + '<br><br><b>Resultat:</b> Lösningen blev en webbsida med enkel navigering och kreativa färger för att skapa kontrast mot den vita bakgrunden och hålla fokus på projektbilderna. Ett projekt kan vara kopplat till flera konton och länkas till en kurs som man kan klicka på och komma vidare till alla projekt för det kontot/kursen.'
       + '<br><br><b>Varumärkeslöfte:</b> På ShowCase lovar vi att förse studenter med en plattform där de får visa upp sin kreativitet, dela intresse med likasinnade individer, och bygga en gemenskap som inspirerar till innovation och utveckling.',
     thumbnail: require('../../images/showcase/thumbnail.png'),
@@ -240,7 +240,7 @@ const projectsDataSv = [
     language: projectDataStatic.find((project) => project.id === 13)?.language || "Unknown",
     reason: 'grupprojekt',
     link: '',
-    description: 'Tillsammans med en annan person har jag designat dessa brochyrer för min dåvarande studentförening Linda Carlstad, till Karlstads universitets introduktionsveckor. Dessa är till för att informera de nya och gamla studenterna om vad introduktionen kommer handla om, avsnariga, schema, sånger och annat. Designen representerar årets nollningstema hos studentföreningen.',
+    description: 'Tillsammans med en annan person har jag designat dessa brochyrer för min dåvarande studentförening Linda Carlstad, till Karlstads universitets introduktionsveckor. Dessa är till för att informera de nya och gamla studenterna om vad introduktionen kommer handla om, ansvariga, schema, sånger och annat. Designen representerar årets nollningstema hos studentföreningen.',
     thumbnail: require('../../images/nollningsbiblar/thumbnail.png'),
     images: [
       { url: nollningsbiblarImages[0], description: "Fram- och baksida av broschyr 2022, tema Super Mario" },

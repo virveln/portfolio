@@ -14,6 +14,7 @@ import eventIcon from '../images/icons/event.png';
 import parachuteIcon from '../images/icons/parachute.png';
 import puzzleIcon from '../images/icons/puzzle.png';
 import contactData from '../data/contactData.json';
+import heroVideo from '../coding_video.mp4';
 
 const About = () => {
     const { t, i18n } = useTranslation('generalData');
@@ -52,12 +53,15 @@ const About = () => {
             </Helmet>
             <div className=" ">
                 <div className='about-hero'>
+                    <video className='hero-video' autoPlay muted loop>
+                        <source src={heroVideo} type='video/mp4' />
+                        Your browser does not support the video tag.
+                    </video>
                     <h5 className='about-hero-text-start about-hero-all-text'>Hi, my name is </h5>
                     <h3 className='about-hero-all-text '>
                         <ReactTyped
                             strings={["Jessica Hvirfvel"]}
                             typeSpeed={100}
-                            loop backSpeed={50}
                             cursorChar="|"
                             showCursor={true}
                             className='about-hero-all-text about-name' />

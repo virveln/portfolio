@@ -12,7 +12,7 @@ const Attributions = () => {
                 <title>Jessica Hvirfvel - Attributions</title>
             </Helmet>
             <div className="attribution-container ">
-                <h1>Attributions.</h1>
+                <h1>Attributions<span className='colorfulend'>.</span></h1>
                 <div className="attributions-mockup">
                     {attributionsData.map((item) => (
                         <div key={item.id} className="attribution-item">
