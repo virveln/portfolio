@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.07abad42.css",
-    "main.js": "/portfolio/static/js/main.523fe2f4.js",
+    "main.css": "/portfolio/static/css/main.49753672.css",
+    "main.js": "/portfolio/static/js/main.3a6c2ee6.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/kampanj.png": "/portfolio/static/media/kampanj.f11a07c4ea0ed9914a2b.png",
     "static/media/mockup-marke-23-2.png": "/portfolio/static/media/mockup-marke-23-2.fd28e9e444f199b61e05.png",
@@ -40,6 +40,7 @@
     "static/media/grafiskprofil3.png": "/portfolio/static/media/grafiskprofil3.7f03b3343a6c204e6e98.png",
     "static/media/grafiskprofil.png": "/portfolio/static/media/grafiskprofil.e6a4983f1c8cd2905c91.png",
     "static/media/sc3.png": "/portfolio/static/media/sc3.16d2e8ab35b2e1738ee1.png",
+    "static/media/koda.JPG": "/portfolio/static/media/koda.706f3873a7c65b8e8a44.JPG",
     "static/media/sc6.png": "/portfolio/static/media/sc6.2313988d4709d335cc7b.png",
     "static/media/grafiskprofil2.png": "/portfolio/static/media/grafiskprofil2.9abeadb5b70e29e5b85a.png",
     "static/media/bibel23-2.png": "/portfolio/static/media/bibel23-2.42667bf0e2374a3ab701.png",
@@ -52,15 +53,21 @@
     "static/media/cnd4.png": "/portfolio/static/media/cnd4.07749cbae9097602e7fc.png",
     "static/media/grafiskprofil1.png": "/portfolio/static/media/grafiskprofil1.4930e769d8a6b746b2cc.png",
     "static/media/sc8.png": "/portfolio/static/media/sc8.04b1b35681b787d581c3.png",
+    "static/media/general.JPG": "/portfolio/static/media/general.293c43e0faec1760e9f5.JPG",
+    "static/media/diplom.JPG": "/portfolio/static/media/diplom.17de80f3244905058e1e.JPG",
     "static/media/3platser.png": "/portfolio/static/media/3platser.7ee2c18354ecfd0d17ad.png",
+    "static/media/resa.PNG": "/portfolio/static/media/resa.e34301580f058b10b338.PNG",
+    "static/media/general1.jpg": "/portfolio/static/media/general1.8c6db7291b3e1624ab1e.jpg",
     "static/media/2profil-startsida.png": "/portfolio/static/media/2profil-startsida.dc674ba6f060a40c982f.png",
     "static/media/1login.png": "/portfolio/static/media/1login.c1049116a53b980abfb5.png",
     "static/media/5belöningar.png": "/portfolio/static/media/5belöningar.98514e43948b1d776ac1.png",
     "static/media/4karta.png": "/portfolio/static/media/4karta.78c5b144259a05d2a7c5.png",
     "static/media/6quiz.png": "/portfolio/static/media/6quiz.191fc56851caca218f37.png",
+    "static/media/bygger.PNG": "/portfolio/static/media/bygger.c5d0e23642ad22b34a65.PNG",
     "static/media/hm2.png": "/portfolio/static/media/hm2.ba7a1260f8aa54179098.png",
     "static/media/Bright Melody Display Typeface.otf": "/portfolio/static/media/Bright Melody Display Typeface.113a81c49da35e70de7a.otf",
     "static/media/hm5.png": "/portfolio/static/media/hm5.c327e1e41b72629a5225.png",
+    "static/media/fallskärm.png": "/portfolio/static/media/fallskärm.5647257bb0f0c2ed9e0e.png",
     "static/media/hm6.png": "/portfolio/static/media/hm6.1b1b2e70b22e931ddd43.png",
     "static/media/hm4.png": "/portfolio/static/media/hm4.07730843867db2bc085a.png",
     "static/media/hm3.png": "/portfolio/static/media/hm3.bc8a73a5640e82b98c60.png",
@@ -68,12 +75,12 @@
     "static/media/Boiling-BlackDemo.ttf": "/portfolio/static/media/Boiling-BlackDemo.094b93a11123d31db4f5.ttf",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "main.07abad42.css.map": "/portfolio/static/css/main.07abad42.css.map",
-    "main.523fe2f4.js.map": "/portfolio/static/js/main.523fe2f4.js.map",
+    "main.49753672.css.map": "/portfolio/static/css/main.49753672.css.map",
+    "main.3a6c2ee6.js.map": "/portfolio/static/js/main.3a6c2ee6.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07abad42.css",
-    "static/js/main.523fe2f4.js"
+    "static/css/main.49753672.css",
+    "static/js/main.3a6c2ee6.js"
   ]
 }
