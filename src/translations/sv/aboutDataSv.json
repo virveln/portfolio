@@ -45,12 +45,12 @@
             "fact": "Jag är grym på pussel och slutar inte förrän alla bitar är på sin plats"
         }
     ],
-    "currently": "På min fritid arbetar jag just nu med att förbättra detta portfolio, samt att skapa en webbapplikation för ett Jeopardy spel, båda med hjälp av React.",
+    "currentlyA": "Vad vore fun facts utan bildbevis? Kika på galleriet vetja!",
+    "currentlyB": "Vad pysslar jag med på min fritid mån tro? Jo just nu sitter jag med att förbättra detta portfolio, samt att skapa en webbapplikation för ett Jeopardy spel, båda med hjälp av React. Hur kul!",
     "experienceText": {
         "text": "Erfarenhet från Karsltad universitet och egen lärning. Part ",
         "coder": "kodare.",
         "designer": "designer."
-
     },
     "experience": [
         {

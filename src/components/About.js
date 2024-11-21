@@ -14,12 +14,15 @@ import eventIcon from '../images/icons/event.png';
 import parachuteIcon from '../images/icons/parachute.png';
 import puzzleIcon from '../images/icons/puzzle.png';
 import contactData from '../data/contactData.json';
-import heroVideo from '../coding_video.mp4';
+import heroVideo from '../images/coding_video.mp4';
+
+import AboutImageGallery from './AboutImageGallery';
 
 const About = () => {
     const { t, i18n } = useTranslation('generalData');
     const [showAll, setShowAll] = useState(false);
     const [aboutData, setAboutData] = useState(null);
+    const [startTyping, setStartTyping] = useState(false);
 
     useEffect(() => {
         const loadAboutData = async () => {
@@ -30,6 +33,14 @@ const About = () => {
         loadAboutData();
     }, [i18n.language]);
 
+    useEffect(() => {
+        // Vänta 3 sekunder innan vi sätter startTyping till true
+        const timer = setTimeout(() => {
+            setStartTyping(true);
+        }, 1500); // 3000 ms = 3 sekunder
+
+        return () => clearTimeout(timer); // Rensa timer när komponenten tas bort
+    }, []);
 
     if (!aboutData) {
         return <p>Loading...</p>; // Visa en laddningsindikator om datan inte är hämtad ännu
@@ -59,12 +70,23 @@ const About = () => {
                     </video>
                     <h5 className='about-hero-text-start about-hero-all-text'>Hi, my name is </h5>
                     <h3 className='about-hero-all-text '>
-                        <ReactTyped
-                            strings={["Jessica Hvirfvel"]}
-                            typeSpeed={100}
-                            cursorChar="|"
-                            showCursor={true}
-                            className='about-hero-all-text about-name' />
+                        {!startTyping && (
+                            <ReactTyped
+                                strings={[""]}
+                                typeSpeed={100}
+                                cursorChar="|"
+                                showCursor={true}
+                                className='about-hero-all-text about-name' />
+                        )}
+                        {startTyping && (
+                            <ReactTyped
+                                strings={["Jessica Hvirfvel"]}
+                                typeSpeed={100}
+                                cursorChar="|"
+                                showCursor={true}
+                                className='about-hero-all-text about-name' 
+                                />
+                        )}
                     </h3>
                     <h5 className='role about-hero-all-text'>— a Web/System Developer</h5>
                 </div>
@@ -105,8 +127,14 @@ const About = () => {
 
                     <div className='current-container new-container'>
                         <div>
-                            <img className='react-logo' src={logo} alt='React logo' />
-                            <p>{aboutData.currently}</p>
+                            {/*<img className='react-logo' src={logo} alt='React logo' />*/}
+                            < AboutImageGallery />
+                            <div className='current-text'>
+                                <hr className='color-line' />
+                                <p>{aboutData.currentlyA}</p>
+                                <p>{aboutData.currentlyB}</p>
+                            </div>
+
                         </div>
                     </div>
 

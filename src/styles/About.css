@@ -45,6 +45,11 @@
   padding: 0;
 }
 
+.about-hero h3{
+  min-height: 80.4px;
+
+}
+
 .about-hero .role {
   letter-spacing: 2px;
   color: var(--primary-color);
@@ -98,6 +103,14 @@
   font-size: 0.9em;
   text-decoration: none;
   text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-btn>span {
+  display: flex;
+  align-items: center;
 }
 
 .about-image-container {
@@ -107,7 +120,7 @@
 
 .about-container .about-image {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
 }
 
 /*SECTION FUN FACTS*/
@@ -120,7 +133,7 @@
 
 .funfacts-inner-container .funfact-item {
   background-color: #f1f1f1;
-  padding: 20px 60px;
+  padding: 20px;
   width: calc(50% - 10px);
   width: 100%;
   min-height: 121px;
@@ -145,12 +158,27 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.current-container>div>p {
+.color-line{
+  width: 50px;
+  background-color: var(--primary-color);
+  height: 1.5px;
+  border: none;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.current-container .current-text {
   max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
+/*
 .react-logo {
   width: 40vw;
   max-width: 400px;
@@ -167,6 +195,7 @@
     transform: rotate(360deg);
   }
 }
+*/
 
 /*SECTION EXPERIENCES*/
 .language-container>p {
@@ -219,10 +248,12 @@
   }
 
   .funfacts-inner-container .funfact-item {
-    padding: 20px;
     width: calc(50% - 10px);
     min-height: 180px;
+    align-content: start;
+    padding-top: 40px;
   }
+
 }
 
 /*TABLET*/
@@ -251,6 +282,7 @@
     display: flex;
     flex: 1;
     max-width: 270px;
+    max-width: 286px;
     margin: 0;
     margin-top: auto;
   }
@@ -267,7 +299,19 @@
   .current-container>div {
     flex-direction: row;
     text-align: start;
+    background: linear-gradient(to right, rgb(241, 241, 241), rgb(255, 255, 255));     
   }
+
+  .color-line{
+    margin: 0;
+  }
+
+  .current-container .current-text {
+    max-width: 50%;
+    max-width: none;
+    flex: 1;
+  }
+  
 
 }
 

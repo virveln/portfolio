@@ -45,7 +45,8 @@
             "fact": "I'm great at puzzles and never stop until every piece is perfectly in place"
         }
     ],
-    "currently": "In my spare time I'm currently working on improving this portfolio and creating a web application for a Jeopardy game, both using React.",
+    "currentlyA": "What are fun facts without photo evidence? Take a look at the gallery!",
+    "currentlyB": "What am I doing in my free time, you ask? Well, right now, I'm currently working on improving this portfolio and creating a web application for a Jeopardy game, both using React. How fun!",
     "experienceText": {
         "text": "Experienced from Karlstad University and private learning. Part ",
         "coder": "Coder.",
