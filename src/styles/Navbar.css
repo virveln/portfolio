@@ -26,6 +26,19 @@
     font-weight: 700;
 }
 
+.logo-jh {
+    width: 50px;
+}
+
+.logo-jh * {   
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.logo-jh:hover>* {
+    fill: var(--primary-color-hover) !important;
+    stroke: var(--primary-color-hover) !important;
+}
+
 /*MOBILE*/
 .nav-desktop {
     display: none;
@@ -36,12 +49,8 @@
 }
 
 .nav-logo {
-    margin: auto;
-    text-transform: uppercase;
+    display: flex;
     justify-content: center;
-    font-size: 1.5em;
-    font-weight: 400;
-    letter-spacing: 2px;
 }
 
 .hamburgerMenu {
@@ -151,6 +160,8 @@
         align-items: center;
         width: 100%;
         padding: 10px 0;
+        padding: 0;
+        margin: auto;
     }
 
     .nav-menu {
