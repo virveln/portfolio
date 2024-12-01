@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a75cee11.css",
-    "main.js": "/portfolio/static/js/main.9bebd906.js",
+    "main.js": "/portfolio/static/js/main.efb0bbee.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/kampanj.png": "/portfolio/static/media/kampanj.f11a07c4ea0ed9914a2b.png",
     "static/media/mockup-marke-23-2.png": "/portfolio/static/media/mockup-marke-23-2.fd28e9e444f199b61e05.png",
@@ -36,6 +36,7 @@
     "static/media/cnd3.png": "/portfolio/static/media/cnd3.a0063f04ca3ecd7843bd.png",
     "static/media/bibel22-1.png": "/portfolio/static/media/bibel22-1.89a09a5004d7fb3f3462.png",
     "static/media/cnd2.png": "/portfolio/static/media/cnd2.0e8567a2e48af88f04d1.png",
+    "static/media/bygger1.JPG": "/portfolio/static/media/bygger1.5fa4f3578b6dcdff48a3.JPG",
     "static/media/sc4.png": "/portfolio/static/media/sc4.8a0883e7f45b90e437e0.png",
     "static/media/grafiskprofil3.png": "/portfolio/static/media/grafiskprofil3.7f03b3343a6c204e6e98.png",
     "static/media/grafiskprofil.png": "/portfolio/static/media/grafiskprofil.e6a4983f1c8cd2905c91.png",
@@ -63,7 +64,6 @@
     "static/media/5belöningar.png": "/portfolio/static/media/5belöningar.98514e43948b1d776ac1.png",
     "static/media/4karta.png": "/portfolio/static/media/4karta.78c5b144259a05d2a7c5.png",
     "static/media/6quiz.png": "/portfolio/static/media/6quiz.191fc56851caca218f37.png",
-    "static/media/bygger.PNG": "/portfolio/static/media/bygger.c5d0e23642ad22b34a65.PNG",
     "static/media/hm2.png": "/portfolio/static/media/hm2.ba7a1260f8aa54179098.png",
     "static/media/Bright Melody Display Typeface.otf": "/portfolio/static/media/Bright Melody Display Typeface.113a81c49da35e70de7a.otf",
     "static/media/hm5.png": "/portfolio/static/media/hm5.c327e1e41b72629a5225.png",
@@ -77,11 +77,11 @@
     "static/media/logoJH.svg": "/portfolio/static/media/logoJH.d942804e71c2009670bb498dc6186c84.svg",
     "index.html": "/portfolio/index.html",
     "main.a75cee11.css.map": "/portfolio/static/css/main.a75cee11.css.map",
-    "main.9bebd906.js.map": "/portfolio/static/js/main.9bebd906.js.map",
+    "main.efb0bbee.js.map": "/portfolio/static/js/main.efb0bbee.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a75cee11.css",
-    "static/js/main.9bebd906.js"
+    "static/js/main.efb0bbee.js"
   ]
 }
