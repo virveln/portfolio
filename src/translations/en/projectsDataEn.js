@@ -12,6 +12,7 @@ const affarssystemImages = importImages(require.context('../../images/affarssyst
 const showcaseImages = importImages(require.context('../../images/showcase', false, /\.(png|jpe?g|svg)$/));
 const nollningsmarkenImages = importImages(require.context('../../images/nollningsmarken', false, /\.(png|jpe?g|svg|JPG)$/));
 const nollningsbiblarImages = importImages(require.context('../../images/nollningsbiblar', false, /\.(png|jpe?g|svg|JPG)$/));
+const jeopardyImages = importImages(require.context('../../images/jeopardy', false, /\.(png|jpe?g|svg)$/));
 
 const projectsDataEn = [
   {
@@ -251,6 +252,21 @@ const projectsDataEn = [
 
     ]
   },
+  {
+    id: 14,
+    title: projectDataStatic.find((project) => project.id === 14)?.title || "Unknown Project",
+    date: projectDataStatic.find((project) => project.id === 14)?.date || "Unknown",
+    language: projectDataStatic.find((project) => project.id === 14)?.language || "Unknown",
+    reason: 'soloproject in my free time',
+    link: '',
+    website: projectDataStatic.find((project) => project.id === 14)?.website || "Unknown",
+    description: 'To be able to play Jeopardy with friends, I created a web application for this where you can choose between different themes to play. It is still under processing.',
+    thumbnail: require('../../images/jeopardy/gameboard.png'), 
+    images: [
+      { url: jeopardyImages[0], description: "Gameboard" },
+      
+    ]
+  }
 
   /*
   {

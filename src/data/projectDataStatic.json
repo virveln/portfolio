@@ -117,5 +117,17 @@
         "language": [
             "Adobe InDesign"
         ]
+    },
+    {
+        "id": 14,
+        "title": "Jeopardy! Game",
+        "date": "2024",
+        "language": [
+            "React",
+            "CSS",
+            "JSON"
+        ],
+        "link": "https://github.com/virveln/jeopardy-game",
+        "website": "https://virveln.github.io/jeopardy-game/"
     }
 ]

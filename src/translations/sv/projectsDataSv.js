@@ -12,6 +12,7 @@ const affarssystemImages = importImages(require.context('../../images/affarssyst
 const showcaseImages = importImages(require.context('../../images/showcase', false, /\.(png|jpe?g|svg)$/));
 const nollningsmarkenImages = importImages(require.context('../../images/nollningsmarken', false, /\.(png|jpe?g|svg)$/));
 const nollningsbiblarImages = importImages(require.context('../../images/nollningsbiblar', false, /\.(png|jpe?g|svg)$/));
+const jeopardyImages = importImages(require.context('../../images/jeopardy', false, /\.(png|jpe?g|svg)$/));
 
 const projectsDataSv = [
   {
@@ -250,6 +251,21 @@ const projectsDataSv = [
       { url: nollningsbiblarImages[4], description: "Fram- och baksida av broschyr 2024, tema Pokémon" },
       { url: nollningsbiblarImages[5], description: "Exempel på insida av brochure 2024, tema Pokémon" },
 
+    ]
+  },
+  {
+    id: 14,
+    title: projectDataStatic.find((project) => project.id === 14)?.title || "Unknown Project",
+    date: projectDataStatic.find((project) => project.id === 14)?.date || "Unknown",
+    language: projectDataStatic.find((project) => project.id === 14)?.language || "Unknown",
+    reason: 'soloprojekt på fritiden',
+    link: '',
+    website: projectDataStatic.find((project) => project.id === 14)?.website || "Unknown",
+    description: 'För att kunna spela Jeopardy med vänner skapade jag en webbapplikation för detta där man kan välja mellan olika teman att spela. Den är fortfarande under bearbetning.',
+    thumbnail: require('../../images/jeopardy/gameboard.png'), 
+    images: [
+      { url: jeopardyImages[0], description: "Spelplan" },
+      
     ]
   },
 

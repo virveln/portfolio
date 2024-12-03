@@ -4,6 +4,7 @@
 //npm install react-helmet - för att ändra title beroende på sida
 //npm install react-typed - för att ha typing effekt
 //npm install react-i18next i18next - för översättning
+//npm install gh-pages --save-dev   = för github pages
 
 //npm run deploy *vilket betyder att sidan uppdateras till domänen*
 

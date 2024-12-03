@@ -135,6 +135,7 @@
     transition: color 0.3s ease, transform 0.2s ease;
     margin-left: auto;
     margin-right: 33px;
+    cursor: pointer;
 }
 
 .language-btn:hover {
