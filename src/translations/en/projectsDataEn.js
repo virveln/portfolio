@@ -128,7 +128,7 @@ const projectsDataEn = [
     website: projectDataStatic.find((project) => project.id === 7)?.website || "Unknown",
     description: '<b>Task:</b> Create a fictional website using Bootstrap with a focus on the design process. Requirements include at least four sections, mobile-first design, responsiveness, a global menu, and animations.'
       + '<br><br><b>Result:</b> The solution was a single-page website for a brunch restaurant with easy navigation and colors that reflect organic and energetic themes. On mobile, the text in the different sections animates into view with a fade effect from below. On larger screens, the text animates in from the sides. This was done to create a greater sense of depth on the website.',
-    thumbnail: require('../../images/brunchncrunch/thumbnail.png'),
+    thumbnail: require('../../images/brunchncrunch/brunchncrunch-thumbnail.png'),
     images: [
       { url: brunchncrunchImages[0], description: "Homepage" },
       { url: brunchncrunchImages[1], description: "This week's deal and opening hours" },
@@ -151,7 +151,7 @@ const projectsDataEn = [
       + '<br><br><b>Role:</b> My main role was to code the CSS and adjust plugins to create custom PODS, templates, and appropriate functionality in WordPress. The entire team was involved in the design process and concept development.'
       + '<br><br><b>Result:</b> The solution was a website with easy navigation and creative colors to create contrast against the white background and keep the focus on the project images. A project can be linked to multiple accounts and connected to a course, which users can click on to access all projects related to that account/course.'
       + '<br><br><b>Brand Promise:</b> At ShowCase, we promise to provide students with a platform where they can showcase their creativity, share interests with like-minded individuals, and build a community that inspires innovation and growth.',
-    thumbnail: require('../../images/showcase/thumbnail.png'),
+    thumbnail: require('../../images/showcase/showcase-thumbnail.png'),
     images: [
       { url: showcaseImages[0], description: "Homepage" },
       { url: showcaseImages[1], description: "Gallery showing all uploaded projects" },
@@ -260,11 +260,16 @@ const projectsDataEn = [
     reason: 'soloproject in my free time',
     link: '',
     website: projectDataStatic.find((project) => project.id === 14)?.website || "Unknown",
-    description: 'To be able to play Jeopardy with friends, I created a web application for this where you can choose between different themes to play. It is still under processing.',
-    thumbnail: require('../../images/jeopardy/gameboard.png'), 
+    description: 'This is a web-based, interactive trivia game inspired by the classic TV show Jeopardy. A game leader challenges players with category-based questions across various themes. Depending on the players\' answers, they receive positive or negative points based on the question\'s value. The game is designed to deliver an engaging experience with an intuitive layout and smooth animations. Note that the web application does not include a built-in feature for players to "buzz in" to answer questions, but this can easily be managed using external tools. The game is not mobile friendly.<br><br>Since the game is currently hosted on GitHub Pages, certain functionalities have been adapted accordingly. For instance, users cannot open a new tab directly from the game\'s instruction page to the page displaying all the answers for the host to read during gameplay. Instead, answers are displayed in the current tab, while a new tab opens for the homepage, allowing the game to continue.<br><br>The game is still under development.',
+    thumbnail: require('../../images/jeopardy/thumbnail.png'), 
     images: [
-      { url: jeopardyImages[0], description: "Gameboard" },
-      
+      { url: jeopardyImages[0], description: "Homepage" },
+      { url: jeopardyImages[1], description: "Game Instructions" },
+      { url: jeopardyImages[2], description: "Game Settings, add players and choose theme" },
+      { url: jeopardyImages[3], description: "Gameboard" },      
+      { url: jeopardyImages[4], description: "Questionpage where players can get minus point if they answer wrong" },
+      { url: jeopardyImages[5], description: "Answerpage where players can get plus point if they answer correct" },
+      { url: jeopardyImages[6], description: "Scoreboard" },      
     ]
   }
 

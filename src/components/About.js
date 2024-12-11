@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet';
 import { ReactTyped } from "react-typed";
 import { FaLinkedin, FaFile, FaEnvelope } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-import logo from '../logo.svg';
 import toolsIcon from '../images/icons/tools.png';
 import backpackIcon from '../images/icons/backpack.png';
 import diplomaIcon from '../images/icons/diploma.png';
@@ -15,6 +14,7 @@ import parachuteIcon from '../images/icons/parachute.png';
 import puzzleIcon from '../images/icons/puzzle.png';
 import contactData from '../data/contactData.json';
 import heroVideo from '../images/coding_video.mp4';
+import heroVideoPoster from '../images/coding-video-poster.png';
 
 import AboutImageGallery from './AboutImageGallery';
 
@@ -64,7 +64,7 @@ const About = () => {
             </Helmet>
             <div className=" ">
                 <div className='about-hero'>
-                    <video className='hero-video' autoPlay muted loop playsInline>
+                    <video className='hero-video' preload="auto" autoPlay muted loop playsInline poster={heroVideoPoster}>
                         <source src={heroVideo} type='video/mp4' />
                         Your browser does not support the video tag.
                     </video>

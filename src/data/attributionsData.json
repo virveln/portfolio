@@ -76,5 +76,13 @@
         "url": "https://www.pexels.com/video/person-typing-946146/",
         "from": "Pexels",
         "desc": "Typing video created by Carlos Arribas"
+    },
+    {
+        "id": 14,
+        "url": "https://www.mockupworld.co/free/huge-apple-devices-mockup-bundle/",
+        "from": "Mockupworld",
+        "desc": "A collection of seven Apple device mockups"
     }
+
+    
 ]

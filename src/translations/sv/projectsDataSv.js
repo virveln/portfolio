@@ -128,7 +128,7 @@ const projectsDataSv = [
     website: projectDataStatic.find((project) => project.id === 7)?.website || "Unknown",
     description: '<b>Uppgift:</b> Skapa en fiktiv webbsida m.h.a. Bootstrap där fokus ligger på designprocessen. Krav är att den ska ha minst fyra sektioner, vara mobile first, responsiv, ha en global meny och animeringar.'
       + '<br><br><b>Resultat:</b> Lösningen blev en single-page webbsida åt en brunch-restaurang med enkel navigering och färger som representerar ekologiskt och energi. På mobilversion animeras texterna i de olika sektionerna fram i en fade underifrån. Vid bredare skärm animeras texterna fram från sidorna. Detta för att skapa ett mer djup i webbsidan.',
-    thumbnail: require('../../images/brunchncrunch/thumbnail.png'),
+    thumbnail: require('../../images/brunchncrunch/brunchncrunch-thumbnail.png'),
     images: [
       { url: brunchncrunchImages[0], description: "Startsida" },
       { url: brunchncrunchImages[1], description: "Veckans deal och öppettider" },
@@ -151,7 +151,7 @@ const projectsDataSv = [
       + '<br><br><b>Roll:</b> Min huvudsakliga roll var att koda CSS och justera plugins för att kunna skapa egna PODS, templates och lämplig funktionalitet i WordPress. Hela teamet var del av designprocessen och konceptet.'
       + '<br><br><b>Resultat:</b> Lösningen blev en webbsida med enkel navigering och kreativa färger för att skapa kontrast mot den vita bakgrunden och hålla fokus på projektbilderna. Ett projekt kan vara kopplat till flera konton och länkas till en kurs som man kan klicka på och komma vidare till alla projekt för det kontot/kursen.'
       + '<br><br><b>Varumärkeslöfte:</b> På ShowCase lovar vi att förse studenter med en plattform där de får visa upp sin kreativitet, dela intresse med likasinnade individer, och bygga en gemenskap som inspirerar till innovation och utveckling.',
-    thumbnail: require('../../images/showcase/thumbnail.png'),
+    thumbnail: require('../../images/showcase/showcase-thumbnail.png'),
     images: [
       { url: showcaseImages[0], description: "Startsida" },
       { url: showcaseImages[1], description: "Galleri som visar alla uppladdade projekt" },
@@ -261,11 +261,17 @@ const projectsDataSv = [
     reason: 'soloprojekt på fritiden',
     link: '',
     website: projectDataStatic.find((project) => project.id === 14)?.website || "Unknown",
-    description: 'För att kunna spela Jeopardy med vänner skapade jag en webbapplikation för detta där man kan välja mellan olika teman att spela. Den är fortfarande under bearbetning.',
-    thumbnail: require('../../images/jeopardy/gameboard.png'), 
+    description: 'Detta är ett webbaserat, interaktivt frågesportspel inspirerat av det klassiska TV-programmet Jeopardy. En spelledare utmanar spelare med kategoribaserade frågor inom olika teman. Beroende på spelarnas svar får de plus- eller minuspoäng baserat på frågans poängvärde. Spelet är utformat för att erbjuda en engagerande spelupplevelse med en intuitiv layout och smidiga animationer. Observera att webbapplikationen inte inkluderar en egen funktion för spelarna att "buzza" in för att svara, men detta kan enkelt lösas med hjälp av externa verktyg. Spelet är inte mobilanpassat.<br><br>Eftersom spelet för närvarande är publicerat via GitHub Pages, har vissa funktioner anpassats därefter. Till exempel kan användare inte öppna en ny flik direkt från spelets instruktionsida till sidan som visar alla svar för spelledaren att läsa under spelets gång. Lösningen är istället att svaren visas i den nuvarande fliken, medan en ny flik öppnas för startsidan där spelet fortsätter.<br><br>Spelet är fortfarande under utveckling.',
+    thumbnail: require('../../images/jeopardy/thumbnail.png'), 
     images: [
-      { url: jeopardyImages[0], description: "Spelplan" },
-      
+      { url: jeopardyImages[0], description: "Startsida" },
+      { url: jeopardyImages[1], description: "Spelinstruktioner" },
+      { url: jeopardyImages[2], description: "Spelinställningar, lägga till spelare och välja tema" },
+      { url: jeopardyImages[3], description: "Spelplan" },      
+      { url: jeopardyImages[4], description: "Frågesida där spelare kan få minuspoäng för fel svar" },
+      { url: jeopardyImages[5], description: "Svarssida där spelare kan få pluspoäng för rätt svar" },
+      { url: jeopardyImages[6], description: "Poängställning" },
+
     ]
   },
 
