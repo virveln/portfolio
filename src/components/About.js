@@ -68,27 +68,29 @@ const About = () => {
                         <source src={heroVideo} type='video/mp4' />
                         Your browser does not support the video tag.
                     </video>
-                    <h5 className='about-hero-text-start about-hero-all-text'>Hi, my name is </h5>
-                    <h3 className='about-hero-all-text '>
-                        {!startTyping && (
-                            <ReactTyped
-                                strings={[""]}
-                                typeSpeed={100}
-                                cursorChar="|"
-                                showCursor={true}
-                                className='about-hero-all-text about-name' />
-                        )}
-                        {startTyping && (
-                            <ReactTyped
-                                strings={["Jessica Hvirfvel"]}
-                                typeSpeed={100}
-                                cursorChar="|"
-                                showCursor={true}
-                                className='about-hero-all-text about-name' 
+                    <div className='about-hero-text-container'>
+                        <h5 className='about-hero-text-start about-hero-all-text'>Hi, my name is </h5>
+                        <h3 className='about-hero-all-text '>
+                            {!startTyping && (
+                                <ReactTyped
+                                    strings={[""]}
+                                    typeSpeed={100}
+                                    cursorChar="|"
+                                    showCursor={true}
+                                    className='about-hero-all-text about-name' />
+                            )}
+                            {startTyping && (
+                                <ReactTyped
+                                    strings={["Jessica Hvirfvel"]}
+                                    typeSpeed={100}
+                                    cursorChar="|"
+                                    showCursor={true}
+                                    className='about-hero-all-text about-name'
                                 />
-                        )}
-                    </h3>
-                    <h5 className='role about-hero-all-text'>— a Web/System Developer</h5>
+                            )}
+                        </h3>
+                        <h5 className='role about-hero-all-text'>— a Web/System Developer</h5>
+                    </div>
                 </div>
 
                 <div className='container about-container'>

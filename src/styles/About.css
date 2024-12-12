@@ -4,12 +4,13 @@
 
 /*ABOUT HERO*/
 .about-hero {
-  min-height: 400px;
-  align-content: center;
-  margin-bottom: 50px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
   position: relative;
+  margin-bottom: 50px;
+  min-height: 400px;
   width: 100%;
-  align-items: center;
   color: white;
   overflow: hidden;
   /* background-color: black; */
@@ -34,11 +35,20 @@
   object-fit: cover;
 }
 
+.about-hero-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  max-width: 1000px;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0;
+}
 
 .about-hero-all-text {
   padding: 5px 20px;
-  margin: 0 auto;
-  max-width: 1000px;
 }
 
 .about-hero .about-name {
@@ -313,8 +323,6 @@
     max-width: none;
     flex: 1;
   }
-
-
 }
 
 /*DESKTOP*/
