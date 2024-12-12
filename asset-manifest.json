@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.26a92298.css",
-    "main.js": "/portfolio/static/js/main.bee7c356.js",
+    "main.css": "/portfolio/static/css/main.94a7f25a.css",
+    "main.js": "/portfolio/static/js/main.d83426ce.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/kampanj.png": "/portfolio/static/media/kampanj.f11a07c4ea0ed9914a2b.png",
     "static/media/mockup-marke-23-2.png": "/portfolio/static/media/mockup-marke-23-2.fd28e9e444f199b61e05.png",
@@ -85,12 +85,12 @@
     "static/media/Boiling-BlackDemo.ttf": "/portfolio/static/media/Boiling-BlackDemo.094b93a11123d31db4f5.ttf",
     "static/media/logoJH.svg": "/portfolio/static/media/logoJH.d942804e71c2009670bb498dc6186c84.svg",
     "index.html": "/portfolio/index.html",
-    "main.26a92298.css.map": "/portfolio/static/css/main.26a92298.css.map",
-    "main.bee7c356.js.map": "/portfolio/static/js/main.bee7c356.js.map",
+    "main.94a7f25a.css.map": "/portfolio/static/css/main.94a7f25a.css.map",
+    "main.d83426ce.js.map": "/portfolio/static/js/main.d83426ce.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26a92298.css",
-    "static/js/main.bee7c356.js"
+    "static/css/main.94a7f25a.css",
+    "static/js/main.d83426ce.js"
   ]
 }
