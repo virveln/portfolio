@@ -270,7 +270,7 @@ const projectsDataSv = [
       { url: jeopardyImages[3], description: "Spelplan" },      
       { url: jeopardyImages[4], description: "Frågesida där spelare kan få minuspoäng för fel svar" },
       { url: jeopardyImages[5], description: "Svarssida där spelare kan få pluspoäng för rätt svar" },
-      { url: jeopardyImages[6], description: "Poängställning" },
+      { url: jeopardyImages[6], description: "Poängställning, där första, andra och tredje plats får en pokal utefter rang" },
 
     ]
   },

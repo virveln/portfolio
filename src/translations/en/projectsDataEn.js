@@ -269,7 +269,7 @@ const projectsDataEn = [
       { url: jeopardyImages[3], description: "Gameboard" },      
       { url: jeopardyImages[4], description: "Questionpage where players can get minus point if they answer wrong" },
       { url: jeopardyImages[5], description: "Answerpage where players can get plus point if they answer correct" },
-      { url: jeopardyImages[6], description: "Scoreboard" },      
+      { url: jeopardyImages[6], description: "Scoreboard, where first, second and third place receive a trophy according to rank" },      
     ]
   }
 
