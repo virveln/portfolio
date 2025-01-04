@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.94a7f25a.css",
-    "main.js": "/portfolio/static/js/main.d83426ce.js",
+    "main.js": "/portfolio/static/js/main.e13fcdbe.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/kampanj.png": "/portfolio/static/media/kampanj.f11a07c4ea0ed9914a2b.png",
     "static/media/mockup-marke-23-2.png": "/portfolio/static/media/mockup-marke-23-2.fd28e9e444f199b61e05.png",
@@ -57,17 +57,17 @@
     "static/media/showcase-thumbnail.png": "/portfolio/static/media/showcase-thumbnail.37e0a778d6aa56d236bf.png",
     "static/media/sc8.png": "/portfolio/static/media/sc8.04b1b35681b787d581c3.png",
     "static/media/general.JPG": "/portfolio/static/media/general.293c43e0faec1760e9f5.JPG",
-    "static/media/j6.png": "/portfolio/static/media/j6.157db50d14e2aec9e3ca.png",
-    "static/media/j2.png": "/portfolio/static/media/j2.284c03d0cbfda348a1a3.png",
+    "static/media/j6.png": "/portfolio/static/media/j6.a41f58ac9e1d31c7d1c8.png",
+    "static/media/j2.png": "/portfolio/static/media/j2.d941b14d5a6de8988d0a.png",
     "static/media/coding-video-poster.png": "/portfolio/static/media/coding-video-poster.3505ef397d5cb7812bcb.png",
     "static/media/diplom.JPG": "/portfolio/static/media/diplom.17de80f3244905058e1e.JPG",
-    "static/media/j0.png": "/portfolio/static/media/j0.21dc21daf8ecf921ee39.png",
-    "static/media/j5.png": "/portfolio/static/media/j5.db629cbe915d0e8d104a.png",
-    "static/media/j1.png": "/portfolio/static/media/j1.ee11e9f6184218c8eec0.png",
+    "static/media/j0.png": "/portfolio/static/media/j0.fcb84acad8a4a47c11fd.png",
+    "static/media/j1.png": "/portfolio/static/media/j1.bd9bd4a6a7c679224c50.png",
+    "static/media/j5.png": "/portfolio/static/media/j5.7fb901394b8b9aecabbc.png",
     "static/media/3platser.png": "/portfolio/static/media/3platser.7ee2c18354ecfd0d17ad.png",
     "static/media/resa.PNG": "/portfolio/static/media/resa.e34301580f058b10b338.PNG",
-    "static/media/j3.png": "/portfolio/static/media/j3.40f6fafe73224fbac923.png",
-    "static/media/j4.png": "/portfolio/static/media/j4.fb37dff4d1897dd7f90c.png",
+    "static/media/j3.png": "/portfolio/static/media/j3.016e3717d3568e1d0ded.png",
+    "static/media/j4.png": "/portfolio/static/media/j4.38a1dc579e0b2543be70.png",
     "static/media/general1.jpg": "/portfolio/static/media/general1.8c6db7291b3e1624ab1e.jpg",
     "static/media/2profil-startsida.png": "/portfolio/static/media/2profil-startsida.dc674ba6f060a40c982f.png",
     "static/media/1login.png": "/portfolio/static/media/1login.c1049116a53b980abfb5.png",
@@ -86,11 +86,11 @@
     "static/media/logoJH.svg": "/portfolio/static/media/logoJH.d942804e71c2009670bb498dc6186c84.svg",
     "index.html": "/portfolio/index.html",
     "main.94a7f25a.css.map": "/portfolio/static/css/main.94a7f25a.css.map",
-    "main.d83426ce.js.map": "/portfolio/static/js/main.d83426ce.js.map",
+    "main.e13fcdbe.js.map": "/portfolio/static/js/main.e13fcdbe.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94a7f25a.css",
-    "static/js/main.d83426ce.js"
+    "static/js/main.e13fcdbe.js"
   ]
 }
