@@ -54,13 +54,14 @@
     },
     "experience": [
         {
-            "title": "Webbutveckling",
+            "title": "Webb-/Fullstackutveckling",
             "language": [
                 "HTML",
                 "CSS",
                 "Bootstrap",
                 "JavaScript",
                 "React",
+                "TypeScript",
                 "WordPress",
                 "PHP"
             ]
@@ -75,36 +76,12 @@
             ]
         },
         {
-            "title": "Design och UX",
-            "language": [
-                "Adobe Photoshop",
-                "-Illustrator",
-                "-InDesign",
-                "Figma",
-                "Prototypskapande",
-                "2c8",
-                "Tillgänglighet"
-            ]
-        },
-        {
             "title": "Databashantering",
             "language": [
                 "MySQL",
                 "MongoDB",
-                "XAMPP"
-            ]
-        },
-        {
-            "title": "Utvecklarverktyg",
-            "language": [
-                "Git & GitHub"
-            ]
-        },
-        {
-            "title": "Mjukvarutestning",
-            "language": [
-                "Python",
-                "Java"
+                "XAMPP",
+                "Postman"
             ]
         },
         {
@@ -115,12 +92,45 @@
             ]
         },
         {
-            "title": "Arbete med APIer",
+            "title": "API hantering",
             "language": [
                 "API",
                 "JSON",
                 "XML",
                 "REST API"
+            ]
+        },
+        {
+            "title": "Utvecklarverktyg",
+            "language": [
+                "Git & GitHub"
+            ]
+        },
+        {
+            "title": "UX",
+            "language": [
+                "Prototypskapande",
+                "Interaktionsdesign",
+                "Tillgänglighet",
+                "WCAG",
+                "ATAG"
+            ]
+        },
+        {
+            "title": "Designverktyg",
+            "language": [
+                "Adobe Photoshop",
+                "Adobe Illustrator",
+                "Adobe InDesign",
+                "Figma",
+                "2c8"
+            ]
+        },
+        {
+            "title": "Mjukvarutestning",
+            "language": [
+                "Python",
+                "Java"
             ]
         },
         {
@@ -130,5 +140,6 @@
                 "Java"
             ]
         }
-    ]
+    ],
+    "certificateLinkTitle": "Visa legitimering"
 }

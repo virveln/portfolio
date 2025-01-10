@@ -16,7 +16,7 @@ import { useLocation } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/Footer';
 import Homepage from './components/Homepage';
-import About from './components/About';
+import About from './components/about/About';
 import ProjectDetail from './components/ProjectDetail';
 import Attributions from './components/Attributions';
 import './i18n';

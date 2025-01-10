@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../styles/General.css';
-import '../styles/AboutImageGallery.css';
+import '../../styles/General.css';
+import '../../styles/AboutImageGallery.css';
 
 const importImages = (requireContext) =>
     requireContext.keys().map(requireContext);
 
 const aboutImages = importImages(
-    require.context('../images/aboutimages', false, /\.(png|jpe?g|svg|JPG|PNG)$/)
+    require.context('../../images/aboutimages', false, /\.(png|jpe?g|svg|JPG|PNG)$/)
 );
 
 const AboutImageGallery = () => {
@@ -44,7 +44,7 @@ const AboutImageGallery = () => {
                                 : 'hidden'
                         }`}
                 >
-                    <img src={image} alt={`Image ${index}`} className='slide-image' />
+                    <img src={image} alt={`${index}`} className='slide-image' />
                 </div>
             ))}
         </div>

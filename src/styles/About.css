@@ -243,6 +243,33 @@
   font-size: 0.9em;
 }
 
+/*CERTIFICATE*/
+.certificate-item {
+  background-color: #f1f1f1;
+  padding: 20px;
+  width: calc(50% - 10px);
+  width: 100%;
+  min-height: 110px;
+  display: flex;
+}
+
+.certificate-item>img {
+  display: none;
+  width: auto;
+  height: 82px;
+  max-height: fit-content;
+}
+
+.certificate-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.certificate-item a:hover {
+  color: var(--primary-color-hover);
+}
+
 /*SMALL SCREEN*/
 @media screen and (min-width: 540px) {
   .about-hero .about-name {
@@ -264,6 +291,14 @@
     min-height: 180px;
     align-content: start;
     padding-top: 40px;
+  }
+
+  .certificate-item>img {
+    display: inline;
+  }
+
+  .certificate-info {
+    padding-left: 20px;
   }
 
 }

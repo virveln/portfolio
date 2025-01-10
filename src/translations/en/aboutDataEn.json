@@ -55,13 +55,14 @@
     },
     "experience": [
         {
-            "title": "Web Development",
+            "title": "Web / Fullstack Development",
             "language": [
                 "HTML",
                 "CSS",
                 "Bootstrap",
                 "JavaScript",
                 "React",
+                "TypeScript",
                 "WordPress",
                 "PHP"
             ]
@@ -76,36 +77,12 @@
             ]
         },
         {
-            "title": "Design and UX",
-            "language": [
-                "Adobe Photoshop",
-                "-Illustrator",
-                "-InDesign",
-                "Figma",
-                "Prototyping",
-                "2c8",
-                "Accessibility"
-            ]
-        },
-        {
             "title": "Database Management",
             "language": [
                 "MySQL",
                 "MongoDB",
-                "XAMPP"
-            ]
-        },
-        {
-            "title": "Development Tools",
-            "language": [
-                "Git & GitHub"
-            ]
-        },
-        {
-            "title": "Software Testing",
-            "language": [
-                "Python",
-                "Java"
+                "XAMPP",
+                "Postman"
             ]
         },
         {
@@ -116,12 +93,45 @@
             ]
         },
         {
-            "title": "Working with APIs",
+            "title": "API management",
             "language": [
                 "API",
                 "JSON",
                 "XML",
                 "REST API"
+            ]
+        },
+        {
+            "title": "Development Tools",
+            "language": [
+                "Git & GitHub"
+            ]
+        },
+        {
+            "title": "UX",
+            "language": [
+                "Prototyping",
+                "Interaction Design",
+                "Accessibility",
+                "WCAG",
+                "ATAG"
+            ]
+        },
+        {
+            "title": "Design Tools",
+            "language": [
+                "Adobe Photoshop",
+                "Adobe Illustrator",
+                "Adobe InDesign",
+                "Figma",
+                "2c8"
+            ]
+        },
+        {
+            "title": "Software Testing",
+            "language": [
+                "Python",
+                "Java"
             ]
         },
         {
@@ -132,5 +142,6 @@
                 
             ]
         }
-    ]
+    ],
+    "certificateLinkTitle": "Show Certificate"
 }
