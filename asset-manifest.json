@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3aadb11d.css",
-    "main.js": "/portfolio/static/js/main.9d09bf8a.js",
+    "main.js": "/portfolio/static/js/main.4a6b3d87.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/kampanj.png": "/portfolio/static/media/kampanj.f11a07c4ea0ed9914a2b.png",
     "static/media/mockup-marke-23-2.png": "/portfolio/static/media/mockup-marke-23-2.fd28e9e444f199b61e05.png",
@@ -71,10 +71,14 @@
     "static/media/general1.jpg": "/portfolio/static/media/general1.8c6db7291b3e1624ab1e.jpg",
     "static/media/2profil-startsida.png": "/portfolio/static/media/2profil-startsida.dc674ba6f060a40c982f.png",
     "static/media/1login.png": "/portfolio/static/media/1login.c1049116a53b980abfb5.png",
+    "static/media/t4.png": "/portfolio/static/media/t4.f50e2f102af8c1271292.png",
     "static/media/5belöningar.png": "/portfolio/static/media/5belöningar.98514e43948b1d776ac1.png",
     "static/media/4karta.png": "/portfolio/static/media/4karta.78c5b144259a05d2a7c5.png",
     "static/media/6quiz.png": "/portfolio/static/media/6quiz.191fc56851caca218f37.png",
+    "static/media/t1.png": "/portfolio/static/media/t1.82da6295ecf595a9ec28.png",
+    "static/media/t2.png": "/portfolio/static/media/t2.3d65b1981b24574abca5.png",
     "static/media/Udemy_Certificate_Understanding_Typescript_Hvirfvel.jpg": "/portfolio/static/media/Udemy_Certificate_Understanding_Typescript_Hvirfvel.c305724a6360d779a850.jpg",
+    "static/media/t3.png": "/portfolio/static/media/t3.d35e5932eb57ab9d5bf6.png",
     "static/media/hm2.png": "/portfolio/static/media/hm2.ba7a1260f8aa54179098.png",
     "static/media/Bright Melody Display Typeface.otf": "/portfolio/static/media/Bright Melody Display Typeface.113a81c49da35e70de7a.otf",
     "static/media/hm5.png": "/portfolio/static/media/hm5.c327e1e41b72629a5225.png",
@@ -87,11 +91,11 @@
     "static/media/logoJH.svg": "/portfolio/static/media/logoJH.d942804e71c2009670bb498dc6186c84.svg",
     "index.html": "/portfolio/index.html",
     "main.3aadb11d.css.map": "/portfolio/static/css/main.3aadb11d.css.map",
-    "main.9d09bf8a.js.map": "/portfolio/static/js/main.9d09bf8a.js.map",
+    "main.4a6b3d87.js.map": "/portfolio/static/js/main.4a6b3d87.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3aadb11d.css",
-    "static/js/main.9d09bf8a.js"
+    "static/js/main.4a6b3d87.js"
   ]
 }
