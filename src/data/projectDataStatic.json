@@ -129,5 +129,16 @@
         ],
         "link": "https://github.com/virveln/jeopardy-game",
         "website": "https://virveln.github.io/jeopardy-game/"
+    },
+    {
+        "id": 15,
+        "title": "Todo App",
+        "date": "2025",
+        "language": [
+            "TypeScript",
+            "React",
+            "CSS"
+        ],
+        "link": "https://github.com/virveln/todo"
     }
 ]

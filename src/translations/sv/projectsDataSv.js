@@ -13,6 +13,7 @@ const showcaseImages = importImages(require.context('../../images/showcase', fal
 const nollningsmarkenImages = importImages(require.context('../../images/nollningsmarken', false, /\.(png|jpe?g|svg)$/));
 const nollningsbiblarImages = importImages(require.context('../../images/nollningsbiblar', false, /\.(png|jpe?g|svg)$/));
 const jeopardyImages = importImages(require.context('../../images/jeopardy', false, /\.(png|jpe?g|svg)$/));
+const todoImages = importImages(require.context('../../images/todo', false, /\.(png|jpe?g|svg)$/));
 
 const projectsDataSv = [
   {
@@ -271,7 +272,23 @@ const projectsDataSv = [
       { url: jeopardyImages[4], description: "Frågesida där spelare kan få minuspoäng för fel svar" },
       { url: jeopardyImages[5], description: "Svarssida där spelare kan få pluspoäng för rätt svar" },
       { url: jeopardyImages[6], description: "Poängställning, där första, andra och tredje plats får en pokal utefter rang" },
-
+    ]
+  },
+  {
+    id: 15,
+    title: projectDataStatic.find((project) => project.id === 15)?.title || "Unknown Project",
+    date: projectDataStatic.find((project) => project.id === 15)?.date || "Unknown",
+    language: projectDataStatic.find((project) => project.id === 15)?.language || "Unknown",
+    reason: 'soloprojekt på fritiden',
+    link: projectDataStatic.find((project) => project.id === 15)?.link || "Unknown",
+    website: '',
+    description: 'En simpel todo webbapplikation med filtrering utefter uppgifternas status, listan sorteras utefter datum och animation vid förändrad status. Ingen mobilanpassningen och ingen databas tillagd.',
+    thumbnail: require('../../images/todo/thumbnail.png'), 
+    images: [
+      { url: todoImages[0], description: "Lista över uppgifter med olika status" },
+      { url: todoImages[1], description: "Filtrerad lista som endast visar uppgifter med status \"In Progress\"" },
+      { url: todoImages[2], description: "Filtrerad lista utan uppgifter men som endast ska visa uppgifter med status \"Completed\"" },
+      { url: todoImages[3], description: "Formuläret till vänster för att lägga till uppgift och filter (cirklarna högst upp) är fixerade, och endast listan med uppgifter som skrollas" },      
     ]
   },
 

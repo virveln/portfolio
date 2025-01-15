@@ -13,6 +13,7 @@ const showcaseImages = importImages(require.context('../../images/showcase', fal
 const nollningsmarkenImages = importImages(require.context('../../images/nollningsmarken', false, /\.(png|jpe?g|svg|JPG)$/));
 const nollningsbiblarImages = importImages(require.context('../../images/nollningsbiblar', false, /\.(png|jpe?g|svg|JPG)$/));
 const jeopardyImages = importImages(require.context('../../images/jeopardy', false, /\.(png|jpe?g|svg)$/));
+const todoImages = importImages(require.context('../../images/todo', false, /\.(png|jpe?g|svg)$/));
 
 const projectsDataEn = [
   {
@@ -271,7 +272,24 @@ const projectsDataEn = [
       { url: jeopardyImages[5], description: "Answerpage where players can get plus point if they answer correct" },
       { url: jeopardyImages[6], description: "Scoreboard, where first, second and third place receive a trophy according to rank" },      
     ]
-  }
+  },
+  {
+    id: 15,
+    title: projectDataStatic.find((project) => project.id === 15)?.title || "Unknown Project",
+    date: projectDataStatic.find((project) => project.id === 15)?.date || "Unknown",
+    language: projectDataStatic.find((project) => project.id === 15)?.language || "Unknown",
+    reason: 'soloproject in my free time',
+    link: projectDataStatic.find((project) => project.id === 15)?.link || "Unknown",
+    website: '',
+    description: 'A simple todo web application with filtering according to the status of the tasks, the list is sorting tasks according to date and animation when the status changes. Not mobile compatible and no connected database added.',
+    thumbnail: require('../../images/todo/thumbnail.png'), 
+    images: [
+      { url: todoImages[0], description: "List of tasks with different statuses" },
+      { url: todoImages[1], description: "Filtered list only showing tasks with status \"In Progress\"" },
+      { url: todoImages[2], description: "Filtered list without tasks but would only show tasks with status \"Completed\"" },
+      { url: todoImages[3], description: "The form on the left for adding a task and the filters (the circles at the top) are fixed, and only the list of tasks scrolls" },      
+    ]
+  },
 
   /*
   {
