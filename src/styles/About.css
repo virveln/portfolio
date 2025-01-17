@@ -244,6 +244,12 @@
 }
 
 /*CERTIFICATE*/
+.certificate-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .certificate-item {
   background-color: #f1f1f1;
   padding: 20px;
@@ -258,6 +264,7 @@
   width: auto;
   height: 82px;
   max-height: fit-content;
+  margin: auto 0;
 }
 
 .certificate-info {

@@ -10,7 +10,7 @@ import Introduction from './Introduction';
 import FunFacts from './FunFacts';
 import CurrentlyDoing from './CurrentlyDoing';
 import TechnicalExperiences from './TechnicalExperiences';
-import Certificate from './Certificate';
+import Certificates from './Certificates';
 
 const About = () => {
     const { t, i18n } = useTranslation('generalData');
@@ -41,7 +41,7 @@ const About = () => {
                     <FunFacts aboutData={aboutData} />
                     <CurrentlyDoing aboutData={aboutData} />
                     <TechnicalExperiences aboutData={aboutData} t={t} />
-                    <Certificate aboutData={aboutData} t={t}/>
+                    <Certificates aboutData={aboutData} t={t}/>
 
                 </div >
             </div>

@@ -127,10 +127,16 @@
             ]
         },
         {
-            "title": "Mjukvarutestning",
+            "title": "Testning",
             "language": [
+                "Mjukvarutestning",
                 "Python",
-                "Java"
+                "Java",
+                "Unit Testing",
+                "Jest",
+                "TypeScript",
+                "NodeJS"
+
             ]
         },
         {
