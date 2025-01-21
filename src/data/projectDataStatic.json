@@ -137,7 +137,8 @@
         "language": [
             "TypeScript",
             "React",
-            "CSS"
+            "CSS",
+            "Jest Unit Testing"
         ],
         "link": "https://github.com/virveln/todo"
     }
