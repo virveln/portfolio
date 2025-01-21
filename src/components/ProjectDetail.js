@@ -10,7 +10,6 @@ import ImageGallery from './ImageGallery';
 import projectsDataEn from '../translations/en/projectsDataEn';
 import projectsDataSv from '../translations/sv/projectsDataSv';
 
-
 function formatTitleForUrl(title) {
     return title.toLowerCase().replace(/ /g, '-').replace('å', 'a').replace('ä', 'a').replace('ö', 'o').replace(/[^a-z0-9-]/g, ''); // Konverterar till små bokstäver, ersätter mellanslag med bindestreck och tar bort specialtecken
 }
@@ -58,9 +57,9 @@ const ProjectDetail = () => {
                                     Visit Website
                                 </a>
                             )}
-                            {project.link && <span className='language-divider'> | </span>}
-                            {project.link && (
-                                <a className='project-link' href={project.link} target="_blank" rel="noopener noreferrer" title={project.link}>
+                            {project.github && <span className='language-divider'> | </span>}
+                            {project.github && (
+                                <a className='project-link' href={project.github} target="_blank" rel="noopener noreferrer" title={project.github}>
                                     GitHub
                                 </a>
                             )}

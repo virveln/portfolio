@@ -17,18 +17,18 @@
     },
     {
         "id": 3,
-        "title": "Hammarö Adventure",
-        "date": "2023",
-        "language": [
-            "Adobe Illustrator"
-        ]
-    },
-    {
-        "id": 4,
         "title": "Lifestyle Magazine",
         "date": "2023",
         "language": [
             "Adobe InDesign"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Hammarö Adventure",
+        "date": "2023",
+        "language": [
+            "Adobe Illustrator"
         ]
     },
     {
@@ -49,7 +49,7 @@
             "CSS",
             "JSON"
         ],
-        "link": "https://github.com/virveln/cocktails-and-dreams",
+        "github": "https://github.com/virveln/cocktails-and-dreams",
         "website": "https://virveln.github.io/cocktails-and-dreams/"
     },
     {
@@ -61,7 +61,7 @@
             "CSS",
             "JavaScript"
         ],
-        "link": "https://github.com/virveln/brunch-n-crunch",
+        "github": "https://github.com/virveln/brunch-n-crunch",
         "website": "https://virveln.github.io/brunch-n-crunch/"
     },
     {
@@ -73,7 +73,7 @@
             "CSS",
             "PHP"
         ],
-        "link": "https://github.com/virveln/showcase"
+        "github": "https://github.com/virveln/showcase"
     },
     {
         "id": 9,
@@ -83,7 +83,7 @@
             "Android Studio",
             "Java"
         ],
-        "link": "https://github.com/virveln/hangman-game"
+        "github": "https://github.com/virveln/hangman-game"
     },
     {
         "id": 10,
@@ -100,7 +100,7 @@
         "language": [
             "C# .NET UWP"
         ],
-        "link": "https://github.com/virveln/business_system_24"
+        "github": "https://github.com/virveln/business_system_24"
     },
     {
         "id": 12,
@@ -127,7 +127,7 @@
             "CSS",
             "JSON"
         ],
-        "link": "https://github.com/virveln/jeopardy-game",
+        "github": "https://github.com/virveln/jeopardy-game",
         "website": "https://virveln.github.io/jeopardy-game/"
     },
     {
@@ -140,6 +140,6 @@
             "CSS",
             "Jest Unit Testing"
         ],
-        "link": "https://github.com/virveln/todo"
+        "github": "https://github.com/virveln/todo"
     }
 ]

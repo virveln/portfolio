@@ -1,13 +1,4 @@
 {
-    "contactInfo": {
-        "linkedin": "https://www.linkedin.com/in/jessica-hvirfvel/",
-        "linkedinTitle": "linkedin.com/in/jessica-hvirfvel",
-        "mail": "mailto:jessica.hvirfvel@hotmail.com",
-        "mailTitle": "jessica.hvirfvel@hotmail.com",
-        "github": "https://github.com/virveln",
-        "githubTitle": "github.com/virveln",
-        "resume": "../../data/Hvirfvel_CV.pdf"
-    },
     "introduction": {
         "p1": "I'm Jessica Hvirfvel - a creative, logical thinker with a passion for crafting, organizing, and problem-solving. I'm driven by a desire to learn and understand how things work together. I've long been interested in IT and graphic design but wasn't sure how to pursue it. That changed in 2020 when my sister introduced me to HTML and CSS, and from that moment on, I was sold. ",
         "p2": "Fast forward to today, I hold a Bachelor of Science degree in Information Systems from Karlstads University, and I'm fully interested in fullstack development.",
