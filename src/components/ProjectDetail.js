@@ -42,28 +42,28 @@ const ProjectDetail = () => {
                     <div className='project-info-container'>
                         <h1 className='project-title'>{t(project.title)}<span className='colorfulend'>.</span></h1>
                         <p className='project-description' dangerouslySetInnerHTML={{ __html: project.description }} />
-                        <p className='project-language'>
-                            {project.language.map((lang, index) => (
+                        <p className='project-techniques'>
+                            {project.techniques.map((lang, index) => (
                                 <span key={index}>
                                     {lang}
-                                    {index < project.language.length - 1 && (
-                                        <span className='language-divider'>  |  </span>
+                                    {index < project.techniques.length - 1 && (
+                                        <span className='techniques-divider'>  |  </span>
                                     )}
                                 </span>
                             ))}
-                            {project.website && <span className='language-divider'> | </span>}
+                            {project.website && <span className='techniques-divider'> | </span>}
                             {project.website && (
                                 <a className='project-link' href={project.website} target="_blank" rel="noopener noreferrer" title={project.website}>
                                     Visit Website
                                 </a>
                             )}
-                            {project.github && <span className='language-divider'> | </span>}
+                            {project.github && <span className='techniques-divider'> | </span>}
                             {project.github && (
                                 <a className='project-link' href={project.github} target="_blank" rel="noopener noreferrer" title={project.github}>
                                     GitHub
                                 </a>
                             )}
-                            {project.reason && <span className='language-divider'> | </span>}
+                            {project.reason && <span className='techniques-divider'> | </span>}
                             {project.reason && <span>{project.reason}</span>}
                         </p>
                     </div>

@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Campaign for climate and sustainability",
         "date": "2023",
-        "language": [
+        "techniques": [
             "Adobe Photoshop"
         ]
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "title": "Graphic Profile",
         "date": "2023",
-        "language": [
+        "techniques": [
             "Adobe InDesign"
         ]
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "title": "Lifestyle Magazine",
         "date": "2023",
-        "language": [
+        "techniques": [
             "Adobe InDesign"
         ]
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "title": "Hammarö Adventure",
         "date": "2023",
-        "language": [
+        "techniques": [
             "Adobe Illustrator"
         ]
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "title": "Drawing Program",
         "date": "2023",
-        "language": [
+        "techniques": [
             "Java"
         ]
     },
@@ -43,7 +43,7 @@
         "id": 6,
         "title": "Cocktails & Dreams",
         "date": "2022",
-        "language": [
+        "techniques": [
             "JavaScript",
             "HTML",
             "CSS",
@@ -56,7 +56,7 @@
         "id": 7,
         "title": "brunch n' crunch",
         "date": "2023",
-        "language": [
+        "techniques": [
             "HTML",
             "CSS",
             "JavaScript"
@@ -68,7 +68,7 @@
         "id": 8,
         "title": "Showcase",
         "date": "2023",
-        "language": [
+        "techniques": [
             "WordPress",
             "CSS",
             "PHP"
@@ -79,7 +79,7 @@
         "id": 9,
         "title": "Hangman Game",
         "date": "2023",
-        "language": [
+        "techniques": [
             "Android Studio",
             "Java"
         ],
@@ -89,7 +89,7 @@
         "id": 10,
         "title": "Text Editor",
         "date": "2024",
-        "language": [
+        "techniques": [
             "C# .NET UWP"
         ]
     },
@@ -97,7 +97,7 @@
         "id": 11,
         "title": "Business System for a store",
         "date": "2024",
-        "language": [
+        "techniques": [
             "C# .NET UWP"
         ],
         "github": "https://github.com/virveln/business_system_24"
@@ -106,7 +106,7 @@
         "id": 12,
         "title": "Designing 'Nollningsmärken'",
         "date": "2022-2024",
-        "language": [
+        "techniques": [
             "Adobe Photoshop"
         ]
     },
@@ -114,7 +114,7 @@
         "id": 13,
         "title": "Designing 'Nollningsbiblar'",
         "date": "2022-2024",
-        "language": [
+        "techniques": [
             "Adobe InDesign"
         ]
     },
@@ -122,7 +122,7 @@
         "id": 14,
         "title": "What is... Jeopardy?",
         "date": "2024",
-        "language": [
+        "techniques": [
             "React",
             "CSS",
             "JSON"
@@ -134,7 +134,7 @@
         "id": 15,
         "title": "Todo App",
         "date": "2025",
-        "language": [
+        "techniques": [
             "TypeScript",
             "React",
             "CSS",

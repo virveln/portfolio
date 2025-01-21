@@ -36,7 +36,7 @@ const projectsDataSv = [
     id: 1,
     title: campaignClimate?.title || "Unknown Project",
     date: campaignClimate?.date || "Unknown",
-    language: campaignClimate?.language || "Unknown",
+    techniques: campaignClimate?.techniques || "Unknown",
     reason: 'grupprojekt på universitet',
     github: '',
     description: '<b>Uppgift:</b> Uppgiften gick ut på att skapa en fiktiv kampanj utifrån klimat och hållbarhet, med tema köttkoncumtion, utsläpp från konsumtion av varor och tjänster, eller utsläpp från inrikes transport. Genom att välja en avsändare och definiera målgrupp skulle vi därmed skapa en idé för en kampanj som hade en chans att påverka den tänkta målgruppen.'
@@ -50,7 +50,7 @@ const projectsDataSv = [
     id: 2,
     title: graphicprofile?.title || "Unknown Project",
     date: graphicprofile?.date || "Unknown",
-    language: graphicprofile?.language || "Unknown",
+    techniques: graphicprofile?.techniques || "Unknown",
     reason: 'soloprojekt på universitet',
     github: '',
     description: '<b>Uppgift:</b> Uppdatera Swenströmskas stenugnsbageris grafiska profil genom att utföra en varumärkes- omvärlds-, målgrupps- och konkurrensanalys. Skapa en enklare grafisk manual där man visar riktlinjer för logotyp, färgval, bildmanér, typografi samt exemplifierar hur den nya identiteten appliceras på relevanta profilmaterial.'
@@ -67,7 +67,7 @@ const projectsDataSv = [
     id: 3,
     title: hammaroadventure?.title || "Unknown Project",
     date: hammaroadventure?.date || "Unknown",
-    language: hammaroadventure?.language || "Unknown",
+    techniques: hammaroadventure?.techniques || "Unknown",
     reason: 'soloprojekt på universitet',
     github: '',
     description: '<b>Uppgift:</b> Skapa en design till en applikation som gör det intressant för människor att besöka Hammarö kommun.'
@@ -86,7 +86,7 @@ const projectsDataSv = [
     id: 4,
     title: magasindesign?.title || "Unknown Project",
     date: magasindesign?.date || "Unknown",
-    language: magasindesign?.language || "Unknown",
+    techniques: magasindesign?.techniques || "Unknown",
     reason: 'soloprojekt på universitet',
     github: '',
     description: '<b>Uppgift:</b> Skapa ett magasin inriktad till valfri målgrupp som följer de typografiska regler och designprinciper som finns. Den ska innehålla ett reportage med en intervju och minst 50% av bilderna/illustrationerna ska vara skapta av en själv.'
@@ -102,7 +102,7 @@ const projectsDataSv = [
     id: 5,
     title: drawingProg?.title || "Unknown Project",
     date: drawingProg?.date || "Unknown",
-    language: drawingProg?.language || "Unknown",
+    techniques: drawingProg?.techniques || "Unknown",
     reason: 'soloprojekt på universitet',
     github: '',
     description: '<b>Uppgift:</b> Skapa ett ritprogram enligt MVC genom att implementera en färdigprogrammerad ritmotor.'
@@ -116,7 +116,7 @@ const projectsDataSv = [
     id: 6,
     title: cocktailsanddreams?.title || "Unknown Project",
     date: cocktailsanddreams?.date || "Unknown",
-    language: cocktailsanddreams?.language || "Unknown",
+    techniques: cocktailsanddreams?.techniques || "Unknown",
     reason: 'soloprojekt på universitet',
     github: cocktailsanddreams?.github || "Unknown",
     website: cocktailsanddreams?.website || "Unknown",
@@ -134,7 +134,7 @@ const projectsDataSv = [
     id: 7,
     title: brunchncrunch?.title || "Unknown Project",
     date: brunchncrunch?.date || "Unknown",
-    language: brunchncrunch?.language || "Unknown",
+    techniques: brunchncrunch?.techniques || "Unknown",
     reason: 'soloprojekt på universitet',
     github: brunchncrunch?.github || "Unknown",
     website: brunchncrunch?.website || "Unknown",
@@ -156,7 +156,7 @@ const projectsDataSv = [
     id: 8,
     title: showcase?.title || "Unknown Project",
     date: showcase?.date || "Unknown",
-    language: showcase?.language || "Unknown",
+    techniques: showcase?.techniques || "Unknown",
     reason: 'grupprojekt på universitet',
     github: showcase?.github || "Unknown",
     description: '<b>Uppgift:</b> I team skapa en webbsida där studenter kan skapa ett konto och lägga upp projekt tillsammans med andra studenter som resulterar i ett portfolio. Målgruppen beskrivs som unga och kreativa studenter som är intresserade av att uttrycka sin kreativitet, inspirera och hitta en gemenskap. Detta ska framställas via ett eget skapat tema i WordPress och med hjälp av plugins. Projektets fokus ligger i designprocessen.'
@@ -179,7 +179,7 @@ const projectsDataSv = [
     id: 9,
     title: hangman?.title || "Unknown Project",
     date: hangman?.date || "Unknown",
-    language: hangman?.language || "Unknown",
+    techniques: hangman?.techniques || "Unknown",
     reason: 'soloprojekt på universitet',
     github: hangman?.github || "Unknown",
     description: '<b>Uppgift:</b> Skapa en applikation för spelet Hangman (Hänga gubbe). Vid start av spel ska ett ord slumpas och spelaren ska försöka att gissa ordet genom att välja en bokstav åt gången. Om man gissar på en bokstav som inte finns med i ordet tappar man ett liv och illustrationen börjar ritas. Har man valt fel bokstav 7 gånger förlorar man. Lyckas man gissa rätt bokstäver innan 7 felförsök vinner man.'
@@ -198,7 +198,7 @@ const projectsDataSv = [
     id: 10,
     title: texteditor?.title || "Unknown Project",
     date: texteditor?.date || "Unknown",
-    language: texteditor?.language || "Unknown",
+    techniques: texteditor?.techniques || "Unknown",
     reason: 'soloprojekt på universitet',
     github: '',
     description: '<b>Uppgift:</b> Skapa en texteditor där man kan skapa ny, öppna och spara fil.'
@@ -212,7 +212,7 @@ const projectsDataSv = [
     id: 11,
     title: businessSystem?.title || "Unknown Project",
     date: businessSystem?.date || "Unknown",
-    language: businessSystem?.language || "Unknown",
+    techniques: businessSystem?.techniques || "Unknown",
     reason: 'soloprojekt på universitet',
     github: businessSystem?.github || "Unknown",
     description: '<b>Uppgift:</b> Designa och implementera ett affärssystem, som ska kunna användas till en fiktiv fysisk affär som säljer media (t.ex. böcker, filmer, spel). Systemet ska användas av anställda i affären och kunna hantera både kassahantering och lagerhållning. Sedan ska butiken integreras med ett centrallager som exponeras mot webben. Programmet ska synkronisera lagerstatus och pris mot centrallagret.'
@@ -229,7 +229,7 @@ const projectsDataSv = [
     id: 12,
     title: nollningsmarken?.title || "Unknown Project",
     date: nollningsmarken?.date || "Unknown",
-    language: nollningsmarken?.language || "Unknown",
+    techniques: nollningsmarken?.techniques || "Unknown",
     reason: 'grupprojekt',
     github: '',
     description: 'Tillsammans med två andra har jag designat dessa märken för min dåvarande studentförening Linda Carlstad, till Karlstads universitets introduktionsveckor. Dessa är till för att pryda studentoverallerna och visar årets nollningstema för studentförerningen.',
@@ -247,7 +247,7 @@ const projectsDataSv = [
     id: 13,
     title: nollningsbiblar?.title || "Unknown Project",
     date: nollningsbiblar?.date || "Unknown",
-    language: nollningsbiblar?.language || "Unknown",
+    techniques: nollningsbiblar?.techniques || "Unknown",
     reason: 'grupprojekt',
     github: '',
     description: 'Tillsammans med en annan person har jag designat dessa brochyrer för min dåvarande studentförening Linda Carlstad, till Karlstads universitets introduktionsveckor. Dessa är till för att informera de nya och gamla studenterna om vad introduktionen kommer handla om, ansvariga, schema, sånger och annat. Designen representerar årets nollningstema hos studentföreningen.',
@@ -265,7 +265,7 @@ const projectsDataSv = [
     id: 14,
     title: jeopardy?.title || "Unknown Project",
     date: jeopardy?.date || "Unknown",
-    language: jeopardy?.language || "Unknown",
+    techniques: jeopardy?.techniques || "Unknown",
     reason: 'soloprojekt på fritiden',
     github: jeopardy?.github || "Unknown",
     website: jeopardy?.website || "Unknown",
@@ -285,7 +285,7 @@ const projectsDataSv = [
     id: 15,
     title: todo?.title || "Unknown Project",
     date: todo?.date || "Unknown",
-    language: todo?.language || "Unknown",
+    techniques: todo?.techniques || "Unknown",
     reason: 'soloprojekt på fritiden',
     github: todo?.github || "Unknown",
     website: '',
@@ -304,7 +304,7 @@ const projectsDataSv = [
     id: 11,
     title: '',
     date: '',
-    language: [
+    techniques: [
       ''
     ],
     reason: '',

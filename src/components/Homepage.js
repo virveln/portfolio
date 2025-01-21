@@ -32,11 +32,11 @@ const Homepage = () => {
                                     <div className="overlay">
                                         <h3 className='overlay-title'>{project.title}</h3>
                                         <p className='overlay-date'>{project.date}</p>
-                                        <p className='overlay-language'>
-                                            {project.language.map((lang, index) => (
+                                        <p className='overlay-techniques'>
+                                            {project.techniques.map((lang, index) => (
                                                 <span key={index}>
                                                     {lang}
-                                                    {index < project.language.length - 1 && (
+                                                    {index < project.techniques.length - 1 && (
                                                         <span> | </span>
                                                     )}
                                                 </span>
