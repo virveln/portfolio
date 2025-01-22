@@ -124,8 +124,7 @@
         "date": "2024",
         "techniques": [
             "React",
-            "CSS",
-            "JSON"
+            "CSS"
         ],
         "github": "https://github.com/virveln/jeopardy-game",
         "website": "https://virveln.github.io/jeopardy-game/"
