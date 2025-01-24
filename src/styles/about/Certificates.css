@@ -1,0 +1,45 @@
+/*CERTIFICATE*/
+.certificate-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.certificate-item {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: calc(50% - 10px);
+    width: 100%;
+    min-height: 110px;
+    display: flex;
+}
+
+.certificate-item>img {
+    display: none;
+    width: auto;
+    height: 82px;
+    max-height: fit-content;
+    margin: auto 0;
+}
+
+.certificate-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.certificate-item a:hover {
+    color: var(--primary-color-hover);
+}
+
+/*SMALL SCREEN*/
+@media screen and (min-width: 540px) {
+    .certificate-item>img {
+        display: inline;
+    }
+
+    .certificate-info {
+        padding-left: 20px;
+    }
+
+}

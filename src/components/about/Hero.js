@@ -1,6 +1,8 @@
 // src/components/About.js
 import '../../styles/General.css';
 import '../../styles/About.css';
+import '../../styles/about/Hero.css';
+
 import React, { useState, useEffect } from 'react';
 import { ReactTyped } from "react-typed";
 import heroVideo from '../../images/coding_video.mp4';

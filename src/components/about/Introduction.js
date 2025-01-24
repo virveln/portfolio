@@ -1,6 +1,8 @@
 // src/components/About.js
 import '../../styles/General.css';
 import '../../styles/About.css';
+import '../../styles/about/Introduction.css';
+
 import React from 'react';
 import { FaLinkedin, FaFile, FaEnvelope } from 'react-icons/fa';
 import contactData from '../../data/contactData.json';

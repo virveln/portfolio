@@ -1,12 +1,14 @@
 // src/components/About.js
 import '../../styles/General.css';
 import '../../styles/About.css';
+import '../../styles/about/Certificates.css';
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { IoOpenOutline } from "react-icons/io5";
 import certificateData from '../../data/certificatesData';
 
-const Certificate = ({ aboutData, t }) => {
+const Certificate = ({ aboutData }) => {
     return (
         <div className='certificate-container new-container'>
             <h2>Certificates<span className='colorfulend'>.</span></h2>

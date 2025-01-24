@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../../styles/General.css';
-import '../../styles/AboutImageGallery.css';
+import '../../styles/about/AboutImageGallery.css';
 
 const importImages = (requireContext) =>
     requireContext.keys().map(requireContext);

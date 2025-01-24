@@ -41,9 +41,8 @@ const About = () => {
                     <FunFacts aboutData={aboutData} />
                     <CurrentlyDoing aboutData={aboutData} />
                     <TechnicalExperiences aboutData={aboutData} t={t} />
-                    <Certificates aboutData={aboutData} t={t}/>
-
-                </div >
+                    <Certificates aboutData={aboutData} />
+                </div>
             </div>
         </div>
     );

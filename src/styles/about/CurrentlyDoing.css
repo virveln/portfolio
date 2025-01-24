@@ -1,0 +1,49 @@
+/*SECTION CURRENT DOING*/
+.current-container {
+    min-height: 200px;
+    align-content: center;
+}
+
+.current-container>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.color-line {
+    width: 50px;
+    background-color: var(--primary-color);
+    height: 1.5px;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.current-container .current-text {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) {
+    .current-container>div {
+        flex-direction: row;
+        text-align: start;
+        background: linear-gradient(to right, rgb(241, 241, 241), rgb(255, 255, 255));
+    }
+
+    .color-line {
+        margin: 0;
+    }
+
+    .current-container .current-text {
+        max-width: 50%;
+        max-width: none;
+        flex: 1;
+    }
+}

@@ -47,7 +47,7 @@
     "experience": [
         {
             "title": "Web / Fullstack Development",
-            "language": [
+            "techniques": [
                 "HTML",
                 "CSS",
                 "Bootstrap",
@@ -60,7 +60,7 @@
         },
         {
             "title": "System Development, OOP and Business Systems",
-            "language": [
+            "techniques": [
                 "C",
                 "C#",
                 ".NET",
@@ -69,7 +69,7 @@
         },
         {
             "title": "Database Management",
-            "language": [
+            "techniques": [
                 "MySQL",
                 "MongoDB",
                 "XAMPP",
@@ -78,14 +78,14 @@
         },
         {
             "title": "Server Programming",
-            "language": [
+            "techniques": [
                 "NodeJS",
                 "Express"
             ]
         },
         {
             "title": "API management",
-            "language": [
+            "techniques": [
                 "API",
                 "JSON",
                 "XML",
@@ -94,13 +94,13 @@
         },
         {
             "title": "Development Tools",
-            "language": [
+            "techniques": [
                 "Git & GitHub"
             ]
         },
         {
             "title": "UX",
-            "language": [
+            "techniques": [
                 "Prototyping",
                 "Interaction Design",
                 "Accessibility",
@@ -110,7 +110,7 @@
         },
         {
             "title": "Design Tools",
-            "language": [
+            "techniques": [
                 "Adobe Photoshop",
                 "Adobe Illustrator",
                 "Adobe InDesign",
@@ -120,7 +120,7 @@
         },
         {
             "title": "Testing",
-            "language": [
+            "techniques": [
                 "Software testing",
                 "Python",
                 "Java",
@@ -132,7 +132,7 @@
         },
         {
             "title": "Mobile Applications",
-            "language": [
+            "techniques": [
                 "Android Studio",
                 "Java"
                 

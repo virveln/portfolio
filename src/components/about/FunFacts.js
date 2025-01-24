@@ -1,6 +1,8 @@
 // src/components/About.js
 import '../../styles/General.css';
 import '../../styles/About.css';
+import '../../styles/about/FunFacts.css';
+
 import React from 'react';
 import toolsIcon from '../../images/icons/tools.png';
 import backpackIcon from '../../images/icons/backpack.png';

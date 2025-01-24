@@ -46,7 +46,7 @@
     "experience": [
         {
             "title": "Webb-/Fullstackutveckling",
-            "language": [
+            "techniques": [
                 "HTML",
                 "CSS",
                 "Bootstrap",
@@ -59,7 +59,7 @@
         },
         {
             "title": "Systemutveckling, OOP och affärssystem",
-            "language": [
+            "techniques": [
                 "C",
                 "C#",
                 ".NET",
@@ -68,7 +68,7 @@
         },
         {
             "title": "Databashantering",
-            "language": [
+            "techniques": [
                 "MySQL",
                 "MongoDB",
                 "XAMPP",
@@ -77,14 +77,14 @@
         },
         {
             "title": "Serverprogrammering",
-            "language": [
+            "techniques": [
                 "NodeJS",
                 "Express"
             ]
         },
         {
             "title": "API hantering",
-            "language": [
+            "techniques": [
                 "API",
                 "JSON",
                 "XML",
@@ -93,13 +93,13 @@
         },
         {
             "title": "Utvecklarverktyg",
-            "language": [
+            "techniques": [
                 "Git & GitHub"
             ]
         },
         {
             "title": "UX",
-            "language": [
+            "techniques": [
                 "Prototypskapande",
                 "Interaktionsdesign",
                 "Tillgänglighet",
@@ -109,7 +109,7 @@
         },
         {
             "title": "Designverktyg",
-            "language": [
+            "techniques": [
                 "Adobe Photoshop",
                 "Adobe Illustrator",
                 "Adobe InDesign",
@@ -119,7 +119,7 @@
         },
         {
             "title": "Testning",
-            "language": [
+            "techniques": [
                 "Mjukvarutestning",
                 "Python",
                 "Java",
@@ -132,7 +132,7 @@
         },
         {
             "title": "Mobila applikationer",
-            "language": [
+            "techniques": [
                 "Android Studio",
                 "Java"
             ]

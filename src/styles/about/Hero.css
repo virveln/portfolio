@@ -1,0 +1,79 @@
+/*ABOUT HERO*/
+.about-hero {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 400px;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    /* background-color: black; */
+    z-index: -2;
+    background-image: url(../../images/coding-video-poster.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.02);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 300px;
+    z-index: -1;
+    filter: blur(10px) brightness(0.5);
+    object-fit: cover;
+  }
+  
+  .about-hero-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    max-width: 1000px;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .about-hero-all-text {
+    padding: 5px 20px;
+  }
+  
+  .about-hero .about-name {
+    font-size: 2.5em;
+    font-weight: 400;
+    padding: 0;
+  }
+  
+  .about-hero h3{
+    min-height: 80.4px;
+  
+  }
+  
+  .about-hero .role {
+    letter-spacing: 2px;
+    color: var(--primary-color);
+  }
+
+  /*SMALL SCREEN*/
+@media screen and (min-width: 540px) {
+    .about-hero .about-name {
+      font-size: 3em;
+    }
+  }
+  
+  /*TABLET*/
+  @media screen and (min-width: 768px) { 
+    .about-hero-all-text {
+      padding: 5px 50px;
+    }
+  }
+  
