@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.92a22788.css",
-    "main.js": "/portfolio/static/js/main.81ca145d.js",
+    "main.css": "/portfolio/static/css/main.a8d38b30.css",
+    "main.js": "/portfolio/static/js/main.960a6eaa.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/kampanj.png": "/portfolio/static/media/kampanj.f11a07c4ea0ed9914a2b.png",
     "static/media/mockup-marke-23-2.png": "/portfolio/static/media/mockup-marke-23-2.fd28e9e444f199b61e05.png",
@@ -75,6 +75,7 @@
     "static/media/t4.png": "/portfolio/static/media/t4.f50e2f102af8c1271292.png",
     "static/media/5belöningar.png": "/portfolio/static/media/5belöningar.98514e43948b1d776ac1.png",
     "static/media/4karta.png": "/portfolio/static/media/4karta.78c5b144259a05d2a7c5.png",
+    "static/media/Udemy_Certificate_Introduction_AWS_Hvirfvel.jpg": "/portfolio/static/media/Udemy_Certificate_Introduction_AWS_Hvirfvel.5c895f8ebb13b13bfc3e.jpg",
     "static/media/6quiz.png": "/portfolio/static/media/6quiz.191fc56851caca218f37.png",
     "static/media/t1.png": "/portfolio/static/media/t1.82da6295ecf595a9ec28.png",
     "static/media/t2.png": "/portfolio/static/media/t2.3d65b1981b24574abca5.png",
@@ -92,12 +93,12 @@
     "static/media/Boiling-BlackDemo.ttf": "/portfolio/static/media/Boiling-BlackDemo.094b93a11123d31db4f5.ttf",
     "static/media/logoJH.svg": "/portfolio/static/media/logoJH.d942804e71c2009670bb498dc6186c84.svg",
     "index.html": "/portfolio/index.html",
-    "main.92a22788.css.map": "/portfolio/static/css/main.92a22788.css.map",
-    "main.81ca145d.js.map": "/portfolio/static/js/main.81ca145d.js.map",
+    "main.a8d38b30.css.map": "/portfolio/static/css/main.a8d38b30.css.map",
+    "main.960a6eaa.js.map": "/portfolio/static/js/main.960a6eaa.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.92a22788.css",
-    "static/js/main.81ca145d.js"
+    "static/css/main.a8d38b30.css",
+    "static/js/main.960a6eaa.js"
   ]
 }
