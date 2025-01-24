@@ -1,7 +1,7 @@
 {
     "introduction": {
         "p1": "Jag är Jessica Hvirfvel - en kreativ, logiskt tänkande pysselfantast som gillar att organisera och problemlösa. Att lära mig nytt och få en förståelse för hur saker hänger ihop är en drivkraft för mig. Jag har länge varit intresserad av IT och grafisk design men inte varit säker på hur jag skulle fullfölja det. Det förändrades 2020 när min syster introducerade mig för HTML och CSS, och från det ögonblicket var jag såld.",
-        "p2": "Snabbspolning till idag har jag en filosofie kandidatexamen (180 hp) med huvudområde informatik från Karlstads universitet, och jag är fullt intresserad av fullstack-utveckling!",
+        "p2": "Snabbspolning till idag har jag en filosofie kandidatexamen (180 hp) med huvudområde informatik från Karlstads universitet, där jag gick Webbutvecklarprogrammet, och jag är fullt intresserad av fullstack-utveckling!",
         "p3": "Let's connect!"
     },
     "funfacts": [
@@ -37,7 +37,7 @@
         }
     ],
     "currentlyA": "Vad vore fun facts utan bildbevis? Kika på galleriet vetja!",
-    "currentlyB": "Vad pysslar jag med på min fritid mån tro? Jo just nu sitter jag med att förbättra detta portfolio, samt att skapa en webbapplikation för ett Jeopardy spel, båda med hjälp av React. Hur kul!",
+    "currentlyB": "Vad pysslar jag med på min fritid mån tro? Jo just nu sitter jag med att förbättra detta portfolio och ett Jeopardy-liknande spel, båda med hjälp av React. Utöver det breddar jag mina kunskaper genom online kurser. Hur kul!",
     "experienceText": {
         "text": "Erfarenhet från Karsltad universitet och egen lärning. Part ",
         "coder": "kodare.",

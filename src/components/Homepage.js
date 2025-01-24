@@ -24,7 +24,11 @@ const Homepage = () => {
                     <h1 className='hero-text'>{t('heroText')}</h1>
                 </div>
                 <div className="project-list">
-                    {projectsData.slice().reverse().map(project => (
+                    {projectsData
+                    .filter(project => project.id !== 1 && project.id !== 2)
+                    .slice()
+                    .reverse()
+                    .map(project => (
                         <div key={project.id} className="project-item">
                             <Link to={`/portfolio/project/${formatTitleForUrl(project.title)}`} className="project-link">
                                 <div className="thumbnail-container">

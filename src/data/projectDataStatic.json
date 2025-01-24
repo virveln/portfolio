@@ -47,7 +47,8 @@
             "JavaScript",
             "HTML",
             "CSS",
-            "JSON"
+            "JSON",
+            "REST-API"
         ],
         "github": "https://github.com/virveln/cocktails-and-dreams",
         "website": "https://virveln.github.io/cocktails-and-dreams/"
@@ -59,7 +60,8 @@
         "techniques": [
             "HTML",
             "CSS",
-            "JavaScript"
+            "JavaScript",
+            "Bootstrap"
         ],
         "github": "https://github.com/virveln/brunch-n-crunch",
         "website": "https://virveln.github.io/brunch-n-crunch/"
