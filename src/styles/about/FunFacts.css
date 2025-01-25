@@ -34,7 +34,6 @@
 
 /*DESKTOP*/
 @media screen and (min-width: 992px) {
-
     .funfacts-inner-container .funfact-item {
         width: calc(33% - 11px);
     }

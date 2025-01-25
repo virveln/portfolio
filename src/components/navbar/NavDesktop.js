@@ -6,7 +6,7 @@ import { ReactComponent as LogoJH } from '../../images/logoJH.svg';
 
 const NavDesktop = () => {
     return (
-        <nav className="nav-desktop navbar">
+        <nav className="nav-desktop">
             <NavMenu />
             <Link to="/portfolio" className="nav-logo nav-item"><LogoJH className="logo-jh" /></Link>
             <NavIcons />

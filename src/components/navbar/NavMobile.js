@@ -18,8 +18,7 @@ const NavMobile = () => {
     };
 
     return (
-
-        <nav className="navbar nav-mobile " >
+        <nav className="nav-mobile" >
             <Link to="/portfolio" className="nav-logo nav-item"><LogoJH className="logo-jh" /></Link>
             <div onClick={toggleMenu}>
                 {click ? Close : Hamburger}
