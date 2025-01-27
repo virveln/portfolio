@@ -7,6 +7,8 @@ import React from 'react';
 import { FaLinkedin, FaFile, FaEnvelope } from 'react-icons/fa';
 import contactData from '../../data/contactData.json';
 
+import profileImg from '../../images/me.JPG';
+
 const Introduction = ({aboutData, t}) => {
     return (
         <div>
@@ -24,7 +26,7 @@ const Introduction = ({aboutData, t}) => {
                     </div>
                 </div>
                 <div className='about-image-container'>
-                    <img src={require('../../images/me.JPG')} alt="About Me" className="about-image" />
+                    <img src={profileImg} alt="About Me" className="about-image" />
                 </div>
             </div>
         </div>

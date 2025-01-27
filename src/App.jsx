@@ -38,10 +38,10 @@ function App() {
       <div className='outer-container'>
         <Navbar />
         <Routes>
-          <Route path="/portfolio" element={<Homepage />} />
+          <Route path="/portfolio/" element={<Homepage />} />
           <Route path="/portfolio/about" element={<About />} />
           <Route path="/portfolio/project/:projectTitle" element={<ProjectDetail />} />
-          <Route path="portfolio/attributions" element={<Attributions />} />
+          <Route path="/portfolio/attributions" element={<Attributions />} />
         </Routes>
         <Footer />
       </div>

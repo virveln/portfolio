@@ -1,7 +1,11 @@
 
-const typescriptImage = require('../images/certificates/Udemy_Certificate_Understanding_Typescript_Hvirfvel.jpg');
-const unitTestImage = require('../images/certificates/Udemy_Certificate_Unit_Testing_TS_Node_Jest_Hvirfvel.jpg');
-const awsImage = require('../images/certificates/Udemy_Certificate_Introduction_AWS_Hvirfvel.jpg');
+// const typescriptImage = require('../images/certificates/Udemy_Certificate_Understanding_Typescript_Hvirfvel.jpg');
+// const unitTestImage = require('../images/certificates/Udemy_Certificate_Unit_Testing_TS_Node_Jest_Hvirfvel.jpg');
+// const awsImage = require('../images/certificates/Udemy_Certificate_Introduction_AWS_Hvirfvel.jpg');
+
+import typescriptImage from '../images/certificates/Udemy_Certificate_Understanding_Typescript_Hvirfvel.jpg';
+import unitTestImage from '../images/certificates/Udemy_Certificate_Unit_Testing_TS_Node_Jest_Hvirfvel.jpg';
+import awsImage from '../images/certificates/Udemy_Certificate_Introduction_AWS_Hvirfvel.jpg';
 
 
 const certificateData =[
