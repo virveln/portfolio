@@ -1,19 +1,30 @@
 // src/components/About.js
 import '../../styles/General.css';
-import '../../styles/About.css';
+import '../../styles/about/About.css';
 import '../../styles/about/TechnicalExperiences.css';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ReactTyped } from "react-typed";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-// import IconCloudEffect from "../functions/IconCloudEffect";
 
 const TechnicalExperiences = ({ aboutData, t }) => {
     const [showAll, setShowAll] = useState(false);
     const itemsToShow = showAll ? aboutData.experience : aboutData.experience.slice(0, 4);
 
     const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    const isMobile = screenWidth <= 768;
 
     return (
         <div className='techniques-container new-container'>
@@ -29,7 +40,7 @@ const TechnicalExperiences = ({ aboutData, t }) => {
             <div className='techniques-inner-container'>
                 {itemsToShow.map((about, index) => {
                     // <div key={index} className='about-techniques-item'>
-                  
+
                     const direction = index % 2 === 0 ? -100 : 100; // Växelvis vänster/höger
 
                     return (
@@ -37,11 +48,12 @@ const TechnicalExperiences = ({ aboutData, t }) => {
                             ref={ref}
                             key={index}
                             className="about-techniques-item"
-                            initial={{ opacity: 0, x: direction }}
+                            initial={isMobile ? { opacity: 1, x: 0 } : { opacity: 0, x: direction }}
                             animate={inView || showAll ? { opacity: 1, x: 0 } : {}} // Animeras om de syns eller showAll är true
                             transition={{
                                 duration: 0.5,
-                                delay: index * 0.2, // Fördröjning per element
+                                // delay: index * 0.2,
+                                delay: Math.floor(index / 2) * 0.5, 
                                 ease: "easeOut",
                             }}
                         >
@@ -65,7 +77,6 @@ const TechnicalExperiences = ({ aboutData, t }) => {
                     </button>
                 )}
             </div>
-            {/* < IconCloudEffect /> */}
         </div>
     );
 };

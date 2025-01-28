@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: left;
     gap: 20px;
+    overflow: hidden;
 }
 
 .funfacts-inner-container .funfact-item {

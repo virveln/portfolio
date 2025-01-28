@@ -1,6 +1,6 @@
 // src/components/About.js
 import '../../styles/General.css';
-import '../../styles/About.css';
+import '../../styles/about/About.css';
 import '../../styles/about/Certificates.css';
 
 import React from 'react';
@@ -18,7 +18,7 @@ const Certificate = ({ aboutData }) => {
                     <div className='certificate-info'>
                         <h4>{certificate.title}</h4>
                         <p>{certificate.provider}</p>
-                        <Link to={certificate.link} target="_blank" rel="noopener noreferrer" title='Show certificate'>{aboutData.certificateLinkTitle} <IoOpenOutline /></Link>
+                        <Link to={certificate.link} target="_blank" rel="noopener noreferrer" title={aboutData.certificateLinkTitle} >{aboutData.certificateLinkTitle} <IoOpenOutline /></Link>
                     </div>
                 </div>
             ))}

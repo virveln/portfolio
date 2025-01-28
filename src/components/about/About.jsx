@@ -1,6 +1,6 @@
 // src/components/About.js
 import '../../styles/General.css';
-import '../../styles/About.css';
+import '../../styles/about/About.css';
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
@@ -10,6 +10,7 @@ import Introduction from './Introduction';
 import FunFacts from './FunFacts';
 import CurrentlyDoing from './CurrentlyDoing';
 import TechnicalExperiences from './TechnicalExperiences';
+import TechIcons from './TechIcons';
 import Certificates from './Certificates';
 
 const About = () => {
@@ -41,6 +42,7 @@ const About = () => {
                     <FunFacts aboutData={aboutData} />
                     <CurrentlyDoing aboutData={aboutData} />
                     <TechnicalExperiences aboutData={aboutData} t={t} />
+                    <TechIcons />
                     <Certificates aboutData={aboutData} />
                 </div>
             </div>

@@ -1,0 +1,29 @@
+.tech-icons-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 70px;
+    /* margin-top: 70px;  */
+    display: flex;
+}
+
+.tech-icons-container div *{
+    display: flex;
+    gap: 70px;
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.rfm-marquee-container> * {
+    margin-right: 70px;
+}
+
+.rfm-child {
+    transition: transform 0.3s ease;
+}
+
+.rfm-child:hover {
+    transform: scale(1.5);
+}
+
+

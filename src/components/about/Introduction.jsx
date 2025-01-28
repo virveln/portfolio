@@ -1,6 +1,6 @@
 // src/components/About.js
 import '../../styles/General.css';
-import '../../styles/About.css';
+import '../../styles/about/About.css';
 import '../../styles/about/Introduction.css';
 
 import React from 'react';

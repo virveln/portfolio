@@ -1,6 +1,6 @@
 // src/components/About.js
 import '../../styles/General.css';
-import '../../styles/About.css';
+import '../../styles/about/About.css';
 import '../../styles/about/FunFacts.css';
 
 import React from 'react';
@@ -10,12 +10,26 @@ import diplomaIcon from '../../images/icons/diploma.png';
 import eventIcon from '../../images/icons/event.png';
 import parachuteIcon from '../../images/icons/parachute.png';
 import puzzleIcon from '../../images/icons/puzzle.png';
-
+import { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const FunFacts = ({aboutData}) => {
+const FunFacts = ({ aboutData }) => {
     const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    const isMobile = screenWidth <= 768;
+
 
     const iconMap = {
         "tools": toolsIcon,
@@ -36,7 +50,7 @@ const FunFacts = ({aboutData}) => {
                         ref={ref}
                         key={index}
                         className="funfact-item"
-                        initial={{ opacity: 0, x: 100 }}
+                        initial={isMobile ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
                         animate={inView ? { opacity: 1, x: 0 } : {}}
                         transition={{
                             duration: 0.5,
