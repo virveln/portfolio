@@ -47,6 +47,31 @@
   text-align: center;
 }
 
+
+/* Bakgrundsfärgen som ska fade bort */
+.fade-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: var(--primary-color);  */
+  z-index: 9999;
+  opacity: 1;
+  /* display: block; */
+  transition: opacity .75s ease-out, z-index 1.25s ease-out; 
+}
+
+/* När den ska vara osynlig */
+.fade-background.fade-out {
+  /* background-color: white; */
+  opacity: 0;
+  z-index: -1;
+  /* display: none; */
+  /* all: unset; */
+}
+
+
 /*DESKTOP*/
 @media screen and (min-width: 992px) {
   .project-info-container{

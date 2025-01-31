@@ -2,7 +2,7 @@
 .homepage-container {
   margin-right: 0;
   margin-left: 0;
-  margin-top: 150px
+  margin-top: 150px;
 }
 
 /*SECTION HERO*/
@@ -44,7 +44,26 @@
 
 .project-item {
   max-width: 1200px;
+  cursor: pointer;
+  transition: transform 0.5s ease-out, opacity 0.3s ease-out, filter 1s ease-out;
+  will-change: transform, opacity, filter;
 }
+/*==========*/
+
+.project-item.zooming {
+  transform: scale(10);
+  z-index: 1000;
+  pointer-events: none;
+  transform-origin: center center; 
+  filter: blur(20px); 
+}
+
+.project-item.zooming .overlay {
+  opacity: 1;
+  color: transparent;
+}
+
+/*==========*/
 
 .thumbnail-container {
   position: relative;
@@ -76,6 +95,7 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
   background-color: var(--primary-color-transparent);
+  /* background-color: var(--primary-color); */
   color: white;
   display: flex;
   flex-direction: column;
@@ -86,8 +106,13 @@
   gap: 10px;
 }
 
-.thumbnail-container:hover .overlay {
+.thumbnail-container:hover .overlay,
+.thumbnail-container:hover .overlay-title,
+.thumbnail-container:hover .overlay-date,
+.thumbnail-container:hover .overlay-techniques {
   opacity: 1;
+  /* opacity: 0.9; */
+  transform: translateY(0);
 }
 
 .overlay-title {
@@ -95,15 +120,24 @@
   text-transform: uppercase;
   text-align: center;
   padding: 0 20px;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.4s ease-out 0.1s, transform 0.4s ease-out 0.1s;
 }
 
 .overlay-date {
   display: none;
   font-weight: bold;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.4s ease-out 0.2s, transform 0.4s ease-out 0.2s;
 }
 
 .overlay-techniques {
   font-weight: 400;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.4s ease-out 0.3s, transform 0.4s ease-out 0.3s;
 }
 
 

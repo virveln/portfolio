@@ -9,6 +9,8 @@ import { TbReload } from "react-icons/tb";
 import ImageGallery from './ImageGallery';
 import projectsDataEn from '../translations/en/projectsDataEn';
 import projectsDataSv from '../translations/sv/projectsDataSv';
+import { motion } from "framer-motion";
+
 
 function formatTitleForUrl(title) {
     return title.toLowerCase().replace(/ /g, '-').replace('å', 'a').replace('ä', 'a').replace('ö', 'o').replace(/[^a-z0-9-]/g, ''); // Konverterar till små bokstäver, ersätter mellanslag med bindestreck och tar bort specialtecken
@@ -17,7 +19,8 @@ function formatTitleForUrl(title) {
 const ProjectDetail = () => {
     const { t, i18n } = useTranslation('projectsData');
     const { projectTitle } = useParams();
-    
+    // const [fadeOut, setFadeOut] = useState(false);
+
     const [project, setProject] = useState(null);
     /*const project = projectsData.find(p => formatTitleForUrl(p.title) === projectTitle);*/
 
@@ -32,6 +35,28 @@ const ProjectDetail = () => {
         setProject(foundProject);
     }, [i18n.language, projectTitle]);
 
+    const [fadeOut, setFadeOut] = useState(false);
+  const [isWhite, setIsWhite] = useState(false);
+
+  // När komponenten mountas, hantera övergångarna
+  useEffect(() => {
+    // Efter 2 sekunder, övergå till vitt
+    const timer1 = setTimeout(() => {
+      setIsWhite(true);
+    }, 200); // 2 sekunder för att ändra bakgrund till vitt
+
+    // Efter ytterligare 1 sekund, fade out bakgrunden
+    const timer2 = setTimeout(() => {
+      setFadeOut(true);
+    }, 300); // 3 sekunder totalt (2s + 1s för fade out)
+
+    // Rensa timers när komponenten unmountas
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
+  }, []);
+
     return (
         <div className="colorscheme container ">
             <Helmet>
@@ -39,7 +64,18 @@ const ProjectDetail = () => {
             </Helmet>
             {project ? (
                 <div className="">
+                    <motion.div
+                        className={`fade-background ${fadeOut ? 'fade-out' : ''}`}
+                        initial={{ opacity: 1, backgroundColor: '#04A0B8' }}
+                        animate={{
+                            opacity: fadeOut ? 0 : 1, 
+                            backgroundColor: isWhite ? '#ffffff' : '#04A0B8', 
+                        }}
+                        transition={{ duration: 1.5, ease: 'easeOut' }}
+                    />
+
                     <div className='project-info-container'>
+
                         <h1 className='project-title'>{t(project.title)}<span className='colorfulend'>.</span></h1>
                         <p className='project-description' dangerouslySetInnerHTML={{ __html: project.description }} />
                         <p className='project-techniques'>
@@ -71,8 +107,8 @@ const ProjectDetail = () => {
                 </div>
             ) : (
                 <div className='project-not-found'>
-                    <p>Project not found</p> 
-                    <p>Try again later <TbReload /></p>
+                    {/* <p>Project not found</p>
+                    <p>Try again later <TbReload /></p> */}
                 </div>
             )}
         </div>

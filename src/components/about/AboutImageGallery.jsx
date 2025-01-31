@@ -2,28 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../../styles/General.css';
 import '../../styles/about/AboutImageGallery.css';
 
-// const importImages = (requireContext) =>
-//     requireContext.keys().map(requireContext);
-
-// const aboutImages = importImages(
-//     require.context('../../images/aboutimages', false, /\.(png|jpe?g|svg|JPG|PNG)$/)
-// );
-
-// const aboutImages = await Promise.all(Object.keys(importImages).map((key) => importImages[key]()));
-
-const importImages = import.meta.glob('../../images/aboutimages/*.{png,jpe?g,svg,JPG,PNG}', { eager: true });
+const importImages = import.meta.glob('../../images/aboutimages/*.{png,jpg,jpeg,svg,JPG,PNG}', { eager: true });
 const aboutImages = Object.values(importImages).map((module) => module.default);
 
-// const aboutImages = Object.keys(importImages).map((key) => importImages[key]());
-// const aboutImages = Object.keys(importImages).map(key => {
-//     return importImages[key]().then((module) => module.default);
-//   });
-
 const AboutImageGallery = () => {
-    const [currentIndex, setCurrentIndex] = useState(0); // Index för aktuell bild
+    const [currentIndex, setCurrentIndex] = useState(0); 
     const timeoutRef = useRef(null);
 
-    const delay = 4000; // Bildväxlingsintervall i millisekunder
+    const delay = 4000;
 
     const resetTimeout = () => {
         if (timeoutRef.current) {
@@ -43,7 +29,6 @@ const AboutImageGallery = () => {
     }, [currentIndex]);
 
 
-    
     return (
         <div className="slideshow">
             {aboutImages.map((image, index) => (
