@@ -12,10 +12,18 @@ import CurrentlyDoing from './CurrentlyDoing';
 import TechnicalExperiences from './TechnicalExperiences';
 import TechIcons from './TechIcons';
 import Certificates from './Certificates';
+// import TableOfContents from './TableOfContents';
 
 const About = () => {
     const { t, i18n } = useTranslation('generalData');
     const [aboutData, setAboutData] = useState(null);
+
+    // const sections = [
+    //     { id: 'section-1', title: 'who am i' },
+    //     { id: 'section-2', title: 'fun facts about me' },
+    //     { id: 'section-3', title: 'technical experiences' },
+    //     { id: 'section-4', title: 'certificates' },
+    // ];
 
     useEffect(() => {
         const loadAboutData = async () => {
@@ -37,7 +45,9 @@ const About = () => {
             </Helmet>
             <div className="">
                 <Hero />
+
                 <div className='container about-container'>
+                    {/* <TableOfContents sections={sections} /> */}
                     <Introduction aboutData={aboutData} t={t} />
                     <FunFacts aboutData={aboutData} />
                     <CurrentlyDoing aboutData={aboutData} />

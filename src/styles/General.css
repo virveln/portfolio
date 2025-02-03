@@ -1,8 +1,10 @@
 :root {
     --primary-color: #04A0B8;
     --primary-color-hover: #037C8F;
+    --primary-color-hover: #0495ab;
     --primary-color-darker: #025966;
     --primary-color-transparent: rgb(4, 160, 184, 0.9);
+    --secondary-color: #f1f1f1;
 }
 
 .colorscheme {
@@ -46,12 +48,83 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    /* Döljer effekten utanför knappen */
+
 }
 
 .btn:hover {
-    background-color: var(--primary-color-hover);
-    transform: translateY(-2px);
+    /* background-color: var(--primary-color-hover); */
+    /* transform: translateY(-2px); */
 }
+
+/*======*/
+.btn-swipe-effect {
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+}
+
+.btn-swipe-effect::after {
+    background-color: var(--primary-color-hover);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .3s;
+    transform: ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.btn-swipe-effect:hover::after {
+    transform: translate(0, 0);
+}
+
+.btn-swipe-effect:hover {
+    will-change: transform;
+}
+
+/* .btn-swipe-effect {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+    
+    span {
+      z-index: 20;
+    }
+    
+    &:after {
+      background: #fff;
+      content: "";
+      height: 155px;
+      left: -75px;
+      opacity: .2;
+      position: absolute;
+      top: -50px;
+      transform: rotate(35deg);
+      transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+      width: 50px;
+      z-index: -10;
+    }
+  }
+  
+  .btn-swipe-effect:hover {
+    
+    &:after {
+      left: 120%;
+      transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  } */
+
+
+/*============*/
 
 .btn:active {
     background-color: var(--primary-color-darker);

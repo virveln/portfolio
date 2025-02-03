@@ -13,14 +13,14 @@ const Certificate = ({ aboutData }) => {
         <div className='certificate-container new-container'>
             <h2>Certificates<span className='colorfulend'>.</span></h2>
             {certificateData.map((certificate, index) => (
-                <div key={index} className='certificate-item'>
+                <Link key={index} className='certificate-item' to={certificate.link} target="_blank" rel="noopener noreferrer" title={aboutData.certificateLinkTitle}>
                     <img src={certificate.image} alt='Certificate' />
                     <div className='certificate-info'>
                         <h4>{certificate.title}</h4>
-                        <p>{certificate.provider}</p>
-                        <Link to={certificate.link} target="_blank" rel="noopener noreferrer" title={aboutData.certificateLinkTitle} >{aboutData.certificateLinkTitle} <IoOpenOutline /></Link>
+                        <h5>{certificate.provider}</h5>
+                        <p className='certificate-link-text'>{aboutData.certificateLinkTitle} <IoOpenOutline /></p>
                     </div>
-                </div>
+                </Link>
             ))}
         </div>
     );

@@ -58,7 +58,7 @@ const Hero = () => {
                         />
                     )}
                 </h3>
-                <h5 className='role about-hero-all-text'>— a Web/System Developer</h5>
+                <h5 className='role about-hero-all-text'>— a Web/System Developer &lt;/&gt;</h5>
             </div>
         </motion.div>
     );

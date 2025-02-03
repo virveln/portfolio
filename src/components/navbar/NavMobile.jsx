@@ -5,8 +5,8 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import NavIcons from './NavIcons';
 import NavMenu from './NavMenu';
-// import { ReactComponent as LogoJH } from '../../images/logoJH.svg';
-import LogoJH from '../../images/logoJH.svg';
+import LogoJH from '../../images/logoJH.svg?react';
+// import LogoJH from '../../images/logoJH.svg';
 
 const NavMobile = () => {
     const [click, setClick] = useState(false);
@@ -20,7 +20,7 @@ const NavMobile = () => {
 
     return (
         <nav className="nav-mobile" >
-            <Link to="/portfolio" className="nav-logo nav-item"><img className="logo-jh" src={LogoJH} alt='logo' /></Link>
+            <Link to="/portfolio" className="nav-logo nav-item"><LogoJH className="logo-jh" /></Link>
             <div onClick={toggleMenu}>
                 {click ? Close : Hamburger}
             </div>

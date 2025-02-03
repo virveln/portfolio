@@ -20,9 +20,9 @@ const Introduction = ({aboutData, t}) => {
                     <p className='about-text connect-text'>{aboutData.introduction.p3}</p>
 
                     <div className='about-container-btn'>
-                        <a className='btn about-btn' href={contactData.linkedin} target="_blank" rel="noopener noreferrer" title={contactData.linkedinTitle} ><span className='externallink-icon'><FaLinkedin /></span> LinkedIn </a>
-                        <a className='btn about-btn' href={contactData.mail} title={contactData.mailTitle}><span className='externallink-icon'><FaEnvelope /></span> E-mail </a>
-                        <a className='btn about-btn' href={contactData.resume} target="_blank" rel="noopener noreferrer"><span className='externallink-icon'><FaFile /></span>{t('buttons.resume')}</a>
+                        <a className='btn about-btn btn-swipe-effect' href={contactData.linkedin} target="_blank" rel="noopener noreferrer" title={contactData.linkedinTitle} ><span className='externallink-icon'><FaLinkedin /></span> LinkedIn </a>
+                        <a className='btn about-btn btn-swipe-effect' href={contactData.mail} title={contactData.mailTitle}><span className='externallink-icon'><FaEnvelope /></span> E-mail </a>
+                        <a className='btn about-btn btn-swipe-effect' href={contactData.resume} target="_blank" rel="noopener noreferrer"><span className='externallink-icon'><FaFile /></span>{t('buttons.resume')}</a>
                     </div>
                 </div>
                 <div className='about-image-container'>

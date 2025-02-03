@@ -23,6 +23,39 @@
     margin-bottom: 5px;
 }
 
+/* SHINY EFFECT */
+.funfacts-inner-container .funfact-item {
+    overflow: hidden;
+    position: relative;
+    
+    span {
+      z-index: 20;
+    }
+    
+    &:after {
+      background: #fff;
+      content: "";
+      height: 300px;
+      left: -175px;
+      opacity: .2;
+      position: absolute;
+      top: -50px;
+      transform: rotate(35deg);
+      transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+      width: 50px;
+      z-index: 1;
+    }
+  }
+  
+  .funfacts-inner-container .funfact-item:hover {
+    
+    &:after {
+      left: 120%;
+      transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+
+
 /*SMALL SCREEN*/
 @media screen and (min-width: 540px) {
     .funfacts-inner-container .funfact-item {

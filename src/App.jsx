@@ -7,6 +7,9 @@
 //npm install gh-pages --save-dev   = för github pages
 
 //npm run deploy *vilket betyder att sidan uppdateras till domänen*
+// Refactored to Vite
+// npm install vite-plugin-svgr --save-dev
+// npm install --save @fortawesome/fontawesome-free
 
 
 import './App.css';
