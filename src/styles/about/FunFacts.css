@@ -1,74 +1,80 @@
 /*SECTION FUN FACTS*/
 .funfacts-inner-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    gap: 20px;
-    overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 20px;
+  overflow: hidden;
 }
 
 .funfacts-inner-container .funfact-item {
-    background-color: #f1f1f1;
-    padding: 20px;
-    width: calc(50% - 10px);
-    width: 100%;
-    min-height: 121px;
-    text-align: center;
-    align-content: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+  width: calc(50% - 10px);
+  width: 100%;
+  min-height: 121px;
+  text-align: center;
+  align-content: center;
+}
+
+.funfacts-inner-container .funfact-item p {
+  /* padding-bottom: 10px; */
 }
 
 .funfacts-inner-container .funfact-icon {
-    width: 30px;
-    height: auto;
-    margin-bottom: 5px;
+  width: 30px;
+  height: auto;
+  margin-bottom: 5px;
 }
 
 /* SHINY EFFECT */
 .funfacts-inner-container .funfact-item {
-    overflow: hidden;
-    position: relative;
-    
-    span {
-      z-index: 20;
-    }
-    
-    &:after {
-      background: #fff;
-      content: "";
-      height: 300px;
-      left: -175px;
-      opacity: .2;
-      position: absolute;
-      top: -50px;
-      transform: rotate(35deg);
-      transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
-      width: 50px;
-      z-index: 1;
-    }
+  overflow: hidden;
+  position: relative;
+
+  span {
+    z-index: 20;
   }
-  
-  .funfacts-inner-container .funfact-item:hover {
-    
-    &:after {
-      left: 120%;
-      transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
-    }
+
+  &:after {
+    background: #fff;
+    content: "";
+    height: 300px;
+    left: -175px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 1;
   }
+}
+
+.funfacts-inner-container .funfact-item:hover {
+
+  &:after {
+    left: 120%;
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
 
 
 /*SMALL SCREEN*/
 @media screen and (min-width: 540px) {
-    .funfacts-inner-container .funfact-item {
-        width: calc(50% - 10px);
-        min-height: 180px;
-        align-content: start;
-        padding-top: 40px;
-    }
+  .funfacts-inner-container .funfact-item {
+    width: calc(50% - 10px);
+    /* min-height: 140px; */
+    align-content: start;
+    padding-top: 30px;
+  }
 }
 
 /*DESKTOP*/
 @media screen and (min-width: 992px) {
-    .funfacts-inner-container .funfact-item {
-        width: calc(33% - 11px);
-    }
+  .funfacts-inner-container .funfact-item {
+    width: calc(33% - 11px);
+    /* min-height: 160px; */
+
+  }
 }

@@ -142,5 +142,18 @@
             "Jest Unit Testing"
         ],
         "github": "https://github.com/virveln/todo"
+    },
+    {
+        "id": 16,
+        "title": "Movie Rater",
+        "date": "2025",
+        "techniques": [
+            "Django",
+            "Django REST Framework",
+            "Python",
+            "React",
+            "React Native"
+        ],
+        "github": "https://github.com/virveln/movie-rater"
     }
 ]

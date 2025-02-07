@@ -56,6 +56,7 @@ const nollningsmarkenImages = imagesByFolder['nollningsmarken'];
 const nollningsbiblarImages = imagesByFolder['nollningsbiblar'];
 const jeopardyImages = imagesByFolder['jeopardy'];
 const todoImages = imagesByFolder['todo'];
+const movieRaterImages = imagesByFolder['movierater'];
 
 const campaignClimate = projectDataStatic.find((project) => project.id === 1);
 const graphicprofile = projectDataStatic.find((project) => project.id === 2);
@@ -72,6 +73,7 @@ const nollningsmarken = projectDataStatic.find((project) => project.id === 12);
 const nollningsbiblar = projectDataStatic.find((project) => project.id === 13);
 const jeopardy = projectDataStatic.find((project) => project.id === 14);
 const todo = projectDataStatic.find((project) => project.id === 15);
+const movieRater = projectDataStatic.find((project) => project.id === 16);
 
 const projectsDataSv = [
   {
@@ -340,25 +342,40 @@ const projectsDataSv = [
       { url: todoImages[3], description: "Formuläret till vänster för att lägga till uppgift och filter (cirklarna högst upp) är fixerade, och endast listan med uppgifter som skrollas" },      
     ]
   },
-
-  /*
   {
-    id: 11,
-    title: '',
-    date: '',
-    techniques: [
-      ''
-    ],
-    reason: '',
-    github: '',
-    description: '',
-    thumbnail: import.meta.glob('../images/'), 
-    images: [
-      { url: affarssystemImages[0], description: "" },
-      
-    ]
-  },
-  */
+      id: 16,
+      title: movieRater?.title || "Unknown Project",
+      date: movieRater?.date || "Unknown",
+      techniques: movieRater?.techniques || "Unknown",
+      reason: 'soloprojekt på fritiden',
+      github: movieRater?.github || "Unknown",
+      website: '',
+      description: 'En fullstack applikation skapad med populära ramverk som Django, React och React Native och grund ur JavaScript och Python. Projektet inkluderar en backend RESTful API, en frontend webbapplikation och mobilapplikationer för både Android och iOS.<br><br>Applikation implementerar användarautentisering (registrering och inloggning), fulla CRUD-operationer (skapa, läsa, uppdatera, ta bort) och egna API-endpoints. Kommunikationen mellan API:t och webbapplikationen är fullt fungerande, och applikationen har både styling och restriktioner för vissa sektioner, som endast är tillgängliga för autentiserade användare.<br><br>Mockups kommer snart.',
+      thumbnail: movieRaterImages[0], 
+      images: [
+        // { url: movieRaterImages[0], description: "" },
+       
+      ]
+    },
+
+
+  // {
+  //   id: **,
+  //   title: *?.title || "Unknown Project",
+  //   date: *?.date || "Unknown",
+  //   techniques: *?.techniques || "Unknown",
+  //   reason: 'soloprojekt på fritiden',
+  //   github: *?.github || "Unknown",
+  //   website: '',
+  //   description: '',
+  //   thumbnail: *[4], 
+  //   images: [
+  //     { url: *[0], description: "" },
+     
+  //   ]
+  // },
+
+ 
 ];
 
 export default projectsDataSv;

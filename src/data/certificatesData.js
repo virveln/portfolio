@@ -6,6 +6,7 @@
 import typescriptImage from '../images/certificates/Udemy_Certificate_Understanding_Typescript_Hvirfvel.jpg';
 import unitTestImage from '../images/certificates/Udemy_Certificate_Unit_Testing_TS_Node_Jest_Hvirfvel.jpg';
 import awsImage from '../images/certificates/Udemy_Certificate_Introduction_AWS_Hvirfvel.jpg';
+import fullstackImage from '../images/certificates/Udemy_Certificate_Fullstack_App_Jest_Hvirfvel.jpg';
 
 
 const certificateData =[
@@ -29,6 +30,13 @@ const certificateData =[
         provider: "Udemy",
         link: "https://ude.my/UC-6d9c4fa0-e71a-434e-b707-7fb69eacda04",
         image: awsImage
+    },
+    {
+        date: "2025-02-07",
+        title: "React  Django Full Stack: web app, backend API, mobile apps",
+        provider: "Udemy",
+        link: "https://www.ude.my/UC-165e6210-61fc-48a4-9879-472113116f79",
+        image: fullstackImage
     }
 ]
 

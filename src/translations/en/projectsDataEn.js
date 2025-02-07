@@ -40,6 +40,7 @@ const nollningsmarkenImages = imagesByFolder['nollningsmarken'];
 const nollningsbiblarImages = imagesByFolder['nollningsbiblar'];
 const jeopardyImages = imagesByFolder['jeopardy'];
 const todoImages = imagesByFolder['todo'];
+const movieRaterImages = imagesByFolder['movierater'];
 
 const campaignClimate = projectDataStatic.find((project) => project.id === 1);
 const graphicprofile = projectDataStatic.find((project) => project.id === 2);
@@ -56,6 +57,7 @@ const nollningsmarken = projectDataStatic.find((project) => project.id === 12);
 const nollningsbiblar = projectDataStatic.find((project) => project.id === 13);
 const jeopardy = projectDataStatic.find((project) => project.id === 14);
 const todo = projectDataStatic.find((project) => project.id === 15);
+const movieRater = projectDataStatic.find((project) => project.id === 16);
 
 const projectsDataEn = [
   {
@@ -332,25 +334,37 @@ const projectsDataEn = [
       { url: todoImages[3], description: "The form on the left for adding a task and the filters (the circles at the top) are fixed, and only the list of tasks scrolls" },      
     ]
   },
-
-  /*
   {
-    id: 11,
-    title: '',
-    date: '',
-    techniques: [
-      ''
-    ],
-    reason: '',
-    github: '',
-    description: '',
-    thumbnail: require('../images/'), 
-    images: [
-      { url: affarssystemImages[0], description: "" },
-      
-    ]
-  },
-  */
+      id: 16,
+      title: movieRater?.title || "Unknown Project",
+      date: movieRater?.date || "Unknown",
+      techniques: movieRater?.techniques || "Unknown",
+      reason: 'solo project in my free time',
+      github: movieRater?.github || "Unknown",
+      website: '',
+      description: 'A full-stack application built using popular frameworks such as Django, React, and React Native, with a foundation in JavaScript and Python. The project includes a backend RESTful API, a front-end web application, and mobile applications for both Android and iOS.<br><br>The application implements user authentication (registration and login), full CRUD operations (create, read, update, delete), and custom API endpoints. The communication between the API and the web application is fully functional, and the app features styling as well as restrictions on certain sections, which are only accessible to authenticated users.<br><br>Mockups coming soon.',
+      thumbnail: movieRaterImages[0], 
+      images: [
+        // { url: movieRaterImages[0], description: "" },
+       
+      ]
+    },
+
+  // {
+    //   id: **,
+    //   title: *?.title || "Unknown Project",
+    //   date: *?.date || "Unknown",
+    //   techniques: *?.techniques || "Unknown",
+    //   reason: 'soloprojekt på fritiden',
+    //   github: *?.github || "Unknown",
+    //   website: '',
+    //   description: '',
+    //   thumbnail: *[4], 
+    //   images: [
+    //     { url: *[0], description: "" },
+       
+    //   ]
+    // },
 ];
 
 export default projectsDataEn;

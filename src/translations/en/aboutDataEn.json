@@ -42,60 +42,67 @@
         "text": "Experienced from Karlstad University and private learning. Part ",
         "coder": "Coder.",
         "designer": "Designer."
-
     },
     "experience": [
         {
-            "title": "Web / Fullstack Development",
+            "title": "Frontend Development",
             "techniques": [
                 "HTML",
                 "CSS",
                 "Bootstrap",
+                "Tailwind",
                 "JavaScript",
                 "React",
                 "TypeScript",
                 "WordPress",
-                "PHP"
+                "React Native"
             ]
         },
         {
-            "title": "System Development, OOP and Business Systems",
+            "title": "Backend Development",
             "techniques": [
+                "NodeJS",
+                "Express",
+                "Django",
+                "Django REST Framework",
+                "PHP",
+                "C#",
+                ".NET"
+            ]
+        },
+        {
+            "title": "Software Development & OOP",
+            "techniques": [
+                "Java",
                 "C",
                 "C#",
                 ".NET",
-                "Java"
+                "Python",
+                "OOP Principles"
             ]
         },
         {
-            "title": "Database Management",
+            "title": "Database, Data Management & API",
             "techniques": [
+                "REST API",
                 "MySQL",
                 "MongoDB",
                 "XAMPP",
-                "Postman"
-            ]
-        },
-        {
-            "title": "Server Programming",
-            "techniques": [
-                "NodeJS",
-                "Express"
-            ]
-        },
-        {
-            "title": "API management",
-            "techniques": [
-                "API",
+                "Postman",
                 "JSON",
-                "XML",
-                "REST API"
+                "XML"
             ]
         },
         {
-            "title": "Development Tools",
+            "title": "Testing & Quality Assurance",
             "techniques": [
-                "Git & GitHub"
+                "Software testing",
+                "Python",
+                "Java",
+                "Unit Testing",
+                "Jest",
+                "TypeScript",
+                "NodeJS"
             ]
         },
         {
@@ -119,23 +126,16 @@
             ]
         },
         {
-            "title": "Testing",
+            "title": "Development Tools & IDE",
             "techniques": [
-                "Software testing",
-                "Python",
-                "Java",
-                "Unit Testing",
-                "Jest",
-                "TypeScript",
-                "NodeJS" 
-            ]
-        },
-        {
-            "title": "Mobile Applications",
-            "techniques": [
+                "Git",
+                "GitHub",
+                "VS Code",
+                "Visual Studio",
+                "Eclipse",
+                "PyCharm",
                 "Android Studio",
-                "Java"
-                
+                "CodeBlocks"
             ]
         }
     ],

@@ -45,58 +45,67 @@
     },
     "experience": [
         {
-            "title": "Webb-/Fullstackutveckling",
+            "title": "Frontend-utveckling",
             "techniques": [
                 "HTML",
                 "CSS",
                 "Bootstrap",
+                "Tailwind",
                 "JavaScript",
                 "React",
                 "TypeScript",
                 "WordPress",
-                "PHP"
+                "React Native"
             ]
         },
         {
-            "title": "Systemutveckling, OOP och affärssystem",
+            "title": "Backend-utveckling",
             "techniques": [
+                "NodeJS",
+                "Express",
+                "Django",
+                "Django REST Framework",
+                "PHP",
+                "C#",
+                ".NET"
+            ]
+        },
+        {
+            "title": "Mjukvaruutveckling & OOP",
+            "techniques": [
+                "Java",
                 "C",
                 "C#",
                 ".NET",
-                "Java"
+                "Python",
+                "OOP Principles"
             ]
         },
         {
-            "title": "Databashantering",
+            "title": "Databas, Datahantering & API",
             "techniques": [
+                "REST API",
                 "MySQL",
                 "MongoDB",
                 "XAMPP",
-                "Postman"
-            ]
-        },
-        {
-            "title": "Serverprogrammering",
-            "techniques": [
-                "NodeJS",
-                "Express"
-            ]
-        },
-        {
-            "title": "API hantering",
-            "techniques": [
-                "API",
+                "Postman",
                 "JSON",
-                "XML",
-                "REST API"
+                "XML"
             ]
         },
         {
-            "title": "Utvecklarverktyg",
+            "title": "Test & Kvalitetssäkring",
             "techniques": [
-                "Git & GitHub"
+                "Mjukvarutestning",
+                "Python",
+                "Java",
+                "Unit Testing",
+                "Jest",
+                "TypeScript",
+                "NodeJS"
             ]
         },
+        
         {
             "title": "UX",
             "techniques": [
@@ -118,23 +127,16 @@
             ]
         },
         {
-            "title": "Testning",
+            "title": "Utvecklarverktyg & IDE",
             "techniques": [
-                "Mjukvarutestning",
-                "Python",
-                "Java",
-                "Unit Testing",
-                "Jest",
-                "TypeScript",
-                "NodeJS"
-
-            ]
-        },
-        {
-            "title": "Mobila applikationer",
-            "techniques": [
+                "Git", 
+                "GitHub",
+                "VS Code",
+                "Visual Studio",
+                "Eclipse",
+                "PyCharm",
                 "Android Studio",
-                "Java"
+                "CodeBlocks"
             ]
         }
     ],

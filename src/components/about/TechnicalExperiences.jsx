@@ -71,12 +71,12 @@ const TechnicalExperiences = ({ aboutData, t }) => {
                         </motion.div>
                     );
                 })}
-                {/* {!showAll && (
+                {!showAll && (
                     <button className="btn show-all-btn show-more-effect btn-swipe-effect" onClick={() => setShowAll(true)}>
                         {t('buttons.showMore')} <IoIosArrowDown />
                     </button>
-                )} */}
-                <AnimatePresence>
+                )}
+                {/* <AnimatePresence>
                     {!showAll && (
                         <motion.button
                             className="btn show-all-btn show-more-effect btn-swipe-effect"
@@ -89,7 +89,7 @@ const TechnicalExperiences = ({ aboutData, t }) => {
                             {t('buttons.showMore')} <IoIosArrowDown />
                         </motion.button>
                     )}
-                </AnimatePresence>
+                </AnimatePresence> */}
             </div>
         </div>
     );

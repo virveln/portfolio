@@ -17,6 +17,7 @@ const TechIcons = () => {
                 <i className="devicon-bootstrap-plain"></i>
                 <i className="devicon-javascript-plain"></i>
                 <i className="devicon-react-original"></i>
+                <i className="devicon-reactrouter-plain"></i>
                 <i className="devicon-typescript-plain"></i>
                 <i className="devicon-wordpress-plain"></i>
                 <i className="devicon-php-plain"></i>
@@ -46,6 +47,12 @@ const TechIcons = () => {
                 <i className="devicon-visualstudio-plain"></i>
                 <i className="devicon-eclipse-plain"></i>
                 <i className="devicon-powershell-plain"></i>
+                <i className="devicon-django-plain"></i>
+                <i className="devicon-djangorest-plain-wordmark"></i>
+                <i className="devicon-python-plain"></i>
+                <i className="devicon-vite-original"></i>
+                <i className="devicon-tailwindcss-original"></i>
+
             </Marquee>
         </div>
     );
