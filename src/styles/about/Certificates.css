@@ -11,24 +11,36 @@
     width: calc(50% - 10px);
     width: 100%;
     min-height: 110px;
-    display: flex;
+    /* display: flex; */
 
     text-decoration: none;
     transition: transform 0.4s ease-out;
+    cursor: pointer;
 }
 
-.certificate-item>img {
+.certificate-item-inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.certificate-item .certificate-img{
     display: none;
     width: auto;
     height: 82px;
+    height: 95px;
     max-height: fit-content;
     margin: auto 0;
 }
 
 .certificate-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: inline-block;
+    /* flex-direction: column; */
+    /* gap: 10px; */
+    width: max-content;
+}
+
+.certificate-info>*{
+    margin-bottom: 10px;
 }
 
 .certificate-info h5 {
@@ -46,15 +58,29 @@
     transform: translateY(-5px);
 }
 
-.certificate-item:hover .certificate-link-text {
+.certificate-link-text:hover  {
     color: var(--primary-color-hover);
     text-decoration: underline;
     /* font-weight: 600; */
 } 
 
+.certificate-item .arrow-down {
+    display: block;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.certificate-item:hover .arrow-down {
+    color: var(--primary-color-hover);
+} 
+
+.certificate-description {
+    margin-top: 20px;
+}
+
 /*SMALL SCREEN*/
 @media screen and (min-width: 540px) {
-    .certificate-item>img {
+    .certificate-item .certificate-img {
         display: inline;
     }
 

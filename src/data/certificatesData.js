@@ -11,6 +11,7 @@ import fullstackImage from '../images/certificates/Udemy_Certificate_Fullstack_A
 
 const certificateData =[
     {
+        id: 1,
         date: "2025-01-10",
         title: "Understanding TypeScript",
         provider: "Udemy",
@@ -18,6 +19,7 @@ const certificateData =[
         image: typescriptImage
     },
     {
+        id: 2,
         date: "2025-01-17",
         title: "Unit Testing for Typescript & NodeJS Developers with Jest",
         provider: "Udemy",
@@ -25,6 +27,7 @@ const certificateData =[
         image: unitTestImage
     },
     {
+        id: 3,
         date: "2025-01-24",
         title: "Introduction to Cloud Computing on AWS for Beginners [2025]",
         provider: "Udemy",
@@ -32,6 +35,7 @@ const certificateData =[
         image: awsImage
     },
     {
+        id: 4,
         date: "2025-02-07",
         title: "React  Django Full Stack: web app, backend API, mobile apps",
         provider: "Udemy",

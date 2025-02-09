@@ -1,7 +1,7 @@
 {
     "introduction": {
         "p1": "Jag är Jessica Hvirfvel - en kreativ, logiskt tänkande pysselfantast som gillar att organisera och problemlösa. Att lära mig nytt och få en förståelse för hur saker hänger ihop är en drivkraft för mig. Jag har länge varit intresserad av IT och grafisk design men inte varit säker på hur jag skulle fullfölja det. Det förändrades 2020 när min syster introducerade mig för HTML och CSS, och från det ögonblicket var jag såld.",
-        "p2": "Snabbspolning till idag har jag en filosofie kandidatexamen (180 hp) med huvudområde informatik från Karlstads universitet, där jag gick Webbutvecklarprogrammet, och jag är fullt intresserad av fullstack-utveckling!",
+        "p2": "Snabbspolning till idag har jag en filosofie kandidatexamen (180 hp) med huvudområde informatik från Karlstads universitet, där jag gick <a href=\"https://www.kau.se/utbildning/program-och-kurser/program/SGWEB\" target=\"_blank\" rel=\"noopener noreferrer\">Webbutvecklarprogrammet</a>, och jag är fullt intresserad av fullstack-utveckling!",
         "p3": "Let's connect!"
     },
     "funfacts": [
@@ -140,5 +140,23 @@
             ]
         }
     ],
-    "certificateLinkTitle": "Visa legitimering"
+    "certificateLinkTitle": "Visa legitimering",
+    "certificate": [
+        {
+            "id": 1,
+            "description": "Den här kursen gav djupgående utbildning i TypeScript, och innehöll typesystem, moderna JavaScript-funktioner och avancerade koncept som generics, decorators och moduler. Jag lärde mig att konfigurera TypeScript-kompilatorn, integrera tredjepartsbibliotek och optimera arbetsflöden med webpack.<br><br>Genom praktiska projekt tillämpade jag TypeScript i verkliga scenarier, inklusive ReactJS och Node.js/Express-applikationer. Detta certifikat visar min förmåga att skriva skalbar, underhållbar och felfri kod med TypeScript."
+        },
+        {
+            "id": 2,
+            "description": "Den här kursen fokuserar på att bemästra TypeScript och enhetstestning med Jest för att skriva robust och felfri kod. Den täcker hur man sätter upp Node.js och TypeScript-projekt, konfigurerar Jest och skriver enhetstester och integrationstester. Jag lärde mig avancerade testtekniker som mocking, stubbing och att skapa djupa mocks för komplexa bibliotek, samt att testa asynkron kod både i Node.js och React-applikationer.<br><br>Kursen betonar Test-Driven Development (TDD) och leder dig genom praktiska övningar som en lösenordskontroll, samt lär ut integrationstestning för REST APIs. Jag fick praktisk erfarenhet av Jest:s funktioner, vilket gjorde mig skicklig på att skriva omfattande tester för verkliga applikationer."
+        },
+        {
+            "id": 3,
+            "description": "Den här nybörjarvänliga kursen ger en omfattande introduktion till molntjänster med AWS. Jag lärde mig grundläggande AWS-tjänster och molnkoncept, från grunderna till avancerade tekniker, genom praktiska övningar med ett AWS Free Tier-konto. Kursen täcker molnens grundläggande funktioner som lagring, nätverk och virtualisering, och går igenom AWS-tjänster som EC2, S3, RDS och Lambda.<br><br>I slutet av kursen hade jag de färdigheter som krävs för att distribuera och hantera molninfrastruktur, implementera automation med DevOps-verktyg och arbeta med serverlös databehandling. Den här kursen är perfekt för den som vill påbörja en karriär inom molntjänster och ger en bra grund för AWS-certifieringsexamen som AWS Certified Cloud Practitioner."
+        },
+        {
+            "id": 4,
+            "description": "Denna full-stack kurs täckte Django, React och React Native för att bygga kompletta applikationer, inklusive backend RESTful API, frontend web appar och mobilappar för både Android och iOS. Jag lära mig användarautentisering, fullständiga CRUD-operationer, egna API-endpoints och hur man kommunicerar mellan API och webapp.<br><br>Kursen inkluderar också styling av applikationen och begränsning av sektioner för endast autentiserade användare. Genom att använda JavaScript och Python får du praktisk erfarenhet med dessa populära ramverk och lärde jag mig att distribuera applikationer på en produktionsserver gratis."
+        }
+    ]
 }

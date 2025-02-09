@@ -1,7 +1,7 @@
 {
     "introduction": {
         "p1": "I'm Jessica Hvirfvel - a creative, logical thinker with a passion for crafting, organizing, and problem-solving. I'm driven by a desire to learn and understand how things work together. I've long been interested in IT and graphic design but wasn't sure how to pursue it. That changed in 2020 when my sister introduced me to HTML and CSS, and from that moment on, I was sold. ",
-        "p2": "Fast forward to today, I hold a Degree of Bachelor of Science (180 credits) in Information Systems from Karlstads University, where I attended the Web development program, and I'm fully interested in fullstack development!",
+        "p2": "Fast forward to today, I hold a Degree of Bachelor of Science (180 credits) in Information Systems from Karlstads University, where I attended the <a href=\"https://www.kau.se/utbildning/program-och-kurser/program/SGWEB\" target=\"_blank\" rel=\"noopener noreferrer\">Web development program</a>, and I'm fully interested in fullstack development!",
         "p3": "Let's connect!"
     },
     "funfacts": [
@@ -139,5 +139,23 @@
             ]
         }
     ],
-    "certificateLinkTitle": "Show Certificate"
+    "certificateLinkTitle": "Show Certificate",
+    "certificate": [
+        {
+            "id": 1,
+            "description": "This course provided in-depth training on TypeScript, covering its type system, modern JavaScript features, and advanced concepts like generics, decorators, and modules. I learned to configure the TypeScript compiler, integrate third-party libraries, and optimize workflows with webpack.<br><br>Through hands-on projects, I applied TypeScript in real-world scenarios, including ReactJS and Node.js/Express applications. This certification demonstrates my ability to write scalable, maintainable, and error-free code using TypeScript."
+        },
+        {
+            "id": 2,
+            "description": "This course focuses on mastering TypeScript and unit testing with Jest to write robust, bug-free code. It covers setting up Node.js and TypeScript projects, configuring Jest, and writing unit and integration tests. I learned advanced testing techniques such as mocking, stubbing, and creating deep mocks for complex libraries, as well as testing asynchronous code in both Node.js and React applications.<br><br>The course emphasizes Test-Driven Development (TDD), guiding you through practical exercises like a password checker, and teaches integration testing for REST APIs. I got hands-on experience with Jest's features, making me proficient in writing comprehensive tests for real-world applications."
+        },
+        {
+            "id": 3,
+            "description": "This beginner-friendly course provides a comprehensive introduction to cloud computing with AWS. I learned core AWS services and cloud concepts, from the basics to advanced techniques, with hands-on exercises using an AWS Free Tier account. The course covers cloud fundamentals such as storage, networking, and virtualization, and dives into AWS services like EC2, S3, RDS, and Lambda.<br><br>By the end of the course, I got the skills to deploy and manage cloud infrastructure, implement automation with DevOps tools, and work with serverless computing. This course is ideal for anyone looking to start a career in cloud computing and serves as a great foundation for AWS certification exams like the AWS Certified Cloud Practitioner."
+        },
+        {
+            "id": 4,
+            "description": "This full-stack course covered Django, React, and React Native to build complete applications, including backend RESTful APIs, frontend web apps, and mobile apps for both Android and iOS. I learned user authentication, full CRUD operations, custom API endpoints, and how to communicate between the API and web app.<br><br>The course also included styling the application and restricting sections to authenticated users only. By using JavaScript and Python, I gained practical experience with these popular frameworks and learned how to deploy applications to a production server for free."
+        }
+    ]
 }

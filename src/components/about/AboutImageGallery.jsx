@@ -41,7 +41,7 @@ const AboutImageGallery = () => {
                                 : 'hidden'
                         }`}
                 >
-                    <img src={image} alt={`${index}`} className='slide-image' />
+                    <img src={image} alt={`${index}`} loading="lazy" className='slide-image' />
                 </div>
             ))}
         </div>

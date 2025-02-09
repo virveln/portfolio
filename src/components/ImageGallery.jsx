@@ -48,6 +48,7 @@ function ImageGallery({ project }) {
                     <img
                         src={image.url}
                         alt={image.description}
+                        loading="lazy"
                         className='project-image'
                         onClick={() => openImage(image)}
                     />

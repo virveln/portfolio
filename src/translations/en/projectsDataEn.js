@@ -342,11 +342,15 @@ const projectsDataEn = [
       reason: 'solo project in my free time',
       github: movieRater?.github || "Unknown",
       website: '',
-      description: 'A full-stack application built using popular frameworks such as Django, React, and React Native, with a foundation in JavaScript and Python. The project includes a backend RESTful API, a front-end web application, and mobile applications for both Android and iOS.<br><br>The application implements user authentication (registration and login), full CRUD operations (create, read, update, delete), and custom API endpoints. The communication between the API and the web application is fully functional, and the app features styling as well as restrictions on certain sections, which are only accessible to authenticated users.<br><br>Mockups coming soon.',
-      thumbnail: movieRaterImages[0], 
+      description: 'A full-stack application built using popular frameworks such as Django, React, and React Native, with a foundation in JavaScript and Python. The project includes a backend RESTful API, a front-end web application, and mobile applications for both Android and iOS.<br><br>The application implements user authentication (registration and login), full CRUD operations (create, read, update, delete), and custom API endpoints. The communication between the API and the web application is fully functional, and the app features styling as well as restrictions on certain sections, which are only accessible to authenticated users.',
+      thumbnail: movieRaterImages[6], 
       images: [
-        // { url: movieRaterImages[0], description: "" },
-       
+        { url: movieRaterImages[0], description: "Login page" },
+        { url: movieRaterImages[1], description: "Register page" },
+        { url: movieRaterImages[2], description: "Listing all movies" },
+        { url: movieRaterImages[3], description: "Ditaild information if you clikced on a movie. Able to rate movie here" },
+        { url: movieRaterImages[4], description: "Editpage for selected movie" },
+        { url: movieRaterImages[5], description: "Form to add new movie" },       
       ]
     },
 

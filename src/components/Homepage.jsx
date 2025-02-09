@@ -22,45 +22,53 @@ const Homepage = () => {
     const handleProjectClick = (e, project) => {
         e.preventDefault(); // Förhindra direkt navigering
         setZoomProject(project.id); // Starta zoom-effekt
-        
+
         setTimeout(() => {
             navigate(`/portfolio/project/${formatTitleForUrl(project.title)}`); // Navigera efter animationen
-        }, 500); 
+        }, 500);
     };
 
     return (
-        <div className='container homepage-container'>
-            <Helmet>
-                <title>Jessica Hvirfvel - Projects</title>
-            </Helmet>
-            <div className='colorscheme'>
-                <div className='hero-text-container'>
-                    {/* <h1 className='hero-text'>{t('heroText')}</h1> */}
-                    <motion.h1
-                        initial={{ opacity: 0, y: -30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1 }}
-                        className="hero-text"
-                    >
-                        {t('heroText')}
-                    </motion.h1>
-                </div>
-                <div className="project-list">
-                    {projectsData
-                        .filter(project => project.id !== 1 && project.id !== 2)
-                        .slice()
-                        .reverse()
-                        .map(project => (
-                            // <div key={project.id} className="project-item">
-                            <div 
-                                key={project.id} 
-                                className={`project-item ${zoomProject === project.id ? "zooming" : ""}`}
-                                onClick={(e) => handleProjectClick(e, project)}
-                                role="link"
-                            >
-                                {/* <Link to={`/portfolio/project/${formatTitleForUrl(project.title)}`} className="project-link"> */}
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.3 }}
+            className='container homepage-container'
+        >
+
+            {/* <div > */}
+                <Helmet>
+                    <title>Jessica Hvirfvel - Projects</title>
+                </Helmet>
+                <div className='colorscheme'>
+                    <div className='hero-text-container'>
+                        {/* <h1 className='hero-text'>{t('heroText')}</h1> */}
+                        <motion.h1
+                            initial={{ opacity: 0, y: -30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            className="hero-text"
+                        >
+                            {t('heroText')}
+                        </motion.h1>
+                    </div>
+                    <div className="project-list">
+                        {projectsData
+                            .filter(project => project.id !== 1 && project.id !== 2)
+                            .slice()
+                            .reverse()
+                            .map(project => (
+                                // <div key={project.id} className="project-item">
+                                <div
+                                    key={project.id}
+                                    className={`project-item ${zoomProject === project.id ? "zooming" : ""}`}
+                                    onClick={(e) => handleProjectClick(e, project)}
+                                    role="link"
+                                >
+                                    {/* <Link to={`/portfolio/project/${formatTitleForUrl(project.title)}`} className="project-link"> */}
                                     <div className="thumbnail-container">
-                                        <img src={project.thumbnail} alt={project.title} className="project-thumbnail" />
+                                        <img src={project.thumbnail} alt={project.title} loading="lazy" className="project-thumbnail" />
                                         <div className="overlay">
                                             <h3 className='overlay-title'>{project.title}</h3>
                                             <p className='overlay-date'>{project.date}</p>
@@ -76,12 +84,13 @@ const Homepage = () => {
                                             </p>
                                         </div>
                                     </div>
-                                {/* </Link> */}
-                            </div>
-                        ))}
+                                    {/* </Link> */}
+                                </div>
+                            ))}
+                    </div>
                 </div>
-            </div>
-        </div>
+            {/* </div> */}
+        </motion.div>
     );
 };
 

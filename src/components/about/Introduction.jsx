@@ -16,7 +16,7 @@ const Introduction = ({aboutData, t}) => {
             <div className="about-container-intro">
                 <div className='about-container-text'>
                     <p className='about-text'>{aboutData.introduction.p1}</p>
-                    <p className='about-text'>{aboutData.introduction.p2}</p>
+                    <p className='about-text'dangerouslySetInnerHTML={{ __html: aboutData.introduction.p2}}></p>
                     <p className='about-text connect-text'>{aboutData.introduction.p3}</p>
 
                     <div className='about-container-btn'>

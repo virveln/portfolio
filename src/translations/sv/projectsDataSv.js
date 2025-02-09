@@ -350,10 +350,15 @@ const projectsDataSv = [
       reason: 'soloprojekt på fritiden',
       github: movieRater?.github || "Unknown",
       website: '',
-      description: 'En fullstack applikation skapad med populära ramverk som Django, React och React Native och grund ur JavaScript och Python. Projektet inkluderar en backend RESTful API, en frontend webbapplikation och mobilapplikationer för både Android och iOS.<br><br>Applikation implementerar användarautentisering (registrering och inloggning), fulla CRUD-operationer (skapa, läsa, uppdatera, ta bort) och egna API-endpoints. Kommunikationen mellan API:t och webbapplikationen är fullt fungerande, och applikationen har både styling och restriktioner för vissa sektioner, som endast är tillgängliga för autentiserade användare.<br><br>Mockups kommer snart.',
-      thumbnail: movieRaterImages[0], 
+      description: 'En fullstack applikation skapad med populära ramverk som Django, React och React Native och grund ur JavaScript och Python. Projektet inkluderar en backend RESTful API, en frontend webbapplikation och mobilapplikationer för både Android och iOS.<br><br>Applikation implementerar användarautentisering (registrering och inloggning), fulla CRUD-operationer (skapa, läsa, uppdatera, ta bort) och egna API-endpoints. Kommunikationen mellan API:t och webbapplikationen är fullt fungerande, och applikationen har både styling och restriktioner för vissa sektioner, som endast är tillgängliga för autentiserade användare.',
+      thumbnail: movieRaterImages[6], 
       images: [
-        // { url: movieRaterImages[0], description: "" },
+        { url: movieRaterImages[0], description: "Login sida" },
+        { url: movieRaterImages[1], description: "Registrerings sida" },
+        { url: movieRaterImages[2], description: "Listar filmer" },
+        { url: movieRaterImages[3], description: "Detaljerad information om man klickat på en film. Går även att ge betyg på filmen" },
+        { url: movieRaterImages[4], description: "Redigringssida för utvald film" },
+        { url: movieRaterImages[5], description: "Formulär för att lägga till ny film" },
        
       ]
     },

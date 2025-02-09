@@ -71,7 +71,7 @@ const ProjectDetail = () => {
                             opacity: fadeOut ? 0 : 1, 
                             backgroundColor: isWhite ? '#ffffff' : '#04A0B8', 
                         }}
-                        transition={{ duration: 1.5, ease: 'easeOut' }}
+                        transition={{ duration: 1.3, ease: 'easeOut' }}
                     />
 
                     <div className='project-info-container'>
