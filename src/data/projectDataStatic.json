@@ -152,7 +152,8 @@
             "Django REST Framework",
             "Python",
             "React",
-            "React Native"
+            "React Native", 
+            "Tailwind"
         ],
         "github": "https://github.com/virveln/movie-rater"
     }

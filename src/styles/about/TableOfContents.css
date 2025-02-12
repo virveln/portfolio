@@ -1,49 +1,83 @@
 .toc-container {
-    position: fixed;
-    top: 50px;
-    right: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #f0f0f0;
-    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
-    padding-top: 20px;
-    display: none;
-  }
-  
-  .progress-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px; /* Bredden på progress baren */
-    background-color: #3498db;
-    transition: height 0.3s ease-out;
-  }
-  
-  .toc-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 50px;
-  }
-  
-  .toc-list li {
-    margin: 20px 0;
-  }
-  
-  .toc-list li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
-  .toc-list li a:hover {
-    color: #3498db;
-  }
-  
+  position: absolute; 
+  top: 40px; 
+  /* right: -250px; */
+  right: auto;
+  z-index: 1000;
+  /* display: flex;
+  flex-direction: column;
+  gap: 50px; */
+  width: 200px;
+  margin-left: 30px;
 
-  /*DESKTOP*/
-@media screen and (min-width: 992px) {
-    .toc-container {
-        display:unset;
-      }
-  }
+  /* transition: top 0.3s ease-in-out; */
+ }
+
+ .toc-container.sticky {
+  position: fixed; 
+  top: 50%;
+  transform: translateY(-50%);
+  /* top: 130px; */
+  right: auto;
+  z-index: 1000;
+  /* transition: top 0.3s ease-in-out; */
+}
+
+/* Progress bar container */
+.progress-bar {
+  width: 4px;
+  height: 100%;
+  background-color: #ddd;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+/* Dynamic progress indicator (Fills from top to bottom) */
+.progress {
+  width: 100%;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0;
+  height: 0;
+  transition: height 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+/* TOC list */
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* TOC item */
+.toc-item {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #555;
+  position: relative;
+  padding-left: 24px;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+
+.toc-item:hover {
+  color: var(--primary-color-hover);
+}
+
+/* Active TOC item */
+.toc-item.active {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+

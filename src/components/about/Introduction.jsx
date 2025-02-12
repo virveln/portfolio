@@ -9,10 +9,12 @@ import contactData from '../../data/contactData.json';
 
 import profileImg from '../../images/me.JPG';
 
-const Introduction = ({aboutData, t}) => {
+const Introduction = ({aboutData, t, sections}) => {
+    const heading = sections.find(section => section.id === 'introduction');
+
     return (
         <div>
-            <h2>Who am I<span className='colorfulend'>.</span></h2>
+            <h2>{heading.label}<span className='colorfulend'>.</span></h2>
             <div className="about-container-intro">
                 <div className='about-container-text'>
                     <p className='about-text'>{aboutData.introduction.p1}</p>

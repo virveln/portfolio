@@ -48,14 +48,15 @@
   transition: transform 0.5s ease-out, opacity 0.3s ease-out, filter 1s ease-out;
   will-change: transform, opacity, filter;
 }
+
 /*==========*/
 
 .project-item.zooming {
   transform: scale(10);
   z-index: 1000;
   pointer-events: none;
-  transform-origin: center center; 
-  filter: blur(20px); 
+  transform-origin: center center;
+  filter: blur(20px);
 }
 
 .project-item.zooming .overlay {
@@ -71,10 +72,10 @@
   transition: transform 0.3s ease;
 }
 
-/*Move image up when hover*/
+/* Move image up when hover
 .thumbnail-container:hover {
   transform: translateY(-5px);
-}
+} */
 
 .project-thumbnail {
   width: 100%;
@@ -199,6 +200,24 @@
     margin-right: 5%;
   }
 
+  .overlay-title {
+    font-size: 1.75em;
+  }
 
+  .overlay-date {
+    font-size: 1.25em;
+  }
 
+  .overlay-techniques {
+    font-size: 1em;
+  }
+}
+
+/*ONLY ON DESKTOP*/
+@media (hover: hover) and (pointer: fine) {
+
+  /*Move image up when hover*/
+  .thumbnail-container:hover {
+    transform: translateY(-5px);
+  }
 }

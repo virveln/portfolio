@@ -294,7 +294,6 @@ const projectsDataEn = [
       { url: nollningsbiblarImages[3], description: "Example of inside of brochure 2023, theme Scooby Doo" },
       { url: nollningsbiblarImages[4], description: "Front and back of brochure 2024, theme Pokémon" },
       { url: nollningsbiblarImages[5], description: "Example of inside of brochure 2024, theme Pokémon" },
-
     ]
   },
   {
@@ -343,14 +342,19 @@ const projectsDataEn = [
       github: movieRater?.github || "Unknown",
       website: '',
       description: 'A full-stack application built using popular frameworks such as Django, React, and React Native, with a foundation in JavaScript and Python. The project includes a backend RESTful API, a front-end web application, and mobile applications for both Android and iOS.<br><br>The application implements user authentication (registration and login), full CRUD operations (create, read, update, delete), and custom API endpoints. The communication between the API and the web application is fully functional, and the app features styling as well as restrictions on certain sections, which are only accessible to authenticated users.',
-      thumbnail: movieRaterImages[6], 
+      thumbnail: movieRaterImages[11], 
       images: [
         { url: movieRaterImages[0], description: "Login page" },
         { url: movieRaterImages[1], description: "Register page" },
         { url: movieRaterImages[2], description: "Listing all movies" },
         { url: movieRaterImages[3], description: "Ditaild information if you clikced on a movie. Able to rate movie here" },
         { url: movieRaterImages[4], description: "Editpage for selected movie" },
-        { url: movieRaterImages[5], description: "Form to add new movie" },       
+        { url: movieRaterImages[5], description: "Form to add new movie" },  
+        { url: movieRaterImages[6], description: "" },
+        { url: movieRaterImages[7], description: "" },
+        { url: movieRaterImages[8], description: "" },
+        { url: movieRaterImages[9], description: "" },
+        { url: movieRaterImages[10], description: "" },     
       ]
     },
 

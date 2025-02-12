@@ -15,8 +15,9 @@ import eventIcon from '../../images/icons/event.png';
 import parachuteIcon from '../../images/icons/parachute.png';
 import puzzleIcon from '../../images/icons/puzzle.png';
 
-const FunFacts = ({ aboutData }) => {
+const FunFacts = ({ aboutData, sections }) => {
     const [ref, inView] = useInView({ triggerOnce: true, threshold: .2, });
+    const heading = sections.find(section => section.id === 'fun-facts');
 
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     useEffect(() => {
@@ -43,7 +44,7 @@ const FunFacts = ({ aboutData }) => {
 
     return (
         <div className='funfacts-container new-container'>
-            <h2>Fun facts about me<span className='colorfulend'>.</span></h2>
+            <h2>{heading.label}<span className='colorfulend'>.</span></h2>
             <div className='funfacts-inner-container' ref={ref}>
                 {aboutData.funfacts.map((funfact, index) => (
                     // <div key={index} className='funfact-item'>

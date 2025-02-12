@@ -5,13 +5,14 @@ import '../../styles/about/TechnicalExperiences.css';
 
 import React, { useState, useEffect } from 'react';
 import { ReactTyped } from "react-typed";
-import { motion, AnimatePresence  } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { IoIosArrowDown } from "react-icons/io";
 
-const TechnicalExperiences = ({ aboutData, t }) => {
+const TechnicalExperiences = ({ aboutData, t, sections }) => {
     const [showAll, setShowAll] = useState(false);
     const itemsToShow = showAll ? aboutData.experience : aboutData.experience.slice(0, 4);
+    const heading = sections.find(section => section.id === 'technical-experiences');
 
     const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2, });
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -26,10 +27,12 @@ const TechnicalExperiences = ({ aboutData, t }) => {
         };
     }, []);
     const isMobile = screenWidth < 768;
+    
+    const [isHovered, setIsHovered] = useState(false);
 
     return (
         <div className='techniques-container new-container'>
-            <h2>Technical experiences<span className='colorfulend'>.</span></h2>
+            <h2>{heading.label}<span className='colorfulend'>.</span></h2>
             <p>{aboutData.experienceText.text}<ReactTyped
                 strings={["Coder.", "Designer."]}
                 typeSpeed={100}
@@ -72,9 +75,26 @@ const TechnicalExperiences = ({ aboutData, t }) => {
                     );
                 })}
                 {!showAll && (
-                    <button className="btn show-all-btn show-more-effect btn-swipe-effect" onClick={() => setShowAll(true)}>
-                        {t('buttons.showMore')} <IoIosArrowDown />
-                    </button>
+                    <motion.button onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)} className="btn show-all-btn show-more-effect btn-swipe-effect" onClick={() => setShowAll(true)}>
+                        {t('buttons.showMore')}
+                        <motion.div
+                            animate={isHovered ? "falling" : "idle"}
+                            variants={{
+                                idle: { y: 0, opacity: 1, rotate: 0 },
+                                falling: {
+                                    y: [0, 20, 50, 80, 100], // Moves down in steps
+                                    opacity: [1, 1, 0.8, 0.5, 0], // Fades as it falls
+                                    rotate: [0, 10, -10, 15, -15], // Slight rotation for effect
+                                    transition: { duration: 0.8, ease: "easeInOut" }
+                                }
+                            }}
+                            onAnimationComplete={() => setIsHovered(false)} // Reset after animation
+                        >
+                            <IoIosArrowDown />
+                        </motion.div>
+
+                    </motion.button>
                 )}
                 {/* <AnimatePresence>
                     {!showAll && (
