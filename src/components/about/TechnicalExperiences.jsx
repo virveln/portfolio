@@ -13,6 +13,7 @@ const TechnicalExperiences = ({ aboutData, t, sections }) => {
     const [showAll, setShowAll] = useState(false);
     const itemsToShow = showAll ? aboutData.experience : aboutData.experience.slice(0, 4);
     const heading = sections.find(section => section.id === 'technical-experiences');
+    const [isHovered, setIsHovered] = useState(false);
 
     const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2, });
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -27,8 +28,6 @@ const TechnicalExperiences = ({ aboutData, t, sections }) => {
         };
     }, []);
     const isMobile = screenWidth < 768;
-    
-    const [isHovered, setIsHovered] = useState(false);
 
     return (
         <div className='techniques-container new-container'>
@@ -75,41 +74,22 @@ const TechnicalExperiences = ({ aboutData, t, sections }) => {
                     );
                 })}
                 {!showAll && (
-                    <motion.button onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)} className="btn show-all-btn show-more-effect btn-swipe-effect" onClick={() => setShowAll(true)}>
+                    <motion.button
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                        className="btn show-all-btn show-more-effect btn-swipe-effect"
+                        onClick={() => setShowAll(true)}>
                         {t('buttons.showMore')}
                         <motion.div
-                            animate={isHovered ? "falling" : "idle"}
-                            variants={{
-                                idle: { y: 0, opacity: 1, rotate: 0 },
-                                falling: {
-                                    y: [0, 20, 50, 80, 100], // Moves down in steps
-                                    opacity: [1, 1, 0.8, 0.5, 0], // Fades as it falls
-                                    rotate: [0, 10, -10, 15, -15], // Slight rotation for effect
-                                    transition: { duration: 0.8, ease: "easeInOut" }
-                                }
-                            }}
+                            animate={{ y: isHovered ? -3 : 0 }}
+                            transition={{ duration: 0.3, repeat: isHovered ? Infinity : '', repeatType: "reverse" }}
+                            style={{ display: 'flex', alignItems: 'center' }}
                             onAnimationComplete={() => setIsHovered(false)} // Reset after animation
                         >
                             <IoIosArrowDown />
                         </motion.div>
-
                     </motion.button>
                 )}
-                {/* <AnimatePresence>
-                    {!showAll && (
-                        <motion.button
-                            className="btn show-all-btn show-more-effect btn-swipe-effect"
-                            onClick={() => setShowAll(true)}
-                            initial={{ opacity: 1, y: 0 }} 
-                            animate={{ opacity: 1, y: 0 }} 
-                            exit={{ opacity: 0, y: -20 }} 
-                            transition={{ duration: 0.4, ease: "easeOut" }}
-                        >
-                            {t('buttons.showMore')} <IoIosArrowDown />
-                        </motion.button>
-                    )}
-                </AnimatePresence> */}
             </div>
         </div>
     );

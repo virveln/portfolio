@@ -15,8 +15,8 @@
 
  .toc-container.sticky {
   position: fixed; 
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
+  transform: translateY(-70%);
   /* top: 130px; */
   right: auto;
   z-index: 1000;

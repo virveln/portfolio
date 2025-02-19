@@ -10,7 +10,8 @@ const TableOfContents = ({ sections }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const offsetTop = 320; 
+      // const offsetTop = 320; 
+      const offsetTop = 420; 
 
       if (scrollPosition >= offsetTop) {
         setIsSticky(true); 
