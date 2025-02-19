@@ -78,7 +78,7 @@ const About = () => {
                         </section>
                         <TechIcons />
                         <section id='certificates'>
-                            <Certificates aboutData={aboutData} sections={sections} />
+                            <Certificates aboutData={aboutData} t={t} sections={sections} />
                         </section>
                         {/* <section>
                             <div style={{ position: "relative" }}>

@@ -10,9 +10,9 @@ import { useInView } from "react-intersection-observer";
 import { IoIosArrowDown } from "react-icons/io";
 
 const TechnicalExperiences = ({ aboutData, t, sections }) => {
+    const heading = sections.find(section => section.id === 'technical-experiences');
     const [showAll, setShowAll] = useState(false);
     const itemsToShow = showAll ? aboutData.experience : aboutData.experience.slice(0, 4);
-    const heading = sections.find(section => section.id === 'technical-experiences');
     const [isHovered, setIsHovered] = useState(false);
 
     const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2, });
@@ -77,7 +77,7 @@ const TechnicalExperiences = ({ aboutData, t, sections }) => {
                     <motion.button
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
-                        className="btn show-all-btn show-more-effect btn-swipe-effect"
+                        className="btn show-all-btn btn-swipe-effect"
                         onClick={() => setShowAll(true)}>
                         {t('buttons.showMore')}
                         <motion.div

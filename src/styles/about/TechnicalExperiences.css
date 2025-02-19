@@ -29,62 +29,6 @@
     color: var(--primary-color);
 }
 
-.techniques-container .show-all-btn {
-    font-size: 0.9em;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-    /* margin-left: auto; */
-    background-color: white;
-    color: black;
-    box-shadow: none;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-
-.show-all-btn.btn-swipe-effect::after {
-    background-color: var(--secondary-color);
-}
-
-/* .show-more-effect {
-    min-width: 120px;
-    text-align: center;
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    
-   
-    overflow: hidden;
-    
-    transition: all 0.2s linear 0s;
-    
-    &:before {
-      content: "\f107";
-      font-family: FontAwesome;
-      font-size: 15px;
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      right: 10px;
-      top: 0;
-      opacity: 0;
-      height: 100%;
-      transition: all 0.2s linear 0s;
-    }
-    
-    &:hover {
-      text-indent: -20px;
-      
-      &:before {
-        opacity: 1;
-        text-indent: 0px;
-      }
-    }
-  } */
-
-
 /*TABLET*/
 @media screen and (min-width: 768px) {
 
@@ -92,7 +36,6 @@
         width: calc(50% - 10px);
     }
 }
-
 
 /*DESKTOP*/
 @media screen and (min-width: 992px) {

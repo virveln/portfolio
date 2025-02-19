@@ -33,13 +33,6 @@
     margin: auto 0;
 }
 
-.certificate-info {
-    /* display: inline-block; */
-    /* flex-direction: column; */
-    /* gap: 10px; */
-    /* width: max-content; */
-}
-
 .certificate-info>*:not(:last-child) {
     margin-bottom: 10px;
 }
@@ -50,14 +43,9 @@
 }
 
 .certificate-link-text {
-    /* font-weight: 400; */
-    /* text-decoration: underline; */
     transition: color 0.3s ease-out, text-decoration 0.3s ease-out;
 }
 
-/* .certificate-item:hover {
-    transform: translateY(-5px);
-} */
 
 .certificate-link-text:hover {
     color: var(--primary-color-hover);
@@ -85,21 +73,26 @@
     /* transition: opacity 0.3s ease, height 0.3s ease; */
 }
 
-/* .certificate-description-container.collapse-enter {
-    opacity: 0;
-    height: 0;
+.btn-certificate {
+    width: fit-content;
+    margin: auto;
 }
-
-.certificate-description-container.collapse-exit {
-    opacity: 1;
-    height: auto;
-} */
-
 
 /*SMALL SCREEN*/
 @media screen and (min-width: 540px) {
+    .certificate-item .certificate-img-container {
+        width: 148px;
+        max-height: 110px;
+        position: relative;
+        overflow: hidden;
+    }
+
     .certificate-item .certificate-img {
         display: inline;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: auto;
     }
 
     .certificate-info {
@@ -110,9 +103,10 @@
 
 /*ONLY ON DESKTOP*/
 @media (hover: hover) and (pointer: fine) {
+
     /*Move image up when hover*/
     .certificate-item:hover {
         transform: translateY(-5px);
     }
-}
 
+}

@@ -36,6 +36,13 @@ h1 {
     font-weight: 400;
 }
 
+/* Dot after headings */
+.colorfulend {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Button general */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -50,8 +57,6 @@ h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
-    /* Döljer effekten utanför knappen */
-
 }
 
 .btn:hover {
@@ -59,7 +64,18 @@ h1 {
     /* transform: translateY(-2px); */
 }
 
-/*======*/
+.btn:active {
+    background-color: var(--primary-color-darker);
+    transform: translateY(1px);
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(3, 124, 143, 0.5);
+}
+
+/*
+ Button effect - swipe*/
 .btn-swipe-effect {
     transition: .2s transform ease-in-out;
     will-change: transform;
@@ -91,54 +107,22 @@ h1 {
     will-change: transform;
 }
 
-/* .btn-swipe-effect {
-    border: 1px solid;
-    overflow: hidden;
-    position: relative;
-    
-    span {
-      z-index: 20;
-    }
-    
-    &:after {
-      background: #fff;
-      content: "";
-      height: 155px;
-      left: -75px;
-      opacity: .2;
-      position: absolute;
-      top: -50px;
-      transform: rotate(35deg);
-      transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-      width: 50px;
-      z-index: -10;
-    }
-  }
-  
-  .btn-swipe-effect:hover {
-    
-    &:after {
-      left: 120%;
-      transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
-    }
-  } */
-
-
-/*============*/
-
-.btn:active {
-    background-color: var(--primary-color-darker);
-    transform: translateY(1px);
+/* Button effect - show more data */
+.show-all-btn {
+    font-size: 0.9em;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    /* margin-left: auto; */
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgb(3, 124, 143, 0.5);
-}
-
-.colorfulend {
-    color: var(--primary-color);
-    font-weight: 600;
+.show-all-btn.btn-swipe-effect::after {
+    background-color: var(--secondary-color);
 }
 
 /*SMALL SCREEN*/

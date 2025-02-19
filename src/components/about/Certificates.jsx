@@ -7,14 +7,16 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoOpenOutline } from "react-icons/io5";
 import certificateData from '../../data/certificatesData';
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { Collapse } from 'react-collapse';
+import { IoIosArrowDown } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion";
 
 
-const Certificate = ({ aboutData, sections }) => {
-    const [openIndex, setOpenIndex] = useState(null);
+const Certificate = ({ aboutData, t, sections }) => {
     const heading = sections.find(section => section.id === 'certificates');
+    const [showAll, setShowAll] = useState(false);
+    const itemsToShow = showAll ? certificateData : certificateData.slice(0, 2);
+    const [isHovered, setIsHovered] = useState(false);
+    const [openIndex, setOpenIndex] = useState(null);
 
     const toggleCollapse = (index) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -23,7 +25,7 @@ const Certificate = ({ aboutData, sections }) => {
     return (
         <div className='certificate-container new-container'>
             <h2>{heading.label}<span className='colorfulend'>.</span></h2>
-            {certificateData.map((certificate, index) => {
+            {itemsToShow.map((certificate, index) => {
                 const description = aboutData.certificate?.find((cert) => cert.id === certificate.id);
                 const isOpen = openIndex === index;
                 // <Link key={index} className='certificate-item' to={certificate.link} target="_blank" rel="noopener noreferrer" title={aboutData.certificateLinkTitle}>
@@ -37,8 +39,9 @@ const Certificate = ({ aboutData, sections }) => {
                         transition={{ type: "spring", stiffness: 400, damping: 30 }}
                     >
                         <div className='certificate-item-inner'>
-
-                            <img src={certificate.image} alt='Certificate' loading="lazy" className='certificate-img' />
+                            <div className='certificate-img-container'>
+                                <img src={certificate.image} alt='Certificate' loading="lazy" className='certificate-img' />
+                            </div>
                             <div className='certificate-info'>
                                 <h4>{certificate.title}</h4>
                                 <h5>{certificate.provider}</h5>
@@ -49,7 +52,7 @@ const Certificate = ({ aboutData, sections }) => {
                                     <motion.div
                                         animate={{ rotate: isOpen ? -180 : 0 }}
                                         transition={{ duration: 0.3 }}
-                                        style={{ display: "inline-block", transformOrigin: "center"}}
+                                        style={{ display: "inline-block", transformOrigin: "center" }}
                                     >
 
                                         <IoIosArrowDown className="arrow-down" />
@@ -58,9 +61,6 @@ const Certificate = ({ aboutData, sections }) => {
                                 </div>
                             </div>
                         </div>
-                        {/* <Collapse isOpened={openIndex === index} className='certificate-description-container'>
-                            <p className='certificate-description' dangerouslySetInnerHTML={{ __html: description ? description.description : "" }} />
-                        </Collapse> */}
                         <AnimatePresence>
                             {isOpen && (
                                 <motion.div
@@ -82,6 +82,23 @@ const Certificate = ({ aboutData, sections }) => {
                     </motion.div>
                 )
             })}
+            {!showAll && (
+                <motion.button
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                    className="btn btn-certificate show-all-btn btn-swipe-effect"
+                    onClick={() => setShowAll(true)}>
+                    {t('buttons.showMore')}
+                    <motion.div
+                        animate={{ y: isHovered ? -3 : 0 }}
+                        transition={{ duration: 0.3, repeat: isHovered ? Infinity : '', repeatType: "reverse" }}
+                        style={{ display: 'flex', alignItems: 'center' }}
+                        onAnimationComplete={() => setIsHovered(false)} // Reset after animation
+                    >
+                        <IoIosArrowDown />
+                    </motion.div>
+                </motion.button>
+            )}
         </div>
     );
 };
