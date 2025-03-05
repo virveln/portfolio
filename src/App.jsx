@@ -40,7 +40,9 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className='outer-container'>
-        <Navbar />
+        <header>
+          <Navbar />
+        </header>
         <Routes>
           <Route path="/portfolio" element={<Homepage />} />
           <Route path="/portfolio/about" element={<About />} />

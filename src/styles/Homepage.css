@@ -43,6 +43,8 @@
 }
 
 .project-item {
+  /* all: unset; */
+  border: none;
   max-width: 1200px;
   cursor: pointer;
   transition: transform 0.5s ease-out, opacity 0.3s ease-out, filter 1s ease-out;

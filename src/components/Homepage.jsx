@@ -60,14 +60,13 @@ const Homepage = () => {
                             .reverse()
                             .map(project => (
                                 // <div key={project.id} className="project-item">
-                                <div
+                                <button
                                     key={project.id}
-                                    className={`project-item ${zoomProject === project.id ? "zooming" : ""}`}
+                                    className={`thumbnail-container project-item ${zoomProject === project.id ? "zooming" : ""}`}
                                     onClick={(e) => handleProjectClick(e, project)}
                                     role="link"
                                 >
                                     {/* <Link to={`/portfolio/project/${formatTitleForUrl(project.title)}`} className="project-link"> */}
-                                    <div className="thumbnail-container">
                                         <img src={project.thumbnail} alt={project.title} loading="lazy" className="project-thumbnail" />
                                         <div className="overlay">
                                             <h3 className='overlay-title'>{project.title}</h3>
@@ -83,9 +82,8 @@ const Homepage = () => {
                                                 ))}
                                             </p>
                                         </div>
-                                    </div>
                                     {/* </Link> */}
-                                </div>
+                                </button>
                             ))}
                     </div>
                 </div>

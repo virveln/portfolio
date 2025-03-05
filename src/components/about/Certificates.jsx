@@ -30,7 +30,7 @@ const Certificate = ({ aboutData, t, sections }) => {
                 const isOpen = openIndex === index;
                 // <Link key={index} className='certificate-item' to={certificate.link} target="_blank" rel="noopener noreferrer" title={aboutData.certificateLinkTitle}>
                 return (
-                    <motion.div
+                    <motion.button
                         key={index}
                         className='certificate-item'
                         onClick={() => toggleCollapse(index)}
@@ -79,7 +79,7 @@ const Certificate = ({ aboutData, t, sections }) => {
                                 </motion.div>
                             )}
                         </AnimatePresence>
-                    </motion.div>
+                    </motion.button>
                 )
             })}
             {!showAll && (

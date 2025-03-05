@@ -28,7 +28,7 @@ const Introduction = ({aboutData, t, sections}) => {
                     </div>
                 </div>
                 <div className='about-image-container'>
-                    <img src={profileImg} alt="About Me" className="about-image" />
+                    <img src={profileImg} alt="Image of Jessica" className="about-image" />
                 </div>
             </div>
         </div>
